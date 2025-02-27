@@ -1,20 +1,20 @@
 ---
 type: server
 repo_url: https://github.com/stripe/agent-toolkit
-name: Stripe
+name: Stripe Agent Toolkit
 owner: stripe
-stars: 0
-last_updated: 2025-02-27
+stars: 300
+last_updated: 2025-02-21
 status: active
 official: true
 verified: false
-sources: ["inbox"]
-tags: ["status/active", "status/official", "category/integration"]
+sources: ["inbox/batch_001.md"]
+tags: ["status/active", "status/official", "category/integration", "integration/stripe", "purpose/payment-processing"]
 ---
 
-#status/active #status/official #category/integration
+# Stripe Agent Toolkit
 
-# Stripe
+#status/active #status/official #category/integration #integration/stripe #purpose/payment-processing
 
 ## Description
 
@@ -36,60 +36,30 @@ Interact with Stripe API. This MCP server provides comprehensive integration wit
 ## Installation
 
 ```bash
-npm install @stripe/mcp-server
+npm install @stripe/agent-toolkit
 ```
 
 ## Usage
 
 ```javascript
-import { StripeServer } from "@stripe/mcp-server";
-
-const server = new StripeServer({
-  apiKey: "your-stripe-secret-key",
-  webhookSecret: "your-webhook-secret",
-});
-
-// Create a payment intent
-const paymentIntent = await server.createPaymentIntent({
-  amount: 2000, // $20.00
-  currency: "usd",
-  paymentMethodTypes: ["card"],
-  metadata: {
-    orderId: "12345",
-  },
-});
-
-// Handle subscriptions
-const subscription = await server.createSubscription({
-  customer: "cus_123",
-  items: [{ price: "price_H123" }],
-  paymentBehavior: "default_incomplete",
-  metadata: {
-    plan: "premium",
-  },
-});
-
-// Process refunds
-const refund = await server.createRefund({
-  paymentIntent: "pi_123",
-  amount: 1000, // $10.00
-  reason: "requested_by_customer",
-});
-
-// Handle disputes
-const dispute = await server.updateDispute({
-  disputeId: "dp_123",
-  evidence: {
-    productDescription: "Detailed product description",
-    serviceDate: "2025-02-27",
-    shippingDocumentation: "file_123",
-  },
-});
+{
+  "mcpServers": {
+    "stripe": {
+      "command": "npx",
+      "args": ["@stripe/agent-toolkit"],
+      "env": {
+        "STRIPE_SECRET_KEY": "your-stripe-secret-key",
+        "STRIPE_WEBHOOK_SECRET": "your-webhook-secret",
+        "STRIPE_API_VERSION": "2025-02-21"
+      }
+    }
+  }
+}
 ```
 
 ## Dependencies
 
-- Node.js >= 14.x
+- Node.js >= 14
 - Stripe account
 - Stripe API keys
 - Webhook endpoint (optional)

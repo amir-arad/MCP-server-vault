@@ -18,9 +18,9 @@
    - DO NOT include the templates or their schema in your work
    - NEVER use the `execute_template` command
 
-2. **Scan Existing Structure**
+2. **Scan Existing**
 
-   - Scan the vault for existing tags using the `search_vault` tool to understand the taxonomy and tagging standards
+   - Tags: Scan the vault for existing tags using the `search_vault` tool to understand the taxonomy and tagging standards
      ```javascript
      // Use this JsonLogic query to retrieve all tags from all files:
      {
@@ -29,7 +29,8 @@
      }
      // This will return an array of objects containing filenames and their associated tags
      ```
-   - Review existing server files to understand the format and content structure
+   - Notes example: Review 3 random existing server files to understand the format and content structure
+   - Pay attention to details. for exampler, the tags appear twice in the note: once in the frontmatter and another time between the title and the description. compare the examples to the template to make sure you are familiar with any neuances.
 
 3. **Process Inbox Entries**
 
