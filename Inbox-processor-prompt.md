@@ -13,7 +13,6 @@
 
 1. **Fetch Templates**
 
-   - Fetch all templates at the start of your work using get_vault_file
    - Read templates/server.md
    - Use these templates as strict reference for how to create new files
    - DO NOT include the templates or their schema in your work
@@ -21,7 +20,15 @@
 
 2. **Scan Existing Structure**
 
-   - Scan the vault for existing tags to understand the taxonomy and tagging standards
+   - Scan the vault for existing tags using the `search_vault` tool to understand the taxonomy and tagging standards
+     ```javascript
+     // Use this JsonLogic query to retrieve all tags from all files:
+     {
+       "query": "{\"var\": \"tags\"}",
+       "queryType": "jsonlogic"
+     }
+     // This will return an array of objects containing filenames and their associated tags
+     ```
    - Review existing server files to understand the format and content structure
 
 3. **Process Inbox Entries**
@@ -80,9 +87,8 @@
      - Purpose (development, data analysis, etc.)
 
 7. **Process in Batches**
-   - Process entries in batches of 5
-   - clear recorded entries from source inbox file after each batch.
-   - continue processing until the inbox file is empty
+   - delete source file after each batch.
+   - continue processing until the inbox is empty
 
 ## Important Notes
 

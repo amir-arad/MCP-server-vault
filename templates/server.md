@@ -12,11 +12,13 @@ sources: { { sources } }
 tags: { { tags } }
 ---
 
-# {{title}}
+# {{ title }}
+
+{{ tags }}
 
 ## Description
 
-{{description}}
+{{ description }}
 
 ## Features
 
@@ -40,8 +42,8 @@ tags: { { tags } }
 
 ## Dependencies
 
-{{dependencies}}
+{{ dependencies }}
 
 ## Related Servers
 
-{{related_servers}}
+{{ related_servers }}
