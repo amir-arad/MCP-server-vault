@@ -1,7 +1,7 @@
 [
   "obsidian-local-rest-api",
   "obsidian-git",
-  "mcp-tools",
   "smart-connections",
-  "templater-obsidian"
+  "templater-obsidian",
+  "mcp-tools"
 ]
