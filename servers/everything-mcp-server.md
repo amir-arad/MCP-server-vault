@@ -11,6 +11,8 @@ sources:
   - inbox
 ---
 
+#status/active #status/official #status/verified
+
 # Everything MCP Server
 
 ## Description

@@ -9,10 +9,18 @@ status: active
 official: true
 verified: false
 sources: ["inbox"]
-related_tags: ["category/database", "status/official", "purpose/development", "tech/typescript"]
+tags:
+  [
+    "category/database",
+    "status/official",
+    "purpose/development",
+    "tech/typescript",
+  ]
 ---
 
 # PostgreSQL
+
+#category/database #status/official #purpose/development #tech/typescript
 
 ## Description
 
@@ -37,11 +45,11 @@ npm install @modelcontextprotocol/postgres-server
 ## Usage
 
 ```javascript
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { PostgresServer } from '@modelcontextprotocol/postgres-server';
+import { Server } from "@modelcontextprotocol/sdk/server";
+import { PostgresServer } from "@modelcontextprotocol/postgres-server";
 
 const server = new PostgresServer({
-  connectionString: process.env.DATABASE_URL
+  connectionString: process.env.DATABASE_URL,
 });
 server.run();
 ```

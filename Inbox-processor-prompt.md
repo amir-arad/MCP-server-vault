@@ -5,13 +5,16 @@
 - Only use the MCP-server-vault tool
 - Read templates using get_vault_file
 - Strictly adhere to template structure
+- Always include complete file content after changes
+- Never use "// rest of code remains the same" or similar shortcuts
+- Never truncate with "..." or ellipses
 
 ## Processing Workflow
 
 1. **Fetch Templates**
 
    - Fetch all templates at the start of your work using get_vault_file
-   - Read templates/server.md, templates/source.md, and templates/tag.md
+   - Read templates/server.md
    - Use these templates as strict reference for how to create new files
    - DO NOT include the templates or their schema in your work
    - NEVER use the `execute_template` command
@@ -23,7 +26,8 @@
 
 3. **Process Inbox Entries**
 
-   - For each entry in Inbox.md:
+   - Pick a file in ./inbox/\*:
+   - For each entry in the file:
      - Parse owner name and server name from the repository URL or other link
      - Check if `servers/owner-repo.md` already exists
      - If it exists, update it with new information
@@ -41,8 +45,8 @@
      - status: Default to "active" unless specified otherwise
      - official: Boolean value (true/false)
      - verified: Default to false
-     - sources: Array of source identifiers, e.g. ["inbox"]
-     - related_tags: Array of relevant tags
+     - sources: Array of source identifiers
+     - tags: Array of relevant tags
    - Add appropriate content sections:
      - Description: Based on the entry description
      - Features: List of server features and capabilities
@@ -77,8 +81,8 @@
 
 7. **Process in Batches**
    - Process entries in batches of 5
-   - clear recorded entries from Inbox after each batch
-   - continue processing until inbox is empty
+   - clear recorded entries from source inbox file after each batch.
+   - continue processing until the inbox file is empty
 
 ## Important Notes
 

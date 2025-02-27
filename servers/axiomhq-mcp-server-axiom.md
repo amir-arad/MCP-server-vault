@@ -21,6 +21,8 @@ tags:
 
 # Axiom
 
+#status/active #status/official #category/database #category/analytics #tech/go #purpose/data-analysis #integration/axiom
+
 ## Description
 
 A Model Context Protocol server implementation for Axiom that enables AI agents to query and analyze logs, traces, and all other event data in natural language using Axiom Processing Language (APL).
@@ -36,9 +38,11 @@ A Model Context Protocol server implementation for Axiom that enables AI agents 
 ## Installation
 
 ### From Releases:
+
 Download the latest built binary from the [releases page](https://github.com/axiomhq/axiom-mcp/releases).
 
 ### From Source:
+
 ```bash
 go install github.com/axiomhq/axiom-mcp@latest
 ```
@@ -48,6 +52,7 @@ go install github.com/axiomhq/axiom-mcp@latest
 Configure using one of these methods:
 
 ### Config File Example (config.txt):
+
 ```
 token xaat-your-token
 url https://api.axiom.co
@@ -58,6 +63,7 @@ datasets-burst 1
 ```
 
 ### Command Line Flags:
+
 ```bash
 axiom-mcp \
   -token xaat-your-token \
@@ -69,6 +75,7 @@ axiom-mcp \
 ```
 
 ### Environment Variables:
+
 ```bash
 export AXIOM_TOKEN=xaat-your-token
 export AXIOM_URL=https://api.axiom.co
@@ -82,11 +89,13 @@ export AXIOM_DATASETS_BURST=1
 ## Usage with Claude
 
 1. Create a config file:
+
 ```bash
 echo "token xaat-your-token" > config.txt
 ```
 
 2. Configure the Claude app to use the MCP server:
+
 ```json
 {
   "mcpServers": {

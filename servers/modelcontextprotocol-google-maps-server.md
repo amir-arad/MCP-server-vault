@@ -9,8 +9,17 @@ status: active
 official: true
 verified: false
 sources: ["inbox"]
-related_tags: ["category/location", "status/official", "purpose/development", "tech/typescript", "integration/google"]
+tags:
+  [
+    "category/location",
+    "status/official",
+    "purpose/development",
+    "tech/typescript",
+    "integration/google",
+  ]
 ---
+
+#category/location #status/official #purpose/development #tech/typescript #integration/google
 
 # Google Maps
 
@@ -37,11 +46,11 @@ npm install @modelcontextprotocol/google-maps-server
 ## Usage
 
 ```javascript
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { GoogleMapsServer } from '@modelcontextprotocol/google-maps-server';
+import { Server } from "@modelcontextprotocol/sdk/server";
+import { GoogleMapsServer } from "@modelcontextprotocol/google-maps-server";
 
 const server = new GoogleMapsServer({
-  apiKey: process.env.GOOGLE_MAPS_API_KEY
+  apiKey: process.env.GOOGLE_MAPS_API_KEY,
 });
 server.run();
 ```

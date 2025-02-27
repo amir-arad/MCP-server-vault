@@ -9,10 +9,18 @@ status: active
 official: true
 verified: false
 sources: ["inbox"]
-related_tags: ["category/version-control", "status/official", "purpose/development", "tech/typescript"]
+tags:
+  [
+    "category/version-control",
+    "status/official",
+    "purpose/development",
+    "tech/typescript",
+  ]
 ---
 
 # Git
+
+#category/version-control #status/official #purpose/development #tech/typescript
 
 ## Description
 
@@ -36,8 +44,8 @@ npm install @modelcontextprotocol/git-server
 ## Usage
 
 ```javascript
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { GitServer } from '@modelcontextprotocol/git-server';
+import { Server } from "@modelcontextprotocol/sdk/server";
+import { GitServer } from "@modelcontextprotocol/git-server";
 
 const server = new GitServer();
 server.run();

@@ -9,6 +9,7 @@ This vault is designed to maintain a complete and useful database of MCP servers
 ## For Human Users
 
 ### Setup Instructions
+
 1. Install [Obsidian](https://obsidian.md/) if you haven't already
 2. Clone this repository: `git clone https://github.com/amir-arad/MCP-server-vault.git`
 3. Open the repository as a vault in Obsidian: "Open folder as vault" → select the cloned directory
@@ -20,15 +21,16 @@ This vault is designed to maintain a complete and useful database of MCP servers
    - [MCP Tools](https://github.com/modelcontextprotocol/obsidian-mcp-tools) - For MCP-specific functionality
 
 ### Using the Vault
+
 - Browse servers in the `servers/` directory
 - Use tags to filter and discover servers by category, technology, or purpose
 - Search using queries like:
   - `tag:#category/database` to find all database servers
   - `tag:#tech/typescript tag:#purpose/rag` to find TypeScript RAG servers
   - `stars:>100` to find popular servers with over 100 GitHub stars
-- View tag records in the `tags/` directory for additional metadata about each tag
 
 ### Contributing
+
 1. Fork the repository from https://github.com/amir-arad/MCP-server-vault
 2. Add new servers using the template in `templates/server.md`
 3. Ensure proper frontmatter metadata and tagging
@@ -37,26 +39,28 @@ This vault is designed to maintain a complete and useful database of MCP servers
 ## For AI Agents
 
 ### Vault Structure
+
 - `servers/` - Individual MCP server documentation files (filename format: `[owner]-[repo-name].md`)
-- `tags/` - Tag record notes organized by category
 - `templates/` - Templates for creating new notes
-- `Processing-Status.md` - Current project status and next steps
 
 ### Effective Searching Methods
+
 1. First list directories to understand structure:
+
    ```
    list_vault_files(directory: "")
    list_vault_files(directory: "servers")
-   list_vault_files(directory: "tags")
    ```
 
 2. For searching by metadata:
+
    ```
    search_vault(query: "file.frontmatter.stars > 100", queryType: "dataview")
    search_vault(query: "file.frontmatter.status = 'active'", queryType: "dataview")
    ```
 
 3. For text-based searches:
+
    ```
    search_vault_simple(query: "vector database")
    ```
@@ -67,6 +71,7 @@ This vault is designed to maintain a complete and useful database of MCP servers
    ```
 
 ### Submitting Updates
+
 To propose changes, format your output as a complete markdown file ready for inclusion in the vault. Include:
 
 1. Full frontmatter metadata
@@ -75,6 +80,7 @@ To propose changes, format your output as a complete markdown file ready for inc
 4. Source citations
 
 Example PR format:
+
 ```
 ## Proposed Addition/Change
 Server: [server-name]
@@ -118,44 +124,3 @@ sources:
 - Integration tags: `#integration/slack`, `#integration/github`
 - Feature tags: `#feature/authentication`, `#feature/vector-search`
 - Source tags: `#source/mcpservers-org`, `#source/awesome-mcp-servers-wong2`
-
-### 4. Tag Record Notes
-
-Each tag has its own record note:
-
-```yaml
----
-type: tag
-id: source/awesome-mcp-servers-wong2
-name: Wong2's Awesome MCP Servers
-url: https://github.com/wong2/awesome-mcp-servers
-last_checked: 2025-02-27
-servers_count: 142
----
-```
-
-Benefits:
-
-- Self-documenting taxonomy
-- Tag metadata tracking
-- Hierarchical organization
-- Detailed source attribution
-- Improved discoverability
-
-### 5. Automation Workflow
-
-1. **Source Scanning**: Fetch data from known sources and append raw data to inbox
-2. **Duplicate Processing**: Extract GitHub URLs, compare against existing notes, update sources
-3. **Source Discovery**: Extract links to new aggregator sites for expanding sources
-4. **Source & Feature Tagging**: Maintain comprehensive tagging
-
-## Server Note Template
-
-- Description (from repository)
-- Features
-- Installation instructions
-- Usage examples
-- Dependencies
-- Related servers (similar functionality)
-
-This design enables powerful querying, cross-referencing, and discovery of MCP servers while maintaining a structured, organized knowledge base that can grow with the ecosystem.

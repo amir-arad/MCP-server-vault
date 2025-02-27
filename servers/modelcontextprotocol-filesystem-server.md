@@ -9,8 +9,10 @@ status: active
 official: true
 verified: false
 sources: ["inbox"]
-related_tags: ["category/filesystem", "status/official", "purpose/development"]
+tags: ["category/filesystem", "status/official", "purpose/development"]
 ---
+
+#category/filesystem #status/official #purpose/development
 
 # Filesystem
 
@@ -35,8 +37,8 @@ npm install @modelcontextprotocol/filesystem-server
 ## Usage
 
 ```javascript
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { FilesystemServer } from '@modelcontextprotocol/filesystem-server';
+import { Server } from "@modelcontextprotocol/sdk/server";
+import { FilesystemServer } from "@modelcontextprotocol/filesystem-server";
 
 const server = new FilesystemServer();
 server.run();

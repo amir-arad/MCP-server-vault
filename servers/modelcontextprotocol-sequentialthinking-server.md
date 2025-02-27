@@ -9,8 +9,11 @@ status: active
 official: true
 verified: false
 sources: ["inbox"]
-related_tags: ["category/ai", "status/official", "purpose/development", "tech/typescript"]
+tags:
+  ["category/ai", "status/official", "purpose/development", "tech/typescript"]
 ---
+
+#category/ai #status/official #purpose/development #tech/typescript
 
 # Sequential Thinking
 
@@ -37,12 +40,12 @@ npm install @modelcontextprotocol/sequentialthinking-server
 ## Usage
 
 ```javascript
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { SequentialThinkingServer } from '@modelcontextprotocol/sequentialthinking-server';
+import { Server } from "@modelcontextprotocol/sdk/server";
+import { SequentialThinkingServer } from "@modelcontextprotocol/sequentialthinking-server";
 
 const server = new SequentialThinkingServer({
   maxThoughts: 10,
-  allowRevision: true
+  allowRevision: true,
 });
 server.run();
 ```

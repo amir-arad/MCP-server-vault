@@ -21,6 +21,8 @@ tags:
   - purpose/reasoning
 ---
 
+#status/active #status/community #category/llm #integration/deepseek #tech/typescript #purpose/reasoning
+
 # DeepSeek MCP Server
 
 ## Description

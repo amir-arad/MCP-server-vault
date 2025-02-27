@@ -22,6 +22,8 @@ tags:
 
 # Apify Actors MCP Server
 
+#status/active #status/official #category/web-scraping #integration/apify #tech/typescript #purpose/data-collection
+
 ## Description
 
 The Apify Actors MCP Server enables using 3,000+ pre-built cloud tools from Apify to extract data from websites, e-commerce platforms, social media, search engines, maps, and more. It provides a standardized MCP interface to Apify's extensive actor ecosystem.

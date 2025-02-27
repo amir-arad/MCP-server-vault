@@ -24,6 +24,8 @@ tags:
 
 # Cloudflare MCP Server
 
+#status/active #status/official #category/cloud #integration/cloudflare #tech/typescript #purpose/infrastructure
+
 ## Description
 
 The Cloudflare MCP server lets you use Claude Desktop, or any MCP Client, to use natural language to accomplish tasks on your Cloudflare account. Interact with Cloudflare's developer platform including Workers, KV, R2, D1, and other services.

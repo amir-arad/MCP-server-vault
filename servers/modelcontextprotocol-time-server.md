@@ -9,10 +9,18 @@ status: active
 official: true
 verified: false
 sources: ["inbox"]
-related_tags: ["category/utility", "status/official", "purpose/development", "tech/typescript"]
+tags:
+  [
+    "category/utility",
+    "status/official",
+    "purpose/development",
+    "tech/typescript",
+  ]
 ---
 
 # Time
+
+#category/utility #status/official #purpose/development #tech/typescript
 
 ## Description
 
@@ -37,11 +45,11 @@ npm install @modelcontextprotocol/time-server
 ## Usage
 
 ```javascript
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { TimeServer } from '@modelcontextprotocol/time-server';
+import { Server } from "@modelcontextprotocol/sdk/server";
+import { TimeServer } from "@modelcontextprotocol/time-server";
 
 const server = new TimeServer({
-  defaultTimezone: 'UTC'
+  defaultTimezone: "UTC",
 });
 server.run();
 ```

@@ -9,10 +9,18 @@ status: active
 official: true
 verified: false
 sources: ["inbox"]
-related_tags: ["category/web-scraping", "status/official", "purpose/development", "tech/typescript"]
+tags:
+  [
+    "category/web-scraping",
+    "status/official",
+    "purpose/development",
+    "tech/typescript",
+  ]
 ---
 
 # Puppeteer
+
+#category/web-scraping #status/official #purpose/development #tech/typescript
 
 ## Description
 
@@ -37,11 +45,11 @@ npm install @modelcontextprotocol/puppeteer-server
 ## Usage
 
 ```javascript
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { PuppeteerServer } from '@modelcontextprotocol/puppeteer-server';
+import { Server } from "@modelcontextprotocol/sdk/server";
+import { PuppeteerServer } from "@modelcontextprotocol/puppeteer-server";
 
 const server = new PuppeteerServer({
-  headless: true
+  headless: true,
 });
 server.run();
 ```

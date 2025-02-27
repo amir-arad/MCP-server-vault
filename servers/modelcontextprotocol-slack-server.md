@@ -9,8 +9,17 @@ status: active
 official: true
 verified: false
 sources: ["inbox"]
-related_tags: ["category/communication", "status/official", "purpose/development", "tech/typescript", "integration/slack"]
+tags:
+  [
+    "category/communication",
+    "status/official",
+    "purpose/development",
+    "tech/typescript",
+    "integration/slack",
+  ]
 ---
+
+#category/communication #status/official #purpose/development #tech/typescript #integration/slack
 
 # Slack
 
@@ -37,12 +46,12 @@ npm install @modelcontextprotocol/slack-server
 ## Usage
 
 ```javascript
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { SlackServer } from '@modelcontextprotocol/slack-server';
+import { Server } from "@modelcontextprotocol/sdk/server";
+import { SlackServer } from "@modelcontextprotocol/slack-server";
 
 const server = new SlackServer({
   token: process.env.SLACK_BOT_TOKEN,
-  signingSecret: process.env.SLACK_SIGNING_SECRET
+  signingSecret: process.env.SLACK_SIGNING_SECRET,
 });
 server.run();
 ```

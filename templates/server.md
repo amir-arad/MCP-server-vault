@@ -9,7 +9,7 @@ status: { { status } }
 official: { { official } }
 verified: false
 sources: { { sources } }
-related_tags: { { tags } }
+tags: { { tags } }
 ---
 
 # {{title}}

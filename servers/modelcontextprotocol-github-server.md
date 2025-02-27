@@ -9,8 +9,17 @@ status: active
 official: true
 verified: false
 sources: ["inbox"]
-related_tags: ["category/version-control", "status/official", "purpose/development", "tech/typescript", "integration/github"]
+tags:
+  [
+    "category/version-control",
+    "status/official",
+    "purpose/development",
+    "tech/typescript",
+    "integration/github",
+  ]
 ---
+
+#category/version-control #status/official #purpose/development #tech/typescript #integration/github
 
 # GitHub
 
@@ -37,11 +46,11 @@ npm install @modelcontextprotocol/github-server
 ## Usage
 
 ```javascript
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { GitHubServer } from '@modelcontextprotocol/github-server';
+import { Server } from "@modelcontextprotocol/sdk/server";
+import { GitHubServer } from "@modelcontextprotocol/github-server";
 
 const server = new GitHubServer({
-  auth: process.env.GITHUB_TOKEN
+  auth: process.env.GITHUB_TOKEN,
 });
 server.run();
 ```

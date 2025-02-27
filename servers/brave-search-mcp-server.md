@@ -13,6 +13,8 @@ sources:
 
 # Brave Search MCP Server
 
+#status/active #status/official #status/verified
+
 ## Description
 
 A Model Context Protocol server that provides seamless integration with Brave Search, enabling powerful web search capabilities for AI assistants and applications.

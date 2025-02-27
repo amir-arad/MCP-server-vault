@@ -9,10 +9,18 @@ status: active
 official: true
 verified: false
 sources: ["inbox"]
-related_tags: ["category/knowledge-base", "status/official", "purpose/development", "tech/typescript"]
+tags:
+  [
+    "category/knowledge-base",
+    "status/official",
+    "purpose/development",
+    "tech/typescript",
+  ]
 ---
 
 # Memory
+
+#category/knowledge-base #status/official #purpose/development #tech/typescript
 
 ## Description
 
@@ -37,11 +45,11 @@ npm install @modelcontextprotocol/memory-server
 ## Usage
 
 ```javascript
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { MemoryServer } from '@modelcontextprotocol/memory-server';
+import { Server } from "@modelcontextprotocol/sdk/server";
+import { MemoryServer } from "@modelcontextprotocol/memory-server";
 
 const server = new MemoryServer({
-  storage: './memory-store'
+  storage: "./memory-store",
 });
 server.run();
 ```

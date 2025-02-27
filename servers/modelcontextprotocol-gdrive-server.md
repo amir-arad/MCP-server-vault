@@ -9,8 +9,17 @@ status: active
 official: true
 verified: false
 sources: ["inbox"]
-related_tags: ["category/filesystem", "status/official", "purpose/development", "tech/typescript", "integration/google"]
+tags:
+  [
+    "category/filesystem",
+    "status/official",
+    "purpose/development",
+    "tech/typescript",
+    "integration/google",
+  ]
 ---
+
+#category/filesystem #status/official #purpose/development #tech/typescript #integration/google
 
 # Google Drive
 
@@ -37,11 +46,11 @@ npm install @modelcontextprotocol/gdrive-server
 ## Usage
 
 ```javascript
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { GoogleDriveServer } from '@modelcontextprotocol/gdrive-server';
+import { Server } from "@modelcontextprotocol/sdk/server";
+import { GoogleDriveServer } from "@modelcontextprotocol/gdrive-server";
 
 const server = new GoogleDriveServer({
-  credentials: process.env.GOOGLE_APPLICATION_CREDENTIALS
+  credentials: process.env.GOOGLE_APPLICATION_CREDENTIALS,
 });
 server.run();
 ```

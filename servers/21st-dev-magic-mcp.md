@@ -22,6 +22,8 @@ tags:
 
 # 21st.dev Magic
 
+#status/active #status/official #category/ui #category/code-generation #tech/typescript #purpose/development #integration/vscode #integration/cursor
+
 ## Description
 
 Magic Component Platform (MCP) is a powerful AI-driven tool that helps developers create beautiful, modern UI components instantly through natural language descriptions. It integrates seamlessly with popular IDEs and provides a streamlined workflow for UI development.
@@ -29,7 +31,7 @@ Magic Component Platform (MCP) is a powerful AI-driven tool that helps developer
 ## Features
 
 - **AI-Powered UI Generation**: Create UI components by describing them in natural language
-- **Multi-IDE Support**: 
+- **Multi-IDE Support**:
   - Cursor IDE integration
   - Windsurf support
   - VSCode + Cline integration (Beta)
@@ -42,12 +44,14 @@ Magic Component Platform (MCP) is a powerful AI-driven tool that helps developer
 ## Installation
 
 For Cursor IDE:
+
 ```bash
 npx -y @smithery/cli@latest run @21st-dev/magic-mcp --config "{\"TWENTY_FIRST_API_KEY\":\"your-api-key\"}"
 ```
 
 For Windsurf:
 Add to `~/.codeium/windsurf/mcp_config.json`:
+
 ```json
 {
   "mcpServers": {
@@ -71,6 +75,7 @@ Add to `~/.codeium/windsurf/mcp_config.json`:
 
 For VSCode + Cline (Beta):
 Add to Cline's MCP configuration:
+
 ```json
 {
   "mcpServers": {

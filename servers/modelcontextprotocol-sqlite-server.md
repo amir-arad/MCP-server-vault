@@ -9,10 +9,18 @@ status: active
 official: true
 verified: false
 sources: ["inbox"]
-related_tags: ["category/database", "status/official", "purpose/development", "tech/typescript"]
+tags:
+  [
+    "category/database",
+    "status/official",
+    "purpose/development",
+    "tech/typescript",
+  ]
 ---
 
 # Sqlite
+
+#category/database #status/official #purpose/development #tech/typescript
 
 ## Description
 
@@ -37,11 +45,11 @@ npm install @modelcontextprotocol/sqlite-server
 ## Usage
 
 ```javascript
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { SqliteServer } from '@modelcontextprotocol/sqlite-server';
+import { Server } from "@modelcontextprotocol/sdk/server";
+import { SqliteServer } from "@modelcontextprotocol/sqlite-server";
 
 const server = new SqliteServer({
-  database: ':memory:' // or path to file
+  database: ":memory:", // or path to file
 });
 server.run();
 ```

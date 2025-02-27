@@ -9,8 +9,17 @@ status: active
 official: true
 verified: false
 sources: ["inbox"]
-related_tags: ["category/monitoring", "status/official", "purpose/development", "tech/typescript", "integration/sentry"]
+tags:
+  [
+    "category/monitoring",
+    "status/official",
+    "purpose/development",
+    "tech/typescript",
+    "integration/sentry",
+  ]
 ---
+
+#category/monitoring #status/official #purpose/development #tech/typescript #integration/sentry
 
 # Sentry
 
@@ -37,12 +46,12 @@ npm install @modelcontextprotocol/sentry-server
 ## Usage
 
 ```javascript
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { SentryServer } from '@modelcontextprotocol/sentry-server';
+import { Server } from "@modelcontextprotocol/sdk/server";
+import { SentryServer } from "@modelcontextprotocol/sentry-server";
 
 const server = new SentryServer({
   token: process.env.SENTRY_AUTH_TOKEN,
-  organization: process.env.SENTRY_ORG
+  organization: process.env.SENTRY_ORG,
 });
 server.run();
 ```

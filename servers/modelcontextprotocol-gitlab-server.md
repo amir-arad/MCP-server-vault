@@ -9,8 +9,17 @@ status: active
 official: true
 verified: false
 sources: ["inbox"]
-related_tags: ["category/version-control", "status/official", "purpose/development", "tech/typescript", "integration/gitlab"]
+tags:
+  [
+    "category/version-control",
+    "status/official",
+    "purpose/development",
+    "tech/typescript",
+    "integration/gitlab",
+  ]
 ---
+
+#category/version-control #status/official #purpose/development #tech/typescript #integration/gitlab
 
 # GitLab
 
@@ -37,11 +46,11 @@ npm install @modelcontextprotocol/gitlab-server
 ## Usage
 
 ```javascript
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { GitLabServer } from '@modelcontextprotocol/gitlab-server';
+import { Server } from "@modelcontextprotocol/sdk/server";
+import { GitLabServer } from "@modelcontextprotocol/gitlab-server";
 
 const server = new GitLabServer({
-  token: process.env.GITLAB_TOKEN
+  token: process.env.GITLAB_TOKEN,
 });
 server.run();
 ```
