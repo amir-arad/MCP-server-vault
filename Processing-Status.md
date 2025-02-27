@@ -37,17 +37,22 @@
 ## Statistics
 
 - Sources identified: 7
-- Servers documented: 5
-- Tags created: 19
+- Servers documented: 10
+- Tags created: 25
 
 ### Recently Added Servers
 
 - 21st.dev Magic - UI component generation (February 2025)
 - Axiom - Data analytics and observability (February 2025)
+- AWS KB Retrieval - Knowledge base integration (February 2025)
+- Brave Search - Privacy-focused web search (February 2025)
+- EverArt - AI-powered art generation (February 2025)
+- Everything - Ultra-fast desktop file search (February 2025)
+- Fetch - Web scraping and content retrieval (February 2025)
 
 ### Recently Added Tags
 
-- Category: UI, Code Generation, Analytics
-- Tech: Go, TypeScript
-- Purpose: Development, Data Analysis
-- Integration: VSCode, Cursor, Axiom
+- Category: UI, Code Generation, Analytics, Knowledge Base, AI Art, File Search, Web Scraping
+- Tech: Go, TypeScript, Machine Learning, System Integration, Web Technologies, Network Programming
+- Purpose: Development, Data Analysis, Privacy, Creativity, Productivity, Data Collection, Research
+- Integration: VSCode, Cursor, Axiom, AWS, Brave

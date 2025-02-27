@@ -9,4 +9,4 @@ https://modelcontextprotocol.io/examples
 - https://github.com/punkpeye/awesome-mcp-servers
 - https://github.com/appcypher/awesome-mcp-servers
 - https://mcp.so/
--
+- https://github.com/modelcontextprotocol/servers
