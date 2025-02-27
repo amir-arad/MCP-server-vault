@@ -1,26 +1,24 @@
 ---
 type: tag
-id: tag-id
-name: Human-Readable Tag Name
-description: Brief description of what this tag represents
-servers_count: 0
-related_tags:
-  - related-tag-id-1
-  - related-tag-id-2
+id: <% tp.frontmatter.tag || tp.frontmatter.id %>
+name: <% tp.frontmatter.tag ? tp.frontmatter.tag.split('/').pop().replace(/-/g, ' ') : tp.frontmatter.name %>
+description: <% tp.frontmatter.description %>
+servers_count: <% tp.frontmatter.servers_count || 0 %>
+related_tags: <% tp.frontmatter.related_tags || [] %>
 ---
 
-# {{name}}
+# <% tp.frontmatter.tag ? tp.frontmatter.tag.split('/').pop().replace(/-/g, ' ') : tp.frontmatter.name %>
 
-{{description}}
+<% tp.frontmatter.description %>
 
 ## Description
 
-More detailed description of the tag, when it should be applied, and its significance in the MCP ecosystem.
+<% tp.frontmatter.long_description || tp.frontmatter.description %>
 
 ## Servers with this tag
 
-<!-- This section can be auto-generated through queries -->
+<% (tp.frontmatter.servers || []).map(server => `- [${server.name}](${server.url})`).join("\n") %>
 
 ## Related Tags
 
-<!-- Links to related tag records -->
+<% (tp.frontmatter.related_tags || []).map(tag => `- [[${tag}]]`).join("\n") %>

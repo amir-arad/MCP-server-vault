@@ -1,47 +1,43 @@
 ---
-repo_url: https://github.com/owner/repo-name
-owner: repository_owner
-name: repository_name
-stars: 0
-last_updated: YYYY-MM-DD
-status: active
-official: false
+type: server
+repo_url: <% tp.frontmatter.url %>
+name: <% tp.frontmatter.title %>
+owner: <% tp.frontmatter.owner %>
+stars: <% tp.frontmatter.stars || 0 %>
+last_updated: <% tp.date.now("YYYY-MM-DD") %>
+status: <% tp.frontmatter.status %>
+official: <% tp.frontmatter.official %>
 verified: false
-sources:
-  - source1
-  - source2
+sources: <% tp.frontmatter.sources %>
+related_tags: <% tp.frontmatter.related_tags || [] %>
 ---
 
-# {{name}}
+# <% tp.file.title %>
 
 ## Description
 
-Brief description of the server's purpose and functionality.
+<% tp.frontmatter.description %>
 
 ## Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+<% (tp.frontmatter.features || []).join("\n") %>
 
 ## Installation
 
 ```bash
-# Installation commands
+<% tp.frontmatter.installation || "" %>
 ```
 
 ## Usage
 
 ```javascript
-// Usage example
+<% tp.frontmatter.usage || "" %>
 ```
 
 ## Dependencies
 
-- Dependency 1
-- Dependency 2
+<% (tp.frontmatter.dependencies || []).join("\n") %>
 
 ## Related Servers
 
-- [Related Server 1](https://github.com/owner/related-repo-1)
-- [Related Server 2](https://github.com/owner/related-repo-2)
+<% (tp.frontmatter.related || []).map(server => `- [${server.name}](${server.url})`).join("\n") %>
