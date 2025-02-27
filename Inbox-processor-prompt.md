@@ -1,182 +1,102 @@
-1. Scan the vault for existing tags, and comprehend the taxonomy and tagging standards
+# MCP Server Vault Inbox Processor
 
-2. Template Schemas:
+## Tools Instructions
 
-   Server Template Schema:
+- Only use the MCP-server-vault tool
+- Read templates using get_vault_file
+- Strictly adhere to template structure
 
-   ```json
-   {
-     "type": "object",
-     "required": [
-       "url",
-       "title",
-       "owner",
-       "description",
-       "status",
-       "official",
-       "sources",
-       "tags"
-     ],
-     "properties": {
-       "url": {
-         "type": "string",
-         "description": "Repository URL, maps to repo_url in template"
-       },
-       "title": {
-         "type": "string",
-         "description": "Human-readable title, maps to name in template"
-       },
-       "owner": {
-         "type": "string",
-         "description": "Repository owner"
-       },
-       "description": {
-         "type": "string",
-         "description": "Server description"
-       },
-       "status": {
-         "type": "string",
-         "enum": ["active", "inactive", "deprecated"],
-         "description": "Current status of the server"
-       },
-       "official": {
-         "type": "boolean",
-         "description": "Whether this is an official server"
-       },
-       "sources": {
-         "type": "array",
-         "items": {
-           "type": "string"
-         },
-         "description": "Array of source identifiers"
-       },
-       "tags": {
-         "type": "array",
-         "items": {
-           "type": "string"
-         },
-         "description": "Array of associated tags"
-       }
-     }
-   }
-   ```
+## Processing Workflow
 
-   Tag Template Schema:
+1. **Fetch Templates**
 
-   ```json
-   {
-     "type": "object",
-     "required": ["tag", "description", "tags"],
-     "properties": {
-       "tag": {
-         "type": "string",
-         "description": "Full tag path (e.g., 'category/tag-name')"
-       },
-       "description": {
-         "type": "string",
-         "description": "Brief description of tag purpose"
-       },
-       "tags": {
-         "type": "array",
-         "items": {
-           "type": "string"
-         },
-         "description": "Array of related tags"
-       }
-     }
-   }
-   ```
+   - Fetch all templates at the start of your work using get_vault_file
+   - Read templates/server.md, templates/source.md, and templates/tag.md
+   - Use these templates as strict reference for how to create new files
+   - DO NOT include the templates or their schema in your work
+   - NEVER use the `execute_template` command
 
-3. Load template:
+2. **Scan Existing Structure**
 
-   ```
-   execute_template(name: "templates/server.md", createFile: "false")
-   ```
+   - Scan the vault for existing tags to understand the taxonomy and tagging standards
+   - Review existing server files to understand the format and content structure
 
-   Note: Always use "false" or "true" as strings for createFile parameter, not boolean values.
+3. **Process Inbox Entries**
 
-4. For each entry in inbox:
+   - For each entry in Inbox.md:
+     - Parse owner name and server name from the repository URL or other link
+     - Check if `servers/owner-repo.md` already exists
+     - If it exists, update it with new information
+     - If it doesn't exist, create a new server file
 
-   - Parse owner name and server name. If the server has its own designated git repository, then extract these names from the repository's URL. else, try guess according to the link in the entry.
-   - Check if `servers/owner-repo.md` exists
+4. **For New Servers**
 
-5. For new servers:
+   - Create a new file at `servers/owner-repo.md` following the server.md template structure
+   - Fill in all required fields:
+     - repo_url: Repository URL from the entry
+     - name: Human-readable title
+     - owner: Repository owner
+     - stars: Default to 0 if unknown
+     - last_updated: Current date in YYYY-MM-DD format
+     - status: Default to "active" unless specified otherwise
+     - official: Boolean value (true/false)
+     - verified: Default to false
+     - sources: Array of source identifiers, e.g. ["inbox"]
+     - related_tags: Array of relevant tags
+   - Add appropriate content sections:
+     - Description: Based on the entry description
+     - Features: List of server features and capabilities
+     - Installation: Installation instructions in bash format
+     - Usage: Usage example in JavaScript format
+     - Dependencies: List of required dependencies
+     - Related Servers: Leave empty initially or add known related servers
 
-   - Transform data for template:
+5. **For New Sources**
 
-     - Format current date as YYYY-MM-DD for last_updated
-     - Convert single source string to YAML array format: ["inbox"]
-     - Convert "true"/"false" string to proper boolean for official field
-     - Set default values:
-       - stars: 0
-       - verified: false
-       - related_tags: []
+   - Create a new file at `tags/source/source-name.md` following the source.md template structure
+   - Fill in all required fields:
+     - id: Unique identifier for the source
+     - name: Display name of the source
+     - url: URL where the source can be found
+     - last_checked: Current date in YYYY-MM-DD format
+     - servers_count: Default to 0
+     - curator: Name of the curator maintaining the source
+   - Add appropriate content sections:
+     - Description: Brief description of the source
+     - Servers from this source: Leave empty initially
+     - Unique Servers: Leave empty initially
 
-   - Create note using template:
+6. **Add Appropriate Tags**
 
-     ```
-     execute_template(
-       name: "templates/server.md",
-       createFile: "true",  // Must be string "true", not boolean
-       targetPath: "servers/owner-repo.md",
-       arguments: {
-         "url": "https://github.com/owner/repo",      // Maps to repo_url in template
-         "title": "Human-readable title",             // Maps to name in template
-         "owner": "owner",                            // Direct mapping
-         "description": "Description from inbox",      // Used in content section
-         "status": "active",                          // Must be one of: active, inactive, deprecated
-         "official": true,                            // Must be boolean, not string
-         "sources": ["inbox"],                        // Must be array format
-         "tags": []                                   // Required empty array if no tags
-       }
-     )
-     ```
+   - Create or use existing tags based on:
+     - Functionality (category tags)
+     - Affiliation (integration tags)
+     - Status (active, inactive, deprecated)
+     - Technology (programming language, framework)
+     - Purpose (development, data analysis, etc.)
 
-   - Add appropriate tags based on functionality, affiliation and status
+7. **Process in Batches**
+   - Process entries in batches of 5
+   - clear recorded entries from Inbox after each batch
+   - continue processing until inbox is empty
 
-6. For each new tag:
+## Important Notes
 
-   - Transform data for template:
-
-     - Extract category and name from tag path
-     - Format tag name for display
-     - Set default values:
-       - type: "tag"
-       - servers_count: 0
-       - related_tags: []
-
-   - Create tag record:
-     ```
-     execute_template(
-       name: "templates/tag.md",
-       createFile: "true",  // Must be string "true", not boolean
-       targetPath: "tags/category/tag-name.md",
-       arguments: {
-         "tag": "category/tag-name",                  // Maps to id and name in template
-         "description": "Brief description of tag purpose", // Direct mapping
-         "tags": []                                   // Required empty array if no tags
-       }
-     )
-     ```
-
-7. Process in batches of 5, updating Processing-Status.md after each batch.
-
-Note: As an LLM agent, you are responsible for:
+As an LLM agent, you are responsible for:
 
 1. Extracting category and tag name from full tag paths
 2. Formatting tag names for display (humanizing)
-3. Converting single source strings to proper YAML array format: ["source"]
-4. Converting "true"/"false" strings to proper boolean values
+3. Converting single source strings to proper array format
+4. Converting string booleans to proper boolean values
 5. Generating current dates in YYYY-MM-DD format
 6. Setting appropriate default values for required fields
-7. Ensuring all template arguments match their schema definitions:
-   - createFile must be string "true" or "false"
-   - tags must be an array, even if empty
-   - arrays must be properly formatted (e.g., ["item"])
-   - boolean values must be actual booleans, not strings
-   - status must be one of the enumerated values
+7. Generating meaningful default content for new fields:
+   - Features list based on description
+   - Appropriate installation commands
+   - Relevant usage examples
+   - Required dependencies
 
-Processing Examples
+## Processing Examples
 
 - "**[Stripe](https://github.com/stripe/agent-toolkit)** - Interact with Stripe API" should be saved as "servers/stripe-agent-toolkit.md" with tags including #status/active #integration/stripe
 - "**[Any Chat Completions](https://github.com/pyroprompts/any-chat-completions-mcp)** - Interact with any OpenAI SDK Compatible Chat Completions API" should be saved as "servers/pyroprompts-any-chat-completions-mcp.md" with tags including #status/active #category/llm

@@ -1,29 +1,29 @@
 ---
 type: source
-id: <% tp.frontmatter.id %>
-name: <% tp.frontmatter.name %>
-url: <% tp.frontmatter.url %>
-last_checked: <% tp.date.now("YYYY-MM-DD") %>
-servers_count: <% tp.frontmatter.servers_count || 0 %>
-curator: <% tp.frontmatter.curator %>
+id: { { id } }
+name: { { name } }
+url: { { url } }
+last_checked: { { date } }
+servers_count: { { servers_count } }
+curator: { { curator } }
 ---
 
-# <% tp.frontmatter.name %>
+# {{ name }}
 
-A curated list of MCP servers maintained by <% tp.frontmatter.curator || "unknown curator" %>.
+A curated list of MCP servers maintained by {{ curator }}.
 
 ## Description
 
-<% tp.frontmatter.description || "No description provided." %>
+{{ description }}
 
 ## Last Check
 
-This source was last checked on <% tp.date.now("YYYY-MM-DD") %>.
+This source was last checked on {{ date }}.
 
 ## Servers from this source
 
-<% (tp.frontmatter.servers || []).map(server => `- [${server.name}](${server.url})`).join("\n") %>
+{{ servers }}
 
 ## Unique Servers
 
-<% (tp.frontmatter.unique_servers || []).map(server => `- [${server.name}](${server.url})`).join("\n") %>
+{{ unique_servers }}

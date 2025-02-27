@@ -1,43 +1,47 @@
 ---
 type: server
-repo_url: <% tp.frontmatter.url %>
-name: <% tp.frontmatter.title %>
-owner: <% tp.frontmatter.owner %>
-stars: <% tp.frontmatter.stars || 0 %>
-last_updated: <% tp.date.now("YYYY-MM-DD") %>
-status: <% tp.frontmatter.status %>
-official: <% tp.frontmatter.official %>
+repo_url: { { url } }
+name: { { title } }
+owner: { { owner } }
+stars: { { stars } }
+last_updated: { { date } }
+status: { { status } }
+official: { { official } }
 verified: false
-sources: <% tp.frontmatter.sources %>
-related_tags: <% tp.frontmatter.related_tags || [] %>
+sources: { { sources } }
+related_tags: { { tags } }
 ---
 
-# <% tp.file.title %>
+# {{title}}
 
 ## Description
 
-<% tp.frontmatter.description %>
+{{description}}
 
 ## Features
 
-<% (tp.frontmatter.features || []).join("\n") %>
+{{features}}
 
 ## Installation
 
 ```bash
-<% tp.frontmatter.installation || "" %>
+{{ installation }}
 ```
 
 ## Usage
 
 ```javascript
-<% tp.frontmatter.usage || "" %>
+{
+  {
+    usage;
+  }
+}
 ```
 
 ## Dependencies
 
-<% (tp.frontmatter.dependencies || []).join("\n") %>
+{{dependencies}}
 
 ## Related Servers
 
-<% (tp.frontmatter.related || []).map(server => `- [${server.name}](${server.url})`).join("\n") %>
+{{related_servers}}

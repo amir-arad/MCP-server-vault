@@ -1,0 +1,21 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "repo_url": "text",
+    "owner": "text",
+    "name": "text",
+    "stars": "number",
+    "last_updated": "date",
+    "status": "text",
+    "official": "checkbox",
+    "verified": "checkbox",
+    "sources": "list",
+    "type": "text",
+    "id": "text",
+    "url": "text",
+    "last_checked": "date",
+    "servers_count": "text"
+  }
+}
