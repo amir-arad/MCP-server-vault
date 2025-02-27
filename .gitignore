@@ -1,0 +1,15 @@
+# .obsidian/*
+.smart-env/*
+
+.obsidian/workspace/*
+.obsidian/workspace*
+
+# .obsidian/plugins/*
+
+.obsidian-git-data
+
+Untitled*
+null*
+
+.trash/
+.DS_Store
