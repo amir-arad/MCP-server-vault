@@ -4,10 +4,10 @@ repo_url: https://github.com/ivo-toby/contentful-mcp
 name: Contentful Management MCP Server
 owner: ivo-toby
 stars: 6
-last_updated: 2025-02-14
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [
@@ -17,34 +17,42 @@ tags:
     "purpose/content-management",
     "purpose/asset-management",
     "purpose/modeling",
+    "tech/typescript",
+    "tech/javascript",
+    "integration/smithery"
   ]
 ---
 
 # Contentful Management MCP Server
 
-#status/active #category/cms #integration/contentful #purpose/content-management #purpose/asset-management #purpose/modeling
+#status/active #category/cms #integration/contentful #purpose/content-management #purpose/asset-management #purpose/modeling #tech/typescript #tech/javascript #integration/smithery
 
 ## Description
 
-Update, create, delete content, content-models and assets in your Contentful Space. This server provides comprehensive management capabilities for Contentful content management system.
+A comprehensive MCP server implementation that integrates with Contentful's Content Management API, providing full CRUD operations for content, assets, spaces, and content models. Features smart pagination to prevent context window overflow and supports multiple deployment options including Smithery integration.
 
 ## Features
 
-- Content management
-- Model creation
-- Asset handling
-- Content updates
-- Content deletion
-- Model validation
-- Asset processing
-- Version control
-- Space management
-- Localization support
+- Content Management (CRUD operations)
+- Space and Environment Management
+- Content Type Definition Control
+- Asset Management and Processing
+- Smart Pagination (3 items per request)
+- Multi-locale Support
+- Publishing Workflow Control
+- Version Management
+- App Identity Support
+- Error Handling
+- Real-time Development Tools
 
 ## Installation
 
 ```bash
+# Via npm
 npm install @ivo-toby/contentful-mcp
+
+# Via Smithery (recommended for Claude Desktop)
+npx -y @smithery/cli install @ivotoby/contentful-management-mcp-server --client claude
 ```
 
 ## Usage
@@ -70,11 +78,13 @@ npm install @ivo-toby/contentful-mcp
 ## Dependencies
 
 - Node.js >= 16
+- TypeScript Runtime
 - Contentful Management API
-- Content validator
-- Asset processor
-- Model manager
-- Backup system
+- Content Validator
+- Asset Processor
+- Model Manager
+- Backup System
+- MCP Inspector (for debugging)
 
 ## Related Servers
 

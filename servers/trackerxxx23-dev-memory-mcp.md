@@ -4,14 +4,14 @@ repo_url: https://github.com/TrackerXXX23/dev_memory_mcp
 name: Development Memory MCP Server
 owner: TrackerXXX23
 stars: 1
-last_updated: 2024-12-22
-status: active
+last_updated: 2025-02-28
+status: blocked
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_009.md"]
 tags:
   [
-    "status/active",
+    "status/blocked",
     "category/development",
     "purpose/memory",
     "purpose/context",
@@ -19,6 +19,8 @@ tags:
     "tech/storage",
   ]
 ---
+
+⚠️ **BLOCKED**: See [Handoff Document](/TrackerXXX23/dev_memory_mcp/blob/main/docs/dev-memory/HANDOFF.md) for details.
 
 # Development Memory MCP Server
 

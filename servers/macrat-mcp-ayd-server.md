@@ -4,12 +4,18 @@ repo_url: https://github.com/macrat/mcp-ayd-server
 name: Ayd MCP Server
 owner: macrat
 stars: 0
-last_updated: 2024-12-16
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "category/monitoring", "purpose/service-monitoring", "purpose/incident-response"]
+tags:
+  [
+    "status/active",
+    "category/monitoring",
+    "purpose/service-monitoring",
+    "purpose/incident-response",
+  ]
 ---
 
 # Ayd MCP Server
@@ -31,30 +37,26 @@ Integrates with Ayd to enable service monitoring, status checks, and log retriev
 - Performance tracking
 - Health reporting
 
-## Installation
-
-```bash
-npm install @macrat/mcp-ayd
-```
-
 ## Usage
 
-```javascript
+1.  Download the latest binary from [release page](https://github.com/macrat/mcp-ayd-server/releases).
+2.  Setup your client's configuration file.
+
+    For example, if you use Claude Desktop:
+
+```json
 {
   "mcpServers": {
     "ayd": {
-      "command": "npx",
-      "args": ["@macrat/mcp-ayd"],
-      "env": {
-        "AYD_ENDPOINT": "http://localhost:9000",
-        "CHECK_INTERVAL": "60",
-        "LOG_RETENTION": "7d",
-        "ALERT_THRESHOLD": "3"
-      }
+      "command": "C:\\path\\to\\mcp-ayd-server.exe",
+      "args": ["http://127.0.0.1:9000"]
     }
   }
 }
 ```
+
+3.  Run the client app.
+4.  Ask assistant like "What's the latest status of Ayd?"
 
 ## Dependencies
 

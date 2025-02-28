@@ -4,12 +4,19 @@ repo_url: https://github.com/seansoreilly/abs
 name: Australian Bureau of Statistics MCP Server
 owner: seansoreilly
 stars: 3
-last_updated: 2025-01-13
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/data-analysis", "integration/abs", "purpose/statistics"]
+tags:
+  [
+    "status/active",
+    "category/data-analysis",
+    "integration/abs",
+    "purpose/statistics",
+    "tech/nodejs",
+  ]
 ---
 
 # Australian Bureau of Statistics MCP Server

@@ -4,10 +4,10 @@ repo_url: https://github.com/mikah13/mcp-clickup
 name: ClickUp MCP Server
 owner: mikah13
 stars: 1
-last_updated: 2025-02-18
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [

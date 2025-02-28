@@ -4,10 +4,10 @@ repo_url: https://github.com/lalanikarim/comfy-mcp-server
 name: Comfy FastMCP Server
 owner: lalanikarim
 stars: 2
-last_updated: 2025-02-19
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [
@@ -43,24 +43,52 @@ The Comfy MCP Server uses the FastMCP framework to generate images from prompts 
 
 ## Installation
 
+You can install the required packages for local development:
+
 ```bash
-npm install @lalanikarim/comfy-mcp-server
+uvx mcp[cli]
 ```
 
 ## Usage
 
-```javascript
+Set the following environment variables:
+
+- `COMFY_URL` to point to your Comfy server URL.
+- `COMFY_WORKFLOW_JSON_FILE` to point to the absolute path of the API export json file for the comfyui workflow.
+- `PROMPT_NODE_ID` to the id of the text prompt node.
+- `OUTPUT_NODE_ID` to the id of the output node with the final image.
+- `OUTPUT_MODE` to either `url` or `file` to select desired output.
+
+Example:
+
+```bash
+export COMFY_URL=http://your-comfy-server-url:port
+export COMFY_WORKFLOW_JSON_FILE=/path/to/the/comfyui_workflow_export.json
+export PROMPT_NODE_ID=6 # use the correct node id here
+export OUTPUT_NODE_ID=9 # use the correct node id here
+export OUTPUT_MODE=file
+```
+
+Comfy MCP Server can be launched by the following command:
+
+```bash
+uvx comfy-mcp-server
+```
+
+### Example Claude Desktop Config
+
+```json
 {
   "mcpServers": {
-    "comfy-server": {
-      "command": "npx",
-      "args": ["@lalanikarim/comfy-mcp-server"],
+    "Comfy MCP Server": {
+      "command": "/path/to/uvx",
+      "args": ["comfy-mcp-server"],
       "env": {
-        "COMFY_SERVER_URL": "http://remote-server:8188",
-        "WORKFLOW_CONFIG": "./workflow.json",
-        "MAX_CONCURRENT": "2",
-        "TIMEOUT": "300",
-        "RETRY_ATTEMPTS": "3"
+        "COMFY_URL": "http://your-comfy-server-url:port",
+        "COMFY_WORKFLOW_JSON_FILE": "/path/to/the/comfyui_workflow_export.json",
+        "PROMPT_NODE_ID": "6",
+        "OUTPUT_NODE_ID": "9",
+        "OUTPUT_MODE": "file"
       }
     }
   }

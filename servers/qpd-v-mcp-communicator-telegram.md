@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/qpd-v/mcp-communicator-telegram
 name: Telegram Communicator MCP Server
 owner: qpd-v
-stars: 7
-last_updated: 2025-02-17
+stars: 8
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [

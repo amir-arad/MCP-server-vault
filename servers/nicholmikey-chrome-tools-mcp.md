@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/nicholmikey/chrome-tools-MCP
 name: Chrome Tools MCP Server
 owner: nicholmikey
-stars: 0
-last_updated: 2025-02-18
+stars: 2
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [

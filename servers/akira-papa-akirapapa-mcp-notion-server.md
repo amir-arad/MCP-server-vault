@@ -4,12 +4,18 @@ repo_url: https://github.com/Akira-Papa/akirapapa-mcp-notion-server
 name: Akirapapa Notion Server
 owner: Akira-Papa
 stars: 1
-last_updated: 2025-02-01
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/productivity", "integration/notion", "purpose/knowledge-management"]
+tags:
+  [
+    "status/active",
+    "category/productivity",
+    "integration/notion",
+    "purpose/knowledge-management",
+  ]
 ---
 
 # Akirapapa Notion Server

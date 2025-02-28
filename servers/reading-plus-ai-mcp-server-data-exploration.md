@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/reading-plus-ai/mcp-server-data-exploration
 name: Data Exploration MCP Server
 owner: reading-plus-ai
-stars: 79
-last_updated: 2025-02-20
+stars: 89
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_008.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "tech/csv",
     "purpose/insights",
     "category/ai",
+    "tech/python",
   ]
 ---
 

@@ -3,13 +3,20 @@ type: server
 repo_url: https://github.com/roychri/mcp-server-asana
 name: Asana MCP Server
 owner: roychri
-stars: 9
-last_updated: 2025-02-20
+stars: 10
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
-tags: ["status/active", "category/productivity", "integration/asana", "purpose/task-management"]
+tags:
+  [
+    "status/active",
+    "category/productivity",
+    "integration/asana",
+    "purpose/task-management",
+    "tech/nodejs",
+  ]
 ---
 
 # Asana MCP Server

@@ -4,12 +4,18 @@ repo_url: https://github.com/aborroy/alfresco-mcp-poc
 name: Alfresco POC MCP Server
 owner: aborroy
 stars: 2
-last_updated: 2025-02-11
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/content-management", "integration/alfresco", "purpose/document-processing"]
+tags:
+  [
+    "status/active",
+    "category/content-management",
+    "integration/alfresco",
+    "purpose/document-processing",
+  ]
 ---
 
 # Alfresco POC MCP Server

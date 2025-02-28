@@ -4,17 +4,24 @@ repo_url: https://github.com/alexgoller/mcp-server-agenda
 name: Agenda MCP Server
 owner: alexgoller
 stars: 0
-last_updated: 2024-12-10
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/productivity", "integration/agenda", "purpose/note-taking", "tech/macos"]
+tags:
+  [
+    "status/active",
+    "category/productivity",
+    "integration/agenda",
+    "purpose/note-management",
+    "tech/macos",
+  ]
 ---
 
 # Agenda MCP Server
 
-#status/active #category/productivity #integration/agenda #purpose/note-taking #tech/macos
+#status/active #category/productivity #integration/agenda #purpose/note-management #tech/macos
 
 ## Description
 

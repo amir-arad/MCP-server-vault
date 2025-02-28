@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/llmian-space/devdocs-mcp
 name: DevDocs MCP Server
 owner: llmian-space
-stars: 0
-last_updated: 2025-01-20
+stars: 1
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_009.md"]
 tags:
   [

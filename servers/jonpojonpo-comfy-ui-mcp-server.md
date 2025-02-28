@@ -4,14 +4,14 @@ repo_url: https://github.com/jonpojonpo/comfy-ui-mcp-server
 name: ComfyUI Node Workflow MCP Server
 owner: jonpojonpo
 stars: 1
-last_updated: 2025-01-21
-status: active
+last_updated: 2025-02-28
+status: inactive
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [
-    "status/active",
+    "status/inactive",
     "category/ai",
     "integration/comfyui",
     "purpose/image-generation",
@@ -22,7 +22,7 @@ tags:
 
 # ComfyUI Node Workflow MCP Server
 
-#status/active #category/ai #integration/comfyui #purpose/image-generation #tech/node-based #tech/stable-diffusion
+#status/inactive #category/ai #integration/comfyui #purpose/image-generation #tech/node-based #tech/stable-diffusion
 
 ## Description
 

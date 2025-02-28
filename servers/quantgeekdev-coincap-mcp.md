@@ -4,10 +4,10 @@ repo_url: https://github.com/QuantGeekDev/coincap-mcp
 name: CoinCap MCP Server
 owner: QuantGeekDev
 stars: 16
-last_updated: 2025-02-15
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [

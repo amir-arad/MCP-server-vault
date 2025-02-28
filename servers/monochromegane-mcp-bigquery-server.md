@@ -4,12 +4,19 @@ repo_url: https://github.com/monochromegane/mcp-bigquery-server
 name: BigQuery MCP Server
 owner: monochromegane
 stars: 0
-last_updated: 2025-02-09
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "category/database", "integration/bigquery", "purpose/data-analysis", "integration/google"]
+tags:
+  [
+    "status/active",
+    "category/database",
+    "integration/bigquery",
+    "purpose/data-analysis",
+    "integration/google",
+  ]
 ---
 
 # BigQuery MCP Server

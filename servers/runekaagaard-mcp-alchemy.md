@@ -3,13 +3,21 @@ type: server
 repo_url: https://github.com/runekaagaard/mcp-alchemy
 name: Alchemy MCP Server
 owner: runekaagaard
-stars: 28
-last_updated: 2025-02-20
+stars: 34
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/database", "tech/sqlalchemy", "purpose/data-access", "integration/claude"]
+tags:
+  [
+    "status/active",
+    "category/database",
+    "tech/sqlalchemy",
+    "purpose/data-access",
+    "integration/claude",
+    "tech/python",
+  ]
 ---
 
 # Alchemy MCP Server

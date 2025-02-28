@@ -4,10 +4,10 @@ repo_url: https://github.com/liuyoshio/mcp-compass
 name: MCP Compass Server
 owner: liuyoshio
 stars: 11
-last_updated: 2025-02-21
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [
@@ -26,10 +26,13 @@ tags:
 
 ## Description
 
-MCP Compass is a discovery and recommendation service that assists AI assistants in finding and understanding Model Context Protocol servers through natural language queries.
+MCP Compass is a discovery & recommendation service that assists AI assistants in finding and understanding Model Context Protocol servers through natural language queries.
 
 ## Features
 
+- 🔍 **Smart Search**: Find MCP services using natural language queries
+- 📚 **Rich Metadata**: Get detailed information about each service
+- 🔄 **Real-time Updates**: Always up-to-date with the latest MCP services
 - Server discovery
 - Recommendation engine
 - Natural language queries
@@ -41,27 +44,47 @@ MCP Compass is a discovery and recommendation service that assists AI assistants
 - Server comparison
 - Integration guidance
 
-## Installation
-
-```bash
-npm install @liuyoshio/mcp-compass
-```
-
 ## Usage
 
-```javascript
+### Installation
+
+For Claude Desktop, edit your `claude_desktop_config.json` file:
+
+#### MacOS/Linux
+
+```bash
+code ~/Library/Application\ Support/Claude/claude_desktop_config.json
+```
+
+#### Windows
+
+```powershell
+code $env:AppData\\Claude\\claude_desktop_config.json
+```
+
+1.  **As an MCP Service**:
+
+    Add to your AI assistant's MCP configuration to enable service discovery capabilities.
+
+```json
 {
   "mcpServers": {
-    "compass": {
+    "mcp-compass": {
       "command": "npx",
-      "args": ["@liuyoshio/mcp-compass"],
-      "env": {
-        "INDEX_UPDATE": "3600",
-        "MAX_RESULTS": "10",
-        "EMBEDDING_MODEL": "all-MiniLM-L6-v2",
-        "CACHE_TTL": "86400",
-        "SIMILARITY_THRESHOLD": "0.8"
-      }
+      "args": ["-y", "@liuyoshio/mcp-compass"]
+    }
+  }
+}
+```
+
+or
+
+```json
+{
+  "mcpServers": {
+    "mcp-compass": {
+      "command": "node",
+      "args": ["/path/to/repo/build/index.js"]
     }
   }
 }

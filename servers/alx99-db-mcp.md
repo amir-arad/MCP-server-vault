@@ -4,10 +4,10 @@ repo_url: https://github.com/ALX99/db-mcp
 name: Multi-Database MCP Server
 owner: ALX99
 stars: 0
-last_updated: 2025-02-12
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_008.md"]
 tags:
   [

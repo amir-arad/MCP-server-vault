@@ -4,12 +4,19 @@ repo_url: https://github.com/kimtth/mcp-aoai-web-browsing
 name: AOAI Web Browsing MCP Server
 owner: kimtth
 stars: 6
-last_updated: 2025-01-27
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
-tags: ["status/active", "category/web-browsing", "integration/azure", "integration/openai", "purpose/web-interaction"]
+tags:
+  [
+    "status/active",
+    "category/web-browsing",
+    "integration/azure",
+    "integration/openai",
+    "purpose/web-interaction",
+  ]
 ---
 
 # AOAI Web Browsing MCP Server
@@ -30,6 +37,9 @@ A minimal server/client application implementation utilizing the Model Context P
 - Content extraction
 - Navigation control
 - Session management
+- The MCP server is built with `FastMCP`.
+- `Playwright` is used for web browser automation.
+- The MCP response about tools is converted to the OpenAI function calling format.
 
 ## Installation
 
@@ -38,6 +48,26 @@ npm install @kimtth/mcp-aoai-web-browsing
 ```
 
 ## Usage
+
+1.  Rename `.env.template` to `.env`, then fill in the values in `.env` for Azure OpenAI:
+
+```
+AZURE_OPEN_AI_ENDPOINT=
+AZURE_OPEN_AI_API_KEY=
+AZURE_OPEN_AI_DEPLOYMENT_MODEL=
+AZURE_OPEN_AI_API_VERSION=
+```
+
+2.  Install `uv` for python library management
+
+```bash
+pip install uv
+uv sync
+```
+
+3.  Execute `python chatgui.py`
+
+- The sample screen shows the client launching a browser to navigate to the URL.
 
 ```javascript
 {

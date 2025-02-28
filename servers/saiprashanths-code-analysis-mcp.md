@@ -4,10 +4,10 @@ repo_url: https://github.com/saiprashanths/code-analysis-mcp
 name: Code Analysis MCP Server
 owner: saiprashanths
 stars: 5
-last_updated: 2025-02-17
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "category/ai",
     "purpose/documentation",
     "tech/nlp",
+    "tech/nodejs",
   ]
 ---
 

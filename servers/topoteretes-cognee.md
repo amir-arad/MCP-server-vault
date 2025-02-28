@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/topoteretes/cognee
 name: Cognee MCP Server
 owner: topoteretes
-stars: 1268
-last_updated: 2025-02-21
+stars: 1300
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [
@@ -19,6 +19,12 @@ tags:
     "purpose/data-ingestion",
   ]
 ---
+
+To install Cognee MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@topoteretes/cognee-mcp):
+
+```bash
+npx -y @smithery/cli install @topoteretes/cognee-mcp --client claude
+```
 
 # Cognee MCP Server
 

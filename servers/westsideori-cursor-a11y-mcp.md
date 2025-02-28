@@ -4,10 +4,10 @@ repo_url: https://github.com/westsideori/cursor-a11y-mcp
 name: Cursor Accessibility MCP Server
 owner: westsideori
 stars: 0
-last_updated: 2025-02-12
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_008.md"]
 tags:
   [
@@ -17,39 +17,58 @@ tags:
     "purpose/testing",
     "tech/wcag",
     "purpose/compliance",
+    "tech/javascript",
+    "tech/axe-core",
+    "tech/react",
+    "purpose/automation"
   ]
 ---
 
 # Cursor Accessibility MCP Server
 
-#status/active #category/accessibility #tech/puppeteer #purpose/testing #tech/wcag #purpose/compliance
+#status/active #category/accessibility #tech/puppeteer #purpose/testing #tech/wcag #purpose/compliance #tech/javascript #tech/axe-core #tech/react #purpose/automation
 
 ## Description
 
-Integrates accessibility testing capabilities using Puppeteer to perform automated WCAG compliance checks and generate remediation suggestions for web applications.
+A JavaScript-based MCP server that provides automated accessibility testing capabilities through a command-line interface. The server uses axe-core and Puppeteer to perform comprehensive WCAG compliance checks on web applications, generating detailed violation reports and remediation suggestions.
 
 ## Features
 
 - WCAG compliance testing
-- Automated checks
-- Remediation suggestions
-- Accessibility scanning
-- Report generation
-- Issue detection
-- Compliance tracking
-- Test automation
+- Automated accessibility checks
+- Detailed violation reporting
+- Impact level assessment
+- Issue descriptions
+- Documentation links
+- Element identification
+- Failure summaries
 - Screenshot capture
-- Documentation support
+- HTML analysis
+- React integration
+- Local testing support
+- Custom URL testing
+- Remediation guidance
 
 ## Installation
 
 ```bash
-npm install @westsideori/cursor-a11y-mcp
+# Install main dependencies
+npm install
+
+# Install test site dependencies
+cd test-site
+npm install
+cd ..
+
+# Build and start
+npm run build
+npm start
 ```
 
 ## Usage
 
 ```javascript
+// Configuration
 {
   "mcpServers": {
     "cursor-a11y": {
@@ -65,19 +84,28 @@ npm install @westsideori/cursor-a11y-mcp
     }
   }
 }
+
+// Example Test URL
+http://localhost:5000/test-page
 ```
 
 ## Dependencies
 
 - Node.js >= 16
-- Puppeteer
-- WCAG test suite
-- Report generator
-- Screenshot tool
+- Puppeteer ^24.1.1
+- axe-core
+- React ^18.2.0
+- React DOM ^18.2.0
+- MCP SDK ^1.4.1
+- Zod ^3.24.1
 - HTML analyzer
+- Screenshot tool
+- Report generator
+- WCAG test suite
 
 ## Related Servers
 
 - justasmonkev-mcp-accessibility-scanner
 - modelcontextprotocol-testing-server
 - modelcontextprotocol-accessibility-server
+- buga-luga-cursor-mcp

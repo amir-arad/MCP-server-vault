@@ -1,67 +1,71 @@
 ---
 type: server
 repo_url: https://github.com/exa-labs/exa-mcp-server
-name: Exa
+name: Exa MCP Server
 owner: exa-labs
-stars: 0
-last_updated: 2025-02-27
+stars: 231
+last_updated: 2025-02-21
 status: active
 official: true
 verified: false
-sources: ["inbox"]
-tags: ["status/active", "status/official", "category/search", "category/ai"]
+sources: ["inbox/batch_011.md"]
+tags: ["status/active", "status/official", "category/search", "category/ai", "integration/exa", "purpose/web-search"]
 ---
 
-#status/active #status/official #category/search #category/ai
+# Exa MCP Server
 
-# Exa
+#status/active #status/official #category/search #category/ai #integration/exa #purpose/web-search
 
 ## Description
 
-Search Engine made for AIs by [Exa](https://exa.ai). This MCP server provides AI-optimized search capabilities, designed specifically for AI agents to efficiently find and process information.
+A Model Context Protocol (MCP) server lets AI assistants like Claude use the Exa AI Search API for web searches. This setup allows AI models to get real-time web information in a safe and controlled way.
 
 ## Features
 
-- AI-optimized search algorithms
-- Semantic understanding of queries
-- Context-aware search results
-- Structured data extraction
-- Real-time search capabilities
-- Advanced filtering options
-- Integration with Exa's AI search platform
+- AI-powered web search
+- Safe search controls
+- Real-time information
+- Search customization
+- Result filtering
+- Context preservation
+- Rate limiting
+- Error handling
+- Cache management
+- Analytics tracking
 
 ## Installation
 
 ```bash
-npm install @exa/mcp-server
+npm install @exa-labs/exa-mcp-server
 ```
 
 ## Usage
 
 ```javascript
-import { ExaServer } from "@exa/mcp-server";
-
-const server = new ExaServer({
-  apiKey: "your-exa-api-key",
-});
-
-// Perform an AI-optimized search
-const results = await server.search({
-  query: "Latest developments in quantum computing",
-  filters: {
-    date: "past_year",
-    type: "research_paper",
-  },
-  maxResults: 10,
-});
+{
+  "mcpServers": {
+    "exa": {
+      "command": "npx",
+      "args": ["@exa-labs/exa-mcp-server"],
+      "env": {
+        "EXA_API_KEY": "your-api-key",
+        "SAFE_SEARCH": "true",
+        "RESULTS_PER_PAGE": "10",
+        "CACHE_TTL": "3600"
+      }
+    }
+  }
+}
 ```
 
 ## Dependencies
 
-- Node.js >= 14.x
-- Exa API key
-- Active Exa account
+- Node.js >= 16
+- Exa AI Search API access
+- Network connectivity
+- Cache storage
+- Rate limiting system
 
 ## Related Servers
 
-- None currently listed
+- [Exa AI Server](https://github.com/mcprouter/exa-ai-mcp-server) - Community Exa implementation

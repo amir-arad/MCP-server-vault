@@ -4,10 +4,10 @@ repo_url: https://github.com/TheApeMachine/mcp-server-devops-bridge
 name: Azure DevOps Bridge MCP Server
 owner: TheApeMachine
 stars: 0
-last_updated: 2025-02-17
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_009.md"]
 tags:
   [
@@ -19,6 +19,12 @@ tags:
     "purpose/wiki",
   ]
 ---
+
+To install Azure DevOps Bridge MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@TheApeMachine/mcp-server-devops-bridge):
+
+```bash
+npx -y @smithery/cli install @TheApeMachine/mcp-server-devops-bridge --client claude
+```
 
 # Azure DevOps Bridge MCP Server
 

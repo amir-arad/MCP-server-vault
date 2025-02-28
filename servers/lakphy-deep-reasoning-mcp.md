@@ -4,10 +4,10 @@ repo_url: https://github.com/Lakphy/deep-reasoning-mcp
 name: Deep Reasoning MCP Server
 owner: Lakphy
 stars: 4
-last_updated: 2025-02-18
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_008.md"]
 tags:
   [
@@ -26,7 +26,7 @@ tags:
 
 ## Description
 
-Integrates with OpenRouter's AI SDK to enable deep reasoning capabilities for complex analysis and inference tasks. This server provides advanced reasoning capabilities for sophisticated problem-solving.
+Integrates with OpenRouter's AI SDK to enable deep reasoning capabilities for complex analysis and inference tasks. This server provides advanced reasoning capabilities for sophisticated problem-solving and is based on the deepseek-r1 model.
 
 ## Features
 
@@ -43,11 +43,11 @@ Integrates with OpenRouter's AI SDK to enable deep reasoning capabilities for co
 
 ## Installation
 
-```bash
-npm install @lakphy/deep-reasoning-mcp
-```
+To add this server to Cursor, use the following command:
 
-## Usage
+```bash
+npx -y deep-reasoning-mcp@latest --apiKey=<YOUR_OPENROUTER_API_KEY> --model=<YOUR_MODEL>
+```
 
 ```javascript
 {

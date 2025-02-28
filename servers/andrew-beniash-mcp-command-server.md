@@ -4,10 +4,10 @@ repo_url: https://github.com/Andrew-Beniash/mcp-command-server
 name: Secure Command Processing MCP Server
 owner: Andrew-Beniash
 stars: 0
-last_updated: 2025-01-30
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [

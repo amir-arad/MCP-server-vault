@@ -1,13 +1,13 @@
 ---
 type: server
 repo_url: https://github.com/JetBrains/mcp-jetbrains
-name: JetBrains
+name: JetBrains MCP Proxy Server
 owner: JetBrains
 stars: 0
-last_updated: 2025-02-27
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags:
   [
@@ -18,73 +18,68 @@ tags:
   ]
 ---
 
-# JetBrains
+# JetBrains MCP Proxy Server
 
 #status/active #status/official #category/development #integration/jetbrains
 
 ## Description
 
-Work on your code with JetBrains IDEs. This MCP server provides integration with JetBrains' suite of development tools, enabling AI agents to interact with and control JetBrains IDEs for enhanced development workflows.
+The server proxies requests from client to JetBrains IDE. This MCP server provides integration with JetBrains' suite of development tools, enabling AI agents to interact with and control JetBrains IDEs for enhanced development workflows.
 
 ## Features
 
-- IDE control and automation
-- Code navigation and manipulation
-- Project management
-- Code analysis and inspection
-- Refactoring capabilities
-- Version control integration
-- Build and run configurations
-- Debug session management
-- Multiple IDE support (IntelliJ, PyCharm, WebStorm, etc.)
+- Proxies requests from client to JetBrains IDE.
 
-## Installation
+## Install MCP Server plugin
 
-```bash
-npm install @jetbrains/mcp-server
+[https://plugins.jetbrains.com/plugin/26071-mcp-server](https://plugins.jetbrains.com/plugin/26071-mcp-server)
+
+## Usage with Claude Desktop
+
+To use this with Claude Desktop, add the following to your `claude_desktop_config.json`. The full path on MacOS: `~/Library/Application\ Support/Claude/claude_desktop_config.json`, on Windows: `%APPDATA%/Claude/claude_desktop_config.json`.
+
+```json
+{
+  "mcpServers": {
+    "jetbrains": {
+      "command": "npx",
+      "args": ["-y", "@jetbrains/mcp-proxy"]
+    }
+  }
+}
 ```
 
-## Usage
+## Configuration
 
-```javascript
-import { JetBrainsServer } from "@jetbrains/mcp-server";
+If you're running multiple IDEs with MCP server and want to connect to the specific one, add to the MCP server configuration:
 
-const server = new JetBrainsServer({
-  apiKey: "your-jetbrains-api-key",
-  ide: "intellij", // or 'pycharm', 'webstorm', etc.
-});
-
-// Open a project
-await server.openProject({
-  path: "/path/to/your/project",
-});
-
-// Navigate to a file and make changes
-await server.editFile({
-  file: "src/main/java/com/example/App.java",
-  actions: [
-    {
-      type: "navigate",
-      position: {
-        line: 10,
-        column: 15,
-      },
-    },
-    {
-      type: "refactor",
-      action: "rename",
-      from: "oldMethodName",
-      to: "newMethodName",
-    },
-  ],
-});
-
-// Run code analysis
-const issues = await server.analyze({
-  scope: "project",
-  severity: ["error", "warning"],
-});
+```json
+"env": {
+  "IDE_PORT": "<port of IDE's built-in webserver>"
+}
 ```
+
+By default, we connect to IDE on 127.0.0.1 but you can specify a different address/host:
+
+```json
+"env": {
+  "HOST": "<host/address of IDE's built-in webserver>"
+}
+```
+
+To enable logging add:
+
+```json
+"env": {
+  "LOG_ENABLED": "true"
+}
+```
+
+## How to build
+
+1. Tested on macOS
+2. `brew install node pnpm`
+3. Run `pnpm build` to build the project
 
 ## Dependencies
 

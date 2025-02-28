@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/zereight/confluence-mcp
 name: Confluence & Jira MCP Server
 owner: zereight
-stars: 1
-last_updated: 2025-02-21
+stars: 3
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [
@@ -43,9 +43,22 @@ An MCP server that integrates with both Confluence wiki and Jira project managem
 
 ## Installation
 
+To install Confluence communication server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@zereight/confluence-mcp):
+
 ```bash
-npm install @zereight/confluence-mcp
+npx -y @smithery/cli install @zereight/confluence-mcp --client claude
 ```
+
+When using with Cursor, you can set up environment variables and run the server as follows:
+
+```bash
+env CONFLUENCE_API_MAIL=your@email.com CONFLUENCE_API_KEY=your-key CONFLUENCE_URL=your-confluence-url JIRA_URL=your-jira-url npx -y @zereight/mcp-confluence
+```
+
+*   `CONFLUENCE_API_MAIL`: Your email address for the Confluence API.
+*   `CONFLUENCE_API_KEY`: Your Confluence API key.
+*   `CONFLUENCE_URL`: Your Confluence URL.
+*   `JIRA_URL`: Your JIRA URL.
 
 ## Usage
 

@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/sammcj/bybit-mcp
 name: Bybit MCP Server
 owner: sammcj
-stars: 4
-last_updated: 2024-12-23
+stars: 5
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [
@@ -16,6 +16,7 @@ tags:
     "integration/bybit",
     "purpose/market-data",
     "category/cryptocurrency",
+    "tech/nodejs",
   ]
 ---
 

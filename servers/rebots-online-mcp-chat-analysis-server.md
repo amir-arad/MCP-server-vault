@@ -4,10 +4,10 @@ repo_url: https://github.com/rebots-online/mcp-chat-analysis-server
 name: Chat Analysis MCP Server
 owner: rebots-online
 stars: 6
-last_updated: 2025-01-24
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "purpose/chat-analysis",
     "tech/vector-embeddings",
     "tech/knowledge-graphs",
+    "tech/python",
   ]
 ---
 

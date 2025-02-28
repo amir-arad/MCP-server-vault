@@ -2,12 +2,12 @@
 type: server
 repo_url: https://github.com/mcpso/mcp-server-chatsum
 name: Chatsum MCP Server by mcpso
-owner: mcpso
-stars: 449
-last_updated: 2025-02-21
+owner: chatmcp
+stars: 460
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [

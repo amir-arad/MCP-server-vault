@@ -4,10 +4,10 @@ repo_url: https://github.com/yosider/cosense-mcp-server
 name: Cosense Pipeline MCP Server
 owner: yosider
 stars: 3
-last_updated: 2025-02-02
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [
@@ -17,34 +17,49 @@ tags:
     "integration/claude",
     "purpose/pipeline",
     "purpose/command-processing",
+    "tech/typescript",
+    "tech/javascript",
+    "tech/jsr"
   ]
 ---
 
 # Cosense Pipeline MCP Server
 
-#status/active #category/middleware #integration/cosense #integration/claude #purpose/pipeline #purpose/command-processing
+#status/active #category/middleware #integration/cosense #integration/claude #purpose/pipeline #purpose/command-processing #tech/typescript #tech/javascript #tech/jsr
 
 ## Description
 
-The cosense-mcp-server facilitates the integration with Claude Desktop by serving as a middleware command pipeline server, allowing for interaction with projects in cosense.
+A TypeScript-based MCP server that serves as a middleware command pipeline for interacting with Cosense projects. The server provides a standardized interface for page management, content search, and line insertion operations, with support for both public and private project access through session authentication.
 
 ## Features
 
-- Command pipeline
-- Middleware processing
-- Claude integration
+- Page content retrieval and management
+- Resource listing and discovery
+- Content search capabilities
+- Line insertion and text manipulation
+- Command pipeline processing
+- Session-based authentication
 - Project interaction
 - Command routing
-- Pipeline management
 - Error handling
-- Event processing
 - Status tracking
 - Result formatting
 
 ## Installation
 
 ```bash
+# Configure JSR registry first
+echo "@jsr:registry=https://npm.jsr.io" >> ~/.npmrc  # Linux/macOS
+echo "@jsr:registry=https://npm.jsr.io" >> $env:USERPROFILE\.npmrc  # Windows
+
+# Install via npm
 npm install @yosider/cosense-mcp
+
+# Or build from source
+git clone https://github.com/yosider/cosense-mcp-server.git
+cd cosense-mcp-server
+npm install
+npm run build
 ```
 
 ## Usage
@@ -56,8 +71,9 @@ npm install @yosider/cosense-mcp
       "command": "npx",
       "args": ["@yosider/cosense-mcp"],
       "env": {
+        "COSENSE_PROJECT_NAME": "your-project-name",
+        "COSENSE_SID": "your-sid",  // Required for private projects
         "COSENSE_URL": "your-cosense-url",
-        "CLAUDE_API_KEY": "your-claude-key",
         "PIPELINE_TIMEOUT": "30000",
         "MAX_RETRIES": "3",
         "LOG_LEVEL": "info"
@@ -70,14 +86,17 @@ npm install @yosider/cosense-mcp
 ## Dependencies
 
 - Node.js >= 16
-- Claude API access
+- TypeScript runtime
+- @cosense/std (via JSR)
+- @cosense/types (via JSR)
 - Cosense account
 - Pipeline processor
 - Command router
 - Event handler
+- MCP Inspector (for debugging)
 
 ## Related Servers
 
-- funwarioisii/cosense-mcp-server
+- funwarioisii/cosense-mcp-server (original project)
 - modelcontextprotocol-pipeline-server
 - modelcontextprotocol-middleware-server

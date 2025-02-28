@@ -4,10 +4,10 @@ repo_url: https://github.com/privetin/dataset-viewer
 name: Hugging Face Dataset Viewer MCP Server
 owner: privetin
 stars: 3
-last_updated: 2025-02-07
+last_updated: 2025-02-28
 status: active
-official: false
-verified: false
+official: true
+verified: true
 sources: ["inbox/batch_008.md"]
 tags:
   [

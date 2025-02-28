@@ -4,10 +4,10 @@ repo_url: https://github.com/adamdude828/mcp-browser-use
 name: Browser Use MCP Server
 owner: adamdude828
 stars: 0
-last_updated: 2025-02-05
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [

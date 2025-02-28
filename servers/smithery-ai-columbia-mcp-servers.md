@@ -4,10 +4,10 @@ repo_url: https://github.com/smithery-ai/COLUMBIA-MCP-SERVERS
 name: Columbia MCP Infrastructure Server
 owner: smithery-ai
 stars: 0
-last_updated: 2025-01-27
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "purpose/deployment",
     "purpose/management",
     "tech/scalability",
+    "tech/typescript",
   ]
 ---
 

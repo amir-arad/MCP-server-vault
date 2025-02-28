@@ -4,12 +4,18 @@ repo_url: https://github.com/mamertofabian/audio-mcp-server
 name: Audio MCP Server
 owner: mamertofabian
 stars: 1
-last_updated: 2024-12-27
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "category/audio", "tech/play-sound", "purpose/sound-playback"]
+tags:
+  [
+    "status/active",
+    "category/audio",
+    "tech/play-sound",
+    "purpose/sound-playback",
+  ]
 ---
 
 # Audio MCP Server

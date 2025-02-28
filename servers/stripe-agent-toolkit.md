@@ -3,13 +3,20 @@ type: server
 repo_url: https://github.com/stripe/agent-toolkit
 name: Stripe Agent Toolkit
 owner: stripe
-stars: 300
-last_updated: 2025-02-21
+stars: 418
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "status/official", "category/integration", "integration/stripe", "purpose/payment-processing"]
+tags:
+  [
+    "status/active",
+    "status/official",
+    "category/integration",
+    "integration/stripe",
+    "purpose/payment-processing",
+  ]
 ---
 
 # Stripe Agent Toolkit

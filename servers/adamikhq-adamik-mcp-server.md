@@ -4,12 +4,18 @@ repo_url: https://github.com/AdamikHQ/adamik-mcp-server
 name: Adamik MCP Server
 owner: AdamikHQ
 stars: 0
-last_updated: 2025-02-20
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/blockchain", "integration/starknet", "purpose/blockchain-operations"]
+tags:
+  [
+    "status/active",
+    "category/blockchain",
+    "integration/starknet",
+    "purpose/blockchain-operations",
+  ]
 ---
 
 # Adamik MCP Server

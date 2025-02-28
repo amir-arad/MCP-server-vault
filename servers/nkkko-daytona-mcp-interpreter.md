@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/nkkko/daytona-mcp-interpreter
 name: Daytona Python Interpreter MCP Server
 owner: nkkko
-stars: 0
-last_updated: 2025-02-19
+stars: 4
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_008.md"]
 tags:
   [

@@ -4,10 +4,10 @@ repo_url: https://github.com/ngeojiajun/mcp-code-snippets
 name: Code Snippets MCP Server
 owner: ngeojiajun
 stars: 4
-last_updated: 2025-02-07
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [

@@ -3,14 +3,27 @@ type: server
 repo_url: https://github.com/turlockmike/apple-notifier-mcp
 name: Apple Notifier MCP Server
 owner: turlockmike
-stars: 1
-last_updated: 2024-12-23
+stars: 3
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
-tags: ["status/active", "category/notifications", "integration/apple", "tech/macos", "purpose/system-interaction"]
+tags:
+  [
+    "status/active",
+    "category/notifications",
+    "integration/apple",
+    "tech/macos",
+    "purpose/system-interaction",
+  ]
 ---
+
+To install Apple Notifier MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/apple-notifier-mcp):
+
+```bash
+npx -y @smithery/cli install apple-notifier-mcp --client claude
+```
 
 # Apple Notifier MCP Server
 

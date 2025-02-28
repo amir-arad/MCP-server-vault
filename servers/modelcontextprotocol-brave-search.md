@@ -4,10 +4,10 @@ repo_url: https://github.com/modelcontextprotocol/servers/tree/main/src/brave-se
 name: Brave Search MCP Server
 owner: modelcontextprotocol
 stars: 9794
-last_updated: 2025-02-21
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [

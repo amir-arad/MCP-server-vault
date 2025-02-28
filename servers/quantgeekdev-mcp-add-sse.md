@@ -4,12 +4,19 @@ repo_url: https://github.com/QuantGeekDev/mcp-add-sse
 name: Add SSE MCP Server
 owner: QuantGeekDev
 stars: 3
-last_updated: 2025-02-17
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/development", "category/data-processing", "tech/typescript", "purpose/development"]
+tags:
+  [
+    "status/active",
+    "category/development",
+    "category/data-processing",
+    "tech/typescript",
+    "purpose/development",
+  ]
 ---
 
 # Add SSE MCP Server

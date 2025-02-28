@@ -3,14 +3,20 @@ type: server
 repo_url: https://github.com/riza-io/riza-mcp
 name: Riza
 owner: riza-io
-stars: 0
-last_updated: 2025-02-27
+stars: 4
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags:
-  ["status/active", "status/official", "category/development", "category/ai"]
+  [
+    "status/active",
+    "status/official",
+    "category/development",
+    "category/ai",
+    "tech/nodejs",
+  ]
 ---
 
 #status/active #status/official #category/development #category/ai

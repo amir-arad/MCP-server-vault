@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/Saik0s/mcp-browser-use
 name: Browser Use MCP Server
 owner: Saik0s
-stars: 86
-last_updated: 2025-02-20
+stars: 98
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [
@@ -16,6 +16,7 @@ tags:
     "purpose/browser-control",
     "tech/browser-use",
     "purpose/agent-interaction",
+    "tech/python",
   ]
 ---
 

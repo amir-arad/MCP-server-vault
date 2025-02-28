@@ -2,11 +2,11 @@
 repo_url: https://github.com/21st-dev/magic-mcp
 owner: 21st-dev
 name: magic-mcp
-stars: 0
-last_updated: 2025-02-21
+stars: 41
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources:
   - inbox
 tags:

@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/aindreyway/mcp-codex-keeper
 name: Codex Keeper MCP Server
 owner: aindreyway
-stars: 41
-last_updated: 2025-02-20
+stars: 46
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [

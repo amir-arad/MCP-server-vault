@@ -4,10 +4,10 @@ repo_url: https://github.com/raju-deriv/mcp-deriv-api-server
 name: Deriv API MCP Server
 owner: raju-deriv
 stars: 0
-last_updated: 2025-01-07
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_009.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "purpose/trading",
     "purpose/market-analysis",
     "tech/api",
+    "tech/python",
   ]
 ---
 

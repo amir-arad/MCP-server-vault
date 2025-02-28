@@ -4,10 +4,10 @@ repo_url: https://github.com/vetlefo/claude-chunks
 name: Claude Chunks MCP Server
 owner: vetlefo
 stars: 7
-last_updated: 2025-02-07
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
@@ -19,6 +19,12 @@ tags:
     "tech/typescript",
   ]
 ---
+
+To install Claude Chunks MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@vetlefo/claude-chunks):
+
+```bash
+npx -y @smithery/cli install @vetlefo/claude-chunks --client claude
+```
 
 # Claude Chunks MCP Server
 

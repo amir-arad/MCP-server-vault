@@ -4,10 +4,10 @@ repo_url: https://github.com/funwarioisii/cosense-mcp-server
 name: Cosense Integration MCP Server
 owner: funwarioisii
 stars: 0
-last_updated: 2024-12-10
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [
@@ -17,34 +17,45 @@ tags:
     "purpose/data-access",
     "purpose/collaboration",
     "purpose/workflow",
+    "tech/javascript",
+    "tech/typescript",
+    "tech/bun"
   ]
 ---
 
 # Cosense Integration MCP Server
 
-#status/active #category/project-management #integration/cosense #purpose/data-access #purpose/collaboration #purpose/workflow
+#status/active #category/project-management #integration/cosense #purpose/data-access #purpose/collaboration #purpose/workflow #tech/javascript #tech/typescript #tech/bun
 
 ## Description
 
-Integrates Cosense to enable access and interaction with project data for enhanced project management and collaboration workflows.
+A TypeScript/JavaScript-based MCP server that provides seamless integration with Cosense's project management platform. The server enables access and interaction with project data, supporting both public and private projects through SID authentication.
 
 ## Features
 
-- Project data access
+- Project data access and management
+- Page content retrieval
 - Workflow integration
 - Collaboration tools
-- Data management
 - Project tracking
 - Task organization
 - Team coordination
 - Progress monitoring
 - Resource allocation
-- Reporting tools
+- Reporting capabilities
+- Private project support via SID
 
 ## Installation
 
 ```bash
+# Via npm
 npm install @funwarioisii/cosense-mcp
+
+# Build from source
+git clone https://github.com/funwarioisii/cosense-mcp-server.git
+cd cosense-mcp-server
+npm install
+npm run build
 ```
 
 ## Usage
@@ -59,6 +70,7 @@ npm install @funwarioisii/cosense-mcp
         "COSENSE_API_URL": "your-cosense-url",
         "API_KEY": "your-api-key",
         "PROJECT_ID": "default-project",
+        "COSENSE_SID": "your-sid",  // Optional, for private projects
         "UPDATE_INTERVAL": "300",
         "CACHE_ENABLED": "true"
       }
@@ -70,11 +82,14 @@ npm install @funwarioisii/cosense-mcp
 ## Dependencies
 
 - Node.js >= 16
+- TypeScript runtime
+- Bun package manager
 - Cosense account
 - API credentials
 - Data processor
 - Cache system
 - Event handler
+- MCP Inspector (for debugging)
 
 ## Related Servers
 

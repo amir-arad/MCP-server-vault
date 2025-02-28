@@ -4,10 +4,10 @@ repo_url: https://github.com/behole/cooper-hewitt-mcp
 name: Cooper Hewitt MCP Server
 owner: behole
 stars: 2
-last_updated: 2025-01-30
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [
@@ -17,34 +17,43 @@ tags:
     "purpose/art",
     "purpose/collection-access",
     "category/cultural",
+    "tech/typescript",
+    "tech/javascript",
+    "tech/python"
   ]
 ---
 
 # Cooper Hewitt MCP Server
 
-#status/active #category/museum #integration/cooper-hewitt #purpose/art #purpose/collection-access #category/cultural
+#status/active #category/museum #integration/cooper-hewitt #purpose/art #purpose/collection-access #category/cultural #tech/typescript #tech/javascript #tech/python
 
 ## Description
 
-Interact with the Cooper Hewitt API with MCP. This server provides access to the Cooper Hewitt Smithsonian Design Museum's digital collections and resources.
+A TypeScript-based MCP server that provides programmatic access to the Cooper Hewitt Smithsonian Design Museum's digital collections and resources through their API. The server enables searching and retrieving detailed information about museum objects with support for pagination and advanced filtering.
 
 ## Features
 
-- Collection access
-- Object search
-- Metadata retrieval
-- Image access
-- Exhibition data
-- Collection browsing
-- Object details
-- Search filtering
+- Collection search and browsing
+- Object metadata retrieval
+- Image access and handling
+- Exhibition data access
+- Advanced search filtering
 - Category navigation
-- Data export
+- Pagination support
+- Data export capabilities
+- Multi-language support
+- Caching system
 
 ## Installation
 
 ```bash
+# Via npm
 npm install @behole/cooper-hewitt-mcp
+
+# Build from source
+git clone https://github.com/behole/cooper-hewitt-mcp.git
+cd cooper-hewitt-mcp
+npm install
 ```
 
 ## Usage
@@ -70,11 +79,13 @@ npm install @behole/cooper-hewitt-mcp
 ## Dependencies
 
 - Node.js >= 16
+- TypeScript runtime
 - Cooper Hewitt API key
 - Image processor
 - Search engine
 - Cache system
 - Data formatter
+- Python (for some utilities)
 
 ## Related Servers
 

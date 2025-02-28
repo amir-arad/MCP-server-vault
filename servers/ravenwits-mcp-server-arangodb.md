@@ -3,13 +3,20 @@ type: server
 repo_url: https://github.com/ravenwits/mcp-server-arangodb
 name: ArangoDB MCP Server
 owner: ravenwits
-stars: 3
-last_updated: 2025-02-16
+stars: 5
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
-tags: ["status/active", "category/database", "integration/arangodb", "tech/typescript", "purpose/data-management"]
+tags:
+  [
+    "status/active",
+    "category/database",
+    "integration/arangodb",
+    "tech/typescript",
+    "purpose/data-management",
+  ]
 ---
 
 # ArangoDB MCP Server

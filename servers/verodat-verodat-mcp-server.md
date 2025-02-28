@@ -3,13 +3,19 @@ type: server
 repo_url: https://github.com/Verodat/verodat-mcp-server
 name: Verodat
 owner: Verodat
-stars: 0
-last_updated: 2025-02-27
+stars: 1
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
-tags: ["status/active", "status/official", "category/data-analysis"]
+tags:
+  [
+    "status/active",
+    "status/official",
+    "category/data-analysis",
+    "integration/verodat",
+  ]
 ---
 
 #status/active #status/official #category/data-analysis

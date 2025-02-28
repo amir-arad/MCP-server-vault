@@ -5,16 +5,22 @@ name: AI Filesystem MCP Server
 owner: PimpMyNines
 stars: 1
 last_updated: 2025-02-18
-status: active
+status: inactive
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/filesystem", "purpose/file-management", "category/ai"]
+tags:
+  [
+    "status/inactive",
+    "category/filesystem",
+    "purpose/file-management",
+    "category/ai",
+  ]
 ---
 
 # AI Filesystem MCP Server
 
-#status/active #category/filesystem #purpose/file-management #category/ai
+#status/inactive #category/filesystem #purpose/file-management #category/ai
 
 ## Description
 

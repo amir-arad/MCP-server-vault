@@ -3,18 +3,18 @@ type: server
 repo_url: https://github.com/modelcontextprotocol/servers/src/filesystem
 name: Filesystem
 owner: modelcontextprotocol
-stars: 0
-last_updated: 2025-02-27
+stars: 9794
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags: ["category/filesystem", "status/official", "purpose/development"]
 ---
 
-#category/filesystem #status/official #purpose/development
-
 # Filesystem
+
+#category/filesystem #status/official #purpose/development
 
 ## Description
 
@@ -48,8 +48,3 @@ server.run();
 
 - @modelcontextprotocol/sdk
 - Node.js filesystem APIs
-
-## Related Servers
-
-- Git Server - For version-controlled file operations
-- Everything Server - For desktop file search capabilities

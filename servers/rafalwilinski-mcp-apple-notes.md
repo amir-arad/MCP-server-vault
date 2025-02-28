@@ -3,13 +3,20 @@ type: server
 repo_url: https://github.com/RafalWilinski/mcp-apple-notes
 name: Apple Notes MCP Server
 owner: RafalWilinski
-stars: 119
-last_updated: 2025-02-21
+stars: 125
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
-tags: ["status/active", "category/productivity", "integration/apple", "purpose/note-management", "tech/macos"]
+tags:
+  [
+    "status/active",
+    "category/productivity",
+    "integration/apple",
+    "purpose/note-management",
+    "tech/macos",
+  ]
 ---
 
 # Apple Notes MCP Server

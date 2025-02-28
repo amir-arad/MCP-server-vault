@@ -4,10 +4,10 @@ repo_url: https://github.com/r3-yamauchi/mcp-server-blastengine-mailer
 name: Blastengine Mailer MCP Server
 owner: r3-yamauchi
 stars: 0
-last_updated: 2025-02-20
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [

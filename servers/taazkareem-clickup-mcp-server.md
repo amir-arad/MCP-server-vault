@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/TaazKareem/clickup-mcp-server
 name: ClickUp AI Integration MCP Server
 owner: TaazKareem
-stars: 5
-last_updated: 2025-02-19
+stars: 8
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [

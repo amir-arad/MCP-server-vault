@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/tinybirdco/mcp-tinybird
 name: Tinybird
 owner: tinybirdco
-stars: 0
-last_updated: 2025-02-27
+stars: 36
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags:
   [
@@ -17,6 +17,14 @@ tags:
     "category/analytics",
   ]
 ---
+
+```bash
+npx -y @smithery/cli install @tinybirdco/mcp-tinybird --client claude
+```
+
+```bash
+npx -y @smithery/cli install @tinybirdco/mcp-tinybird --client claude
+```
 
 # Tinybird
 

@@ -3,13 +3,20 @@ type: server
 repo_url: https://github.com/seanivore/bing-searches-mcp
 name: Bing Searches MCP Server
 owner: seanivore
-stars: 2
-last_updated: 2025-02-12
+stars: 1
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
-tags: ["status/active", "category/search", "integration/bing", "purpose/data-analysis"]
+tags:
+  [
+    "status/active",
+    "category/search",
+    "integration/bing",
+    "purpose/data-analysis",
+    "tech/nodejs",
+  ]
 ---
 
 # Bing Searches MCP Server

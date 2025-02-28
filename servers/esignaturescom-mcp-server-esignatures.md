@@ -1,34 +1,37 @@
 ---
 type: server
 repo_url: https://github.com/esignaturescom/mcp-server-esignatures
-name: eSignatures
+name: eSignatures MCP Server
 owner: esignaturescom
-stars: 0
-last_updated: 2025-02-27
+stars: 2
+last_updated: 2025-02-12
 status: active
 official: true
 verified: false
-sources: ["inbox"]
-tags: ["status/active", "status/official", "category/utility"]
+sources: ["inbox/batch_011.md"]
+tags: ["status/active", "status/official", "category/document-management", "purpose/esignature", "purpose/contract-management", "purpose/template-management"]
 ---
 
-#status/active #status/official #category/utility
+# eSignatures MCP Server
 
-# eSignatures
+#status/active #status/official #category/document-management #purpose/esignature #purpose/contract-management #purpose/template-management
 
 ## Description
 
-Contract and template management MCP server for drafting, reviewing, and sending binding contracts. Integrates with [eSignatures](https://esignatures.com) platform for comprehensive digital contract management.
+Facilitates contract and template management for eSignatures, enabling users to create, send, update, and manage contracts and templates with customizable options through a user-friendly interface.
 
 ## Features
 
-- Contract drafting and management
-- Template-based document creation
-- Document review workflow
-- Digital signature integration
-- Contract status tracking
+- Contract management
 - Template management
-- Secure document handling
+- Electronic signatures
+- Document customization
+- Workflow automation
+- Status tracking
+- Audit trails
+- User management
+- Template versioning
+- Security compliance
 
 ## Installation
 
@@ -39,28 +42,29 @@ npm install @esignatures/mcp-server
 ## Usage
 
 ```javascript
-import { ESignaturesServer } from "@esignatures/mcp-server";
-
-const server = new ESignaturesServer({
-  apiKey: "your-esignatures-api-key",
-});
-
-// Create a new contract from template
-const contract = await server.createContract({
-  templateId: "template-123",
-  signers: [{ email: "signer1@example.com", name: "John Doe" }],
-  data: {
-    clientName: "Acme Corp",
-    startDate: "2025-03-01",
-  },
-});
+{
+  "mcpServers": {
+    "esignatures": {
+      "command": "npx",
+      "args": ["@esignatures/mcp-server"],
+      "env": {
+        "ESIGNATURES_API_KEY": "your-api-key",
+        "WEBHOOK_URL": "your-webhook-url",
+        "TEMPLATE_DIR": "./templates",
+        "STORAGE_PATH": "./storage"
+      }
+    }
+  }
+}
 ```
 
 ## Dependencies
 
-- Node.js >= 14.x
-- eSignatures API key
-- Active eSignatures account
+- Node.js >= 14
+- eSignatures API access
+- Storage system
+- PDF processing libraries
+- Network connectivity
 
 ## Related Servers
 

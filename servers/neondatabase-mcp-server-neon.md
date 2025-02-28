@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/neondatabase/mcp-server-neon
 name: Neon
 owner: neondatabase
-stars: 0
-last_updated: 2025-02-27
+stars: 61
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags: ["status/active", "status/official", "category/database"]
 ---

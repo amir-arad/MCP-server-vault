@@ -4,10 +4,10 @@ repo_url: https://github.com/Toowiredd/chatgpt-mcp-server
 name: ChatGPT Docker Management MCP Server
 owner: Toowiredd
 stars: 0
-last_updated: 2025-02-17
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
@@ -19,6 +19,12 @@ tags:
     "purpose/container-management",
   ]
 ---
+
+To install ChatGPT Docker Management MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Toowiredd/chatgpt-mcp-server):
+
+```bash
+npx -y @smithery/cli install @Toowiredd/chatgpt-mcp-server --client claude
+```
 
 # ChatGPT Docker Management MCP Server
 

@@ -4,10 +4,10 @@ repo_url: https://github.com/twolven/mcp-codesavant
 name: CodeSavant MCP Server
 owner: twolven
 stars: 5
-last_updated: 2025-02-06
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [
@@ -19,6 +19,12 @@ tags:
     "tech/multi-language",
   ]
 ---
+
+To install CodeSavant MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@twolven/mcp-codesavant):
+
+```bash
+npx -y @smithery/cli install @twolven/mcp-codesavant --client claude
+```
 
 # CodeSavant MCP Server
 

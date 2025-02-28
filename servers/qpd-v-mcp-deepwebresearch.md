@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/qpd-v/mcp-DEEPwebresearch
 name: Deep Web Research MCP Server
 owner: qpd-v
-stars: 17
-last_updated: 2025-02-19
+stars: 21
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_009.md"]
 tags:
   [

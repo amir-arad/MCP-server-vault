@@ -3,13 +3,20 @@ type: server
 repo_url: https://github.com/RafalWilinski/aws-mcp
 name: AWS MCP Server
 owner: RafalWilinski
-stars: 88
-last_updated: 2025-02-21
+stars: 95
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "category/cloud", "integration/aws", "purpose/cloud-management", "category/ai"]
+tags:
+  [
+    "status/active",
+    "category/cloud",
+    "integration/aws",
+    "purpose/cloud-management",
+    "category/ai",
+  ]
 ---
 
 # AWS MCP Server

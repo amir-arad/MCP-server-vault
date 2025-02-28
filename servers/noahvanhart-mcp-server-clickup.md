@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/noahvanhart/mcp-server-clickup
 name: ClickUp Integration MCP Server
 owner: noahvanhart
-stars: 1
-last_updated: 2025-02-12
+stars: 2
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [

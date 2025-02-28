@@ -4,13 +4,25 @@ repo_url: https://github.com/Text2Go/ai-humanizer-mcp-server
 name: AI Humanizer MCP Server
 owner: Text2Go
 stars: 6
-last_updated: 2025-01-31
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/content-processing", "category/ai", "purpose/text-enhancement"]
+tags:
+  [
+    "status/active",
+    "category/content-processing",
+    "category/ai",
+    "purpose/text-enhancement",
+  ]
 ---
+
+To install AI Humanizer MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Text2Go/ai-humanizer-mcp-server):
+
+```bash
+npx -y @smithery/cli install @Text2Go/ai-humanizer-mcp-server --client claude
+```
 
 # AI Humanizer MCP Server
 

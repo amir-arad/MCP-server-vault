@@ -4,10 +4,10 @@ repo_url: https://github.com/jwaldor/mcp-api-expert
 name: API Expert MCP Server
 owner: jwaldor
 stars: 5
-last_updated: 2025-02-09
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
 tags: ["status/active", "category/api", "purpose/integration", "tech/rest"]
 ---
@@ -18,7 +18,7 @@ tags: ["status/active", "category/api", "purpose/integration", "tech/rest"]
 
 ## Description
 
-Integrates any REST API by dynamically connecting to APIs using provided documentation and keys, enabling rapid prototyping of applications with real-time external data.
+Integrates any REST API by dynamically connecting to APIs using provided documentation and keys, enabling rapid prototyping of applications with real-time external data. All you have to do is provide API documentation and API keys in a message.
 
 ## Features
 
@@ -31,11 +31,21 @@ Integrates any REST API by dynamically connecting to APIs using provided documen
 - Response formatting
 - Error handling
 
-## Installation
+## Setup with Claude Desktop
+
+1.  Install the package globally:
 
 ```bash
-npm install @jwaldor/mcp-api-expert
+npm i -g mcp-api-connect
 ```
+
+2.  Run the setup command:
+
+```bash
+mcpapiconnect install
+```
+
+3.  Restart Claude
 
 ## Usage
 

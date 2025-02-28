@@ -3,13 +3,21 @@ type: server
 repo_url: https://github.com/rishikavikondala/mcp-server-aws
 name: AWS MCP Server
 owner: rishikavikondala
-stars: 40
-last_updated: 2025-02-19
+stars: 43
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "category/cloud", "integration/aws", "integration/s3", "integration/dynamodb"]
+tags:
+  [
+    "status/active",
+    "category/cloud",
+    "integration/aws",
+    "integration/s3",
+    "integration/dynamodb",
+    "tech/nodejs",
+  ]
 ---
 
 # AWS MCP Server

@@ -4,10 +4,10 @@ repo_url: https://github.com/shivay-couchbase/couchbase-mcp
 name: Couchbase Vector Search MCP Server
 owner: shivay-couchbase
 stars: 0
-last_updated: 2025-01-03
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [
@@ -17,34 +17,46 @@ tags:
     "purpose/vector-search",
     "tech/semantic",
     "category/demo",
+    "tech/typescript",
+    "tech/javascript",
+    "tech/vector-db"
   ]
 ---
 
 # Couchbase Vector Search MCP Server
 
-#status/active #category/database #integration/couchbase #purpose/vector-search #tech/semantic #category/demo
+#status/active #category/database #integration/couchbase #purpose/vector-search #tech/semantic #category/demo #tech/typescript #tech/javascript #tech/vector-db
 
 ## Description
 
-Integrates Couchbase vector search for semantic similarity queries on Star Wars planet data. This server demonstrates vector search capabilities using a themed dataset.
+A TypeScript/JavaScript-based MCP server that demonstrates semantic search capabilities using Couchbase's vector search functionality. The server provides a standardized interface for querying and finding similar Star Wars planets based on vector embeddings, showcasing practical applications of vector search in a themed dataset.
 
 ## Features
 
-- Vector search
-- Semantic queries
-- Similarity matching
-- Data indexing
+- Vector-based semantic search
+- Similarity matching with embeddings
+- Efficient vector indexing
 - Query optimization
-- Result ranking
+- Result ranking and scoring
 - Dataset management
 - Search filtering
 - Performance tuning
-- Example queries
+- Connection pooling
+- Error handling
+- Type-safe implementation
+- Example queries and data
 
 ## Installation
 
 ```bash
+# Install dependencies
 npm install @shivay-couchbase/couchbase-mcp
+
+# Or build from source
+git clone https://github.com/shivay-couchbase/couchbase-mcp.git
+cd couchbase-mcp
+npm install
+npm run build
 ```
 
 ## Usage
@@ -60,7 +72,9 @@ npm install @shivay-couchbase/couchbase-mcp
         "COUCHBASE_USER": "your-username",
         "COUCHBASE_PASSWORD": "your-password",
         "BUCKET_NAME": "starwars",
-        "VECTOR_DIM": "384"
+        "VECTOR_DIM": "384",
+        "TIMEOUT": "5000",
+        "MAX_CONNECTIONS": "10"
       }
     }
   }
@@ -70,11 +84,14 @@ npm install @shivay-couchbase/couchbase-mcp
 ## Dependencies
 
 - Node.js >= 16
-- Couchbase server
+- TypeScript runtime
+- Couchbase server with vector search capability
 - Vector engine
 - Search indexer
 - Query processor
 - Dataset loader
+- Connection manager
+- Error handler
 
 ## Related Servers
 

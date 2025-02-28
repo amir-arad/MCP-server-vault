@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/tavily-ai/tavily-mcp
 name: Tavily
 owner: tavily-ai
-stars: 0
-last_updated: 2025-02-27
+stars: 67
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags: ["status/active", "status/official", "category/search", "category/ai"]
 ---
@@ -99,7 +99,7 @@ const structuredData = await server.getStructuredData({
 
 ## Dependencies
 
-- Node.js >= 14.x
+- Node.js >= 14
 - Tavily account
 - Tavily API key
 

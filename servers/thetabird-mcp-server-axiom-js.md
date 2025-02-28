@@ -4,13 +4,28 @@ repo_url: https://github.com/ThetaBird/mcp-server-axiom-js
 name: Axiom JS MCP Server
 owner: ThetaBird
 stars: 1
-last_updated: 2025-01-28
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "category/analytics", "integration/axiom", "tech/javascript", "purpose/data-analysis"]
+tags:
+  [
+    "status/active",
+    "category/analytics",
+    "integration/axiom",
+    "tech/javascript",
+    "purpose/data-analysis",
+  ]
 ---
+
+```bash
+npx -y @smithery/cli install @ThetaBird/mcp-server-axiom-js --client claude
+```
+
+```bash
+npx -y @smithery/cli install @ThetaBird/mcp-server-axiom-js --client claude
+```
 
 # Axiom JS MCP Server
 

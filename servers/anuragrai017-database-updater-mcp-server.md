@@ -4,11 +4,11 @@ repo_url: https://github.com/AnuragRai017/database-updater-MCP-Server
 name: Database Updater MCP Server
 owner: AnuragRai017
 stars: 0
-last_updated: 2025-01-14
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
-sources: ["inbox/batch_008.md"]
+verified: true
+sources: ["inbox/batch_007.md"]
 tags:
   [
     "status/active",

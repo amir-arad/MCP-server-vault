@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/anjor/coinmarket-mcp-server
 name: CoinMarket MCP Server
 owner: anjor
-stars: 17
-last_updated: 2025-02-15
+stars: 18
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [

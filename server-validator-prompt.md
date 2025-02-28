@@ -19,7 +19,10 @@ Validate unverified servers (`verified: false`) by checking repository informati
 2. **For Each Server:**
 
    - Get server file content: `get_vault_file({filename: "servers/owner-repo.md"})`
-   - Visit repository URL to check:
+   - Visit repository URL: `fetch_markdown({"url":"https://github.com/servers/owner-repo"})`
+     - Use markdown (or text) to read pages, because raw HTML wastes too many tokens.
+     - If fetch fails, move to next server and make no changes
+   - check:
      - Does repository exist?
      - Current star count
      - Repository activity

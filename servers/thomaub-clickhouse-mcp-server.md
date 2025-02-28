@@ -4,10 +4,10 @@ repo_url: https://github.com/ThomAub/clickhouse_mcp_server
 name: ClickHouse Integration MCP Server
 owner: ThomAub
 stars: 1
-last_updated: 2024-12-18
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [
@@ -19,6 +19,12 @@ tags:
     "tech/sql",
   ]
 ---
+
+To install ClickHouse Integration MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@thomaub/clickhouse-mcp):
+
+```bash
+npx -y @smithery/cli install @thomaub/clickhouse-mcp --client claude
+```
 
 # ClickHouse Integration MCP Server
 

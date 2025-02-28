@@ -4,17 +4,17 @@ repo_url: https://github.com/metoro-io/metoro-mcp-server
 name: Metoro
 owner: metoro-io
 stars: 0
-last_updated: 2025-02-27
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags: ["status/active", "status/official", "category/monitoring"]
 ---
 
-#status/active #status/official #category/monitoring
-
 # Metoro
+
+#status/active #status/official #category/monitoring
 
 ## Description
 
@@ -33,52 +33,54 @@ Query and interact with kubernetes environments monitored by Metoro. This MCP se
 - Historical data analysis
 - Multi-cluster support
 
-## Installation
-
-```bash
-npm install @metoro/mcp-server
-```
-
 ## Usage
 
-```javascript
-import { MetoroServer } from "@metoro/mcp-server";
+1.  Install the [Claude Desktop App](https://claude.ai/download).
+2.  Make sure you have [Golang](https://golang.org/dl/) installed. `brew install go` for mac or `sudo apt-get install golang` for ubuntu.
+3.  Clone the repository: `git clone https://github.com/metoro-io/metoro-mcp-server.git`
+4.  Navigate to the repository directory: `cd metoro-mcp-server`
+5.  Build the server executable: `go build -o metoro-mcp-server`
 
-const server = new MetoroServer({
-  apiKey: "your-metoro-api-key",
-  clusterId: "your-cluster-id",
-});
+### If you already have a Metoro Account:
 
-// Get cluster metrics
-const metrics = await server.getMetrics({
-  timeRange: {
-    from: "now-1h",
-    to: "now",
-  },
-  metrics: ["cpu_usage", "memory_usage", "pod_count"],
-});
+Copy your auth token from your Metoro account in [Settings](https://us-east.metoro.io/settings) -> Users Settings. Create a file in `~/Library/Application Support/Claude/claude_desktop_config.json` with the following contents:
 
-// Query pod status
-const pods = await server.queryPods({
-  namespace: "production",
-  labelSelector: "app=frontend",
-  status: "Running",
-});
-
-// Set up alerts
-await server.createAlert({
-  name: "High CPU Usage",
-  condition: "cpu_usage > 80%",
-  duration: "5m",
-  severity: "critical",
-  notifications: [
-    {
-      type: "slack",
-      channel: "#alerts",
-    },
-  ],
-});
+```json
+{
+  "mcpServers": {
+    "metoro-mcp-server": {
+      "command": "<your path to Metoro MCP server go executable>/metoro-mcp-server",
+      "args": [],
+      "env": {
+        "METORO_AUTH_TOKEN": "<your auth token>",
+        "METORO_API_URL": "https://us-east.metoro.io"
+      }
+    }
+  }
+}
 ```
+
+### If you don't have a Metoro Account:
+
+No worries, you can still play around using the [Live Demo Cluster](https://demo.us-east.metoro.io/). The included token is a demo token, publicly available for anyone to use. Create a file in `~/Library/Application Support/Claude/claude_desktop_config.json` with the following contents:
+
+```json
+{
+  "mcpServers": {
+    "metoro-mcp-server": {
+      "command": "<your path to Metoro MCP server go executable>/metoro-mcp-server",
+      "args": [],
+      "env": {
+        "METORO_AUTH_TOKEN": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcklkIjoiOThlZDU1M2QtYzY4ZC00MDRhLWFhZjItNDM2ODllNWJiMGUzIiwiZW1haWwiOiJ0ZXN0QGNocmlzYmF0dGFyYmVlLmNvbSIsImV4cCI6MTgyMTI0NzIzN30.7G6alDpcZh_OThYj293Jce5rjeOBqAhOlANR_Fl5auw",
+        "METORO_API_URL": "https://demo.us-east.metoro.io"
+      }
+    }
+  }
+}
+```
+
+4.  Once you are done editing `claude_desktop_config.json` save the file and restart Claude Desktop app.
+5.  You should now see the Metoro MCP Server in the dropdown list of MCP Servers in the Claude Desktop App. You are ready to start using Metoro MCP Server with Claude Desktop App!
 
 ## Dependencies
 
@@ -86,7 +88,3 @@ await server.createAlert({
 - Metoro account
 - Metoro API key
 - Kubernetes cluster
-
-## Related Servers
-
-- None currently listed

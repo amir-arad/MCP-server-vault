@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/PhialsBasement/CMD-MCP-Server
 name: CMD MCP Server
 owner: PhialsBasement
-stars: 6
-last_updated: 2025-02-14
+stars: 7
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [

@@ -4,10 +4,10 @@ repo_url: https://github.com/namin/dafny-mcp
 name: Dafny Verification MCP Server
 owner: namin
 stars: 2
-last_updated: 2025-01-19
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_008.md"]
 tags:
   [

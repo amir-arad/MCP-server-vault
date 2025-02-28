@@ -3,13 +3,21 @@ type: server
 repo_url: https://github.com/squirrelogic/mcp-architect
 name: Architect MCP Server
 owner: squirrelogic
-stars: 11
-last_updated: 2025-02-17
+stars: 12
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
-tags: ["status/active", "category/architecture", "purpose/design", "category/ai", "tech/cloud"]
+tags:
+  [
+    "status/active",
+    "category/architecture",
+    "purpose/design",
+    "category/ai",
+    "tech/cloud",
+    "tech/nodejs",
+  ]
 ---
 
 # Architect MCP Server

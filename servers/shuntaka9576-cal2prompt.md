@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/shuntaka9576/cal2prompt
 name: Cal2Prompt MCP Server
 owner: shuntaka9576
-stars: 2
-last_updated: 2025-02-21
+stars: 3
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [
@@ -16,6 +16,7 @@ tags:
     "purpose/scheduling",
     "purpose/task-management",
     "integration/calendar",
+    "tech/rust",
   ]
 ---
 

@@ -4,12 +4,19 @@ repo_url: https://github.com/skydeckai/mcp-server-aidd
 name: AiDD MCP Server
 owner: skydeckai
 stars: 12
-last_updated: 2025-02-11
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/development", "category/ai", "purpose/code-analysis"]
+tags:
+  [
+    "status/active",
+    "category/development",
+    "category/ai",
+    "purpose/code-analysis",
+    "tech/python",
+  ]
 ---
 
 # AiDD MCP Server

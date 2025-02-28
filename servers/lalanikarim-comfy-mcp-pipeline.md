@@ -4,10 +4,10 @@ repo_url: https://github.com/lalanikarim/comfy-mcp-pipeline
 name: ComfyUI Pipeline MCP Server
 owner: lalanikarim
 stars: 3
-last_updated: 2025-02-19
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [

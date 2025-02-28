@@ -4,10 +4,10 @@ repo_url: https://github.com/seanivore/mcp-code-analyzer
 name: Python Code Analyzer MCP Server
 owner: seanivore
 stars: 10
-last_updated: 2025-02-17
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "purpose/code-analysis",
     "purpose/quality-assurance",
     "purpose/code-review",
+    "tech/nodejs",
   ]
 ---
 

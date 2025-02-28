@@ -4,10 +4,10 @@ repo_url: https://github.com/andre-jesus/claude-mcp
 name: Claude Terminal Monitor MCP Server
 owner: andre-jesus
 stars: 0
-last_updated: 2025-01-03
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [

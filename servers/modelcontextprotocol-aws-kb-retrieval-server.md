@@ -4,12 +4,19 @@ repo_url: https://github.com/modelcontextprotocol/servers/tree/main/src/aws-kb-r
 name: AWS KB Retrieval Server
 owner: modelcontextprotocol
 stars: 9794
-last_updated: 2025-02-21
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "status/official", "category/knowledge-base", "integration/aws", "integration/bedrock"]
+tags:
+  [
+    "status/active",
+    "status/official",
+    "category/knowledge-base",
+    "integration/aws",
+    "integration/bedrock",
+  ]
 ---
 
 # AWS KB Retrieval Server
@@ -18,38 +25,72 @@ tags: ["status/active", "status/official", "category/knowledge-base", "integrati
 
 ## Description
 
-Retrieval from AWS Knowledge Base using Bedrock Agent Runtime.
+An MCP server implementation for retrieving information from the AWS Knowledge Base using the Bedrock Agent Runtime.
 
 ## Features
 
-- Knowledge base retrieval
-- Bedrock agent integration
-- Runtime management
-- Query processing
-- Content indexing
-- Search optimization
-- Response formatting
-- Context handling
+- **RAG (Retrieval-Augmented Generation)**: Retrieve context from the AWS Knowledge Base based on a query and a Knowledge Base ID.
+- **Supports multiple results retrieval**: Option to retrieve a customizable number of results.
 
-## Installation
+## Tools
 
-```bash
-npm install @modelcontextprotocol/aws-kb-retrieval-server
-```
+- **retrieve_from_aws_kb**
+  - Perform retrieval operations using the AWS Knowledge Base.
+  - Inputs:
+    - `query` (string): The search query for retrieval.
+    - `knowledgeBaseId` (string): The ID of the AWS Knowledge Base.
+    - `n` (number, optional): Number of results to retrieve (default: 3).
 
-## Usage
+## Configuration
 
-```javascript
+### Setting up AWS Credentials
+
+1.  Obtain AWS access key ID, secret access key, and region from the AWS Management Console.
+2.  Ensure these credentials have appropriate permissions for Bedrock Agent Runtime operations.
+
+### Usage with Claude Desktop
+
+Add this to your `claude_desktop_config.json`:
+
+#### Docker
+
+```json
 {
   "mcpServers": {
-    "aws-kb": {
-      "command": "npx",
-      "args": ["@modelcontextprotocol/aws-kb-retrieval-server"],
+    "aws-kb-retrieval": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "AWS_ACCESS_KEY_ID",
+        "-e",
+        "AWS_SECRET_ACCESS_KEY",
+        "-e",
+        "AWS_REGION",
+        "mcp/aws-kb-retrieval-server"
+      ],
       "env": {
-        "AWS_ACCESS_KEY_ID": "your-access-key",
-        "AWS_SECRET_ACCESS_KEY": "your-secret-key",
-        "AWS_REGION": "us-east-1",
-        "BEDROCK_AGENT_ID": "your-agent-id"
+        "AWS_ACCESS_KEY_ID": "YOUR_ACCESS_KEY_HERE",
+        "AWS_SECRET_ACCESS_KEY": "YOUR_SECRET_ACCESS_KEY_HERE",
+        "AWS_REGION": "YOUR_AWS_REGION_HERE"
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "mcpServers": {
+    "aws-kb-retrieval": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-aws-kb-retrieval"],
+      "env": {
+        "AWS_ACCESS_KEY_ID": "YOUR_ACCESS_KEY_HERE",
+        "AWS_SECRET_ACCESS_KEY": "YOUR_SECRET_ACCESS_KEY_HERE",
+        "AWS_REGION": "YOUR_AWS_REGION_HERE"
       }
     }
   }
@@ -62,9 +103,3 @@ npm install @modelcontextprotocol/aws-kb-retrieval-server
 - AWS account
 - Bedrock access
 - Knowledge base setup
-
-## Related Servers
-
-- RafalWilinski/aws-mcp
-- rishikavikondala/mcp-server-aws
-- baryhuang/mcp-server-aws-resources-python

@@ -4,10 +4,10 @@ repo_url: https://github.com/LostInBrittany/clever-doc-mcp-server
 name: Clever Cloud Documentation MCP Server
 owner: LostInBrittany
 stars: 0
-last_updated: 2025-01-29
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
@@ -26,7 +26,7 @@ tags:
 
 ## Description
 
-The MCP server provides access to Clever Cloud's documentation, allowing users to query and interact with it through Model Context Protocol clients like Claude Desktop.
+This MCP demo Server based on [FastMCP](https://github.com/punkpeye/fastmcp), exposes [Clever Cloud](https://clever-cloud.com)'s documentation, allowing users to query and interact with it through Model Context Protocol clients like Claude Desktop.
 
 ## Features
 
@@ -41,30 +41,39 @@ The MCP server provides access to Clever Cloud's documentation, allowing users t
 - Content indexing
 - Update notifications
 
-## Installation
-
-```bash
-npm install @lostinbrittany/clever-doc-mcp
-```
-
 ## Usage
 
-```javascript
+To use this server in an MCP client such as Claude Desktop:
+
+```json
 {
   "mcpServers": {
-    "clever-docs": {
+    "mcp-clever-demo": {
       "command": "npx",
-      "args": ["@lostinbrittany/clever-doc-mcp"],
-      "env": {
-        "DOC_SOURCE": "https://api.clever-cloud.com/docs",
-        "CACHE_TTL": "3600",
-        "MAX_RESULTS": "10",
-        "SEARCH_DEPTH": "3",
-        "INDEX_UPDATE": "daily"
-      }
+      "args": ["-y", "mcp-clever-demo"]
     }
   }
 }
+```
+
+## Development
+
+### Test with `mcp-cli`
+
+The fastest way to test and debug your server is with fastmcp dev:
+
+```bash
+npx fastmcp dev src/index.ts
+```
+
+This will run your server with [`mcp-cli`](https://github.com/wong2/mcp-cli) for testing and debugging your MCP server in the terminal.
+
+### Inspect with MCP Inspector
+
+Another way is to use the official [MCP Inspector](https://modelcontextprotocol.io/docs/tools/inspector) to inspect your server with a Web UI:
+
+```bash
+npx fastmcp inspect src/index.ts
 ```
 
 ## Dependencies

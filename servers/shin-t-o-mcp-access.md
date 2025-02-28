@@ -4,12 +4,19 @@ repo_url: https://github.com/shin-t-o/mcp-access
 name: Access MCP Server
 owner: shin-t-o
 stars: 0
-last_updated: 2025-02-06
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/content-processing", "category/automation", "purpose/data-extraction"]
+tags:
+  [
+    "status/active",
+    "category/content-processing",
+    "category/automation",
+    "purpose/data-extraction",
+    "tech/nodejs",
+  ]
 ---
 
 # Access MCP Server

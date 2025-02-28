@@ -4,10 +4,10 @@ repo_url: https://github.com/r3-yamauchi/cdata-connect-cloud-mcp-server
 name: CData Connect Cloud MCP Server
 owner: r3-yamauchi
 stars: 0
-last_updated: 2025-02-18
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [

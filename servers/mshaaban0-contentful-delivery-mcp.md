@@ -4,10 +4,10 @@ repo_url: https://github.com/mshaaban0/contentful-delivery-mcp
 name: Contentful Delivery MCP Server
 owner: mshaaban0
 stars: 0
-last_updated: 2025-02-20
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [
@@ -15,36 +15,42 @@ tags:
     "category/cms",
     "integration/contentful",
     "tech/typescript",
+    "tech/javascript",
     "purpose/content-delivery",
     "purpose/notes",
+    "integration/mastra-ai"
   ]
 ---
 
 # Contentful Delivery MCP Server
 
-#status/active #category/cms #integration/contentful #tech/typescript #purpose/content-delivery #purpose/notes
+#status/active #category/cms #integration/contentful #tech/typescript #tech/javascript #purpose/content-delivery #purpose/notes #integration/mastra-ai
 
 ## Description
 
-A TypeScript-based MCP server that interacts with Contentful's Delivery API, enabling users to create, query, and summarize text notes through natural language.
+A TypeScript-based MCP server that provides seamless access to Contentful's Delivery API through AI assistants. The server enables natural language querying and retrieval of content entries, assets, and content types from Contentful, with built-in support for Mastra AI integration.
 
 ## Features
 
-- Content delivery
-- Note creation
-- Query capabilities
-- Text summarization
-- Content management
-- Natural language interface
-- Type safety
-- Content modeling
-- Asset handling
+- Natural language content querying
+- Entry management and retrieval
+- Asset handling and browsing
+- Content type schema access
+- Pagination support
+- Rich text content handling
+- Mastra AI integration
+- Type-safe implementation
+- Content modeling support
 - Version control
 
 ## Installation
 
 ```bash
+# Project installation
 npm install @mshaaban0/contentful-delivery-mcp
+
+# Global installation
+npm install -g @mshaaban0/contentful-delivery-mcp
 ```
 
 ## Usage
@@ -70,11 +76,13 @@ npm install @mshaaban0/contentful-delivery-mcp
 ## Dependencies
 
 - Node.js >= 16
-- TypeScript
+- TypeScript runtime
 - Contentful SDK
 - Content processor
 - Query engine
 - Cache system
+- Mastra AI SDK (optional)
+- MCP Inspector (for debugging)
 
 ## Related Servers
 

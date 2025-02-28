@@ -3,13 +3,21 @@ type: server
 repo_url: https://github.com/scorzeth/anki-mcp-server
 name: Anki MCP Server
 owner: scorzeth
-stars: 17
-last_updated: 2025-02-19
+stars: 22
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
-tags: ["status/active", "category/education", "integration/anki", "purpose/learning", "category/ai"]
+tags:
+  [
+    "status/active",
+    "category/education",
+    "integration/anki",
+    "purpose/learning",
+    "category/ai",
+    "tech/typescript",
+  ]
 ---
 
 # Anki MCP Server

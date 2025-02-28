@@ -3,22 +3,31 @@ type: server
 repo_url: https://github.com/zxkane/mcp-server-amazon-bedrock
 name: Amazon Bedrock MCP Server
 owner: zxkane
-stars: 12
-last_updated: 2025-01-26
+stars: 14
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
-tags: ["status/active", "category/ai", "integration/aws", "integration/bedrock", "purpose/image-generation"]
+tags:
+  [
+    "status/active",
+    "category/ai",
+    "integration/aws",
+    "integration/bedrock",
+    "purpose/image-generation",
+    "tech/javascript",
+    "tech/typescript"
+  ]
 ---
 
 # Amazon Bedrock MCP Server
 
-#status/active #category/ai #integration/aws #integration/bedrock #purpose/image-generation
+#status/active #category/ai #integration/aws #integration/bedrock #purpose/image-generation #tech/javascript #tech/typescript
 
 ## Description
 
-Provides access to Amazon Bedrock's Nova Canvas model for AI image generation.
+Provides access to Amazon Bedrock's Nova Canvas model for AI image generation. It allows AI models to generate images using text prompts, leveraging the power of Amazon Bedrock.
 
 ## Features
 
@@ -30,6 +39,8 @@ Provides access to Amazon Bedrock's Nova Canvas model for AI image generation.
 - Batch processing
 - Result management
 - AWS service integration
+- High-quality image generation
+- Flexible configuration
 
 ## Installation
 
@@ -62,7 +73,8 @@ npm install @zxkane/mcp-server-amazon-bedrock
 - AWS credentials
 - Amazon Bedrock access
 - AWS SDK
+- TypeScript runtime
 
 ## Related Servers
 
-- None currently listed
+- exa-labs/exa-mcp-server

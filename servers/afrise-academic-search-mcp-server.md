@@ -3,13 +3,14 @@ type: server
 repo_url: https://github.com/afrise/academic-search-mcp-server
 name: Academic Search MCP Server
 owner: afrise
-stars: 5
-last_updated: 2025-02-12
+stars: 6
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/search", "category/academic", "purpose/research"]
+tags:
+  ["status/active", "category/search", "category/academic", "purpose/research"]
 ---
 
 # Academic Search MCP Server

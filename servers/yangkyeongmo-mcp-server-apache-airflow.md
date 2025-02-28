@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/yangkyeongmo/mcp-server-apache-airflow
 name: Apache Airflow MCP Server
 owner: yangkyeongmo
 stars: 1
-last_updated: 2025-02-18
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
 tags: ["status/active", "category/workflow", "integration/airflow", "purpose/orchestration"]
 ---
@@ -33,28 +33,69 @@ Provides a standardized way for MCP clients to interact with Apache Airflow's RE
 
 ## Installation
 
-```bash
-npm install @yangkyeongmo/mcp-server-apache-airflow
+Set the following environment variables:
+
+```
+AIRFLOW_HOST=<your-airflow-host>
+AIRFLOW_USERNAME=<your-airflow-username>
+AIRFLOW_PASSWORD=<your-airflow-password>
 ```
 
-## Usage
+Add to your `claude_desktop_config.json`:
 
-```javascript
+```json
 {
-  "mcpServers": {
-    "airflow": {
-      "command": "npx",
-      "args": ["@yangkyeongmo/mcp-server-apache-airflow"],
-      "env": {
-        "AIRFLOW_API_URL": "http://localhost:8080",
-        "AIRFLOW_USERNAME": "admin",
-        "AIRFLOW_PASSWORD": "admin",
-        "REFRESH_INTERVAL": "30"
-      }
-    }
-  }
+ "mcpServers": {
+ "mcp-server-apache-airflow": {
+ "command": "uvx",
+ "args": ["mcp-server-apache-airflow"],
+ "env": {
+ "AIRFLOW_HOST": "https://your-airflow-host",
+ "AIRFLOW_USERNAME": "your-username",
+ "AIRFLOW_PASSWORD": "your-password"
+ }
+ }
+ }
 }
 ```
+
+Alternative configuration using `uv`:
+
+```json
+{
+ "mcpServers": {
+ "mcp-server-apache-airflow": {
+ "command": "uv",
+ "args": [
+ "--directory",
+ "/path/to/mcp-server-apache-airflow",
+ "run",
+ "mcp-server-apache-airflow"
+ ],
+ "env": {
+ "AIRFLOW_HOST": "https://your-airflow-host",
+ "AIRFLOW_USERNAME": "your-username",
+ "AIRFLOW_PASSWORD": "your-password"
+ }
+ }
+ }
+}
+```
+
+Replace `/path/to/mcp-server-apache-airflow` with the actual path where you've cloned the repository.
+
+### Manual Execution
+
+You can also run the server manually:
+
+```bash
+python src/server.py
+```
+
+Options:
+
+*   `--port`: Port to listen on for SSE (default: 8000)
+*   `--transport`: Transport type (stdio/sse, default: stdio)
 
 ## Dependencies
 

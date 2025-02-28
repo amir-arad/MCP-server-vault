@@ -3,13 +3,21 @@ type: server
 repo_url: https://github.com/sooperset/mcp-atlassian
 name: Atlassian MCP Server
 owner: sooperset
-stars: 70
-last_updated: 2025-02-21
+stars: 83
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "category/productivity", "integration/atlassian", "integration/confluence", "integration/jira"]
+tags:
+  [
+    "status/active",
+    "category/productivity",
+    "integration/atlassian",
+    "integration/confluence",
+    "integration/jira",
+    "tech/python",
+  ]
 ---
 
 # Atlassian MCP Server

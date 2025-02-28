@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/neo4j-contrib/mcp-neo4j/
 name: Neo4j
 owner: neo4j-contrib
-stars: 0
-last_updated: 2025-02-27
+stars: 67
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags: ["status/active", "status/official", "category/database"]
 ---

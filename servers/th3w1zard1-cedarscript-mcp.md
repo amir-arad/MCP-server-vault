@@ -4,10 +4,10 @@ repo_url: https://github.com/th3w1zard1/cedarscript-mcp
 name: CEDARScript MCP Server
 owner: th3w1zard1
 stars: 7
-last_updated: 2025-01-27
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
@@ -18,6 +18,12 @@ tags:
     "category/language",
   ]
 ---
+
+To install CEDARScript MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@th3w1zard1/cedarscript-mcp):
+
+```bash
+npx -y @smithery/cli install @th3w1zard1/cedarscript-mcp --client claude
+```
 
 # CEDARScript MCP Server
 

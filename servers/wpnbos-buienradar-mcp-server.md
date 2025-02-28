@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/wpnbos/buienradar-mcp-server
 name: Buienradar MCP Server
 owner: wpnbos
 stars: 0
-last_updated: 2025-02-17
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [
@@ -40,8 +40,10 @@ Fetches precipitation forecasts for any location using Buienradar and integrates
 
 ## Installation
 
+To install Buienradar MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@wpnbos/buienradar-mcp-server):
+
 ```bash
-npm install @wpnbos/buienradar-mcp
+npx -y @smithery/cli install @wpnbos/buienradar-mcp-server --client claude
 ```
 
 ## Usage

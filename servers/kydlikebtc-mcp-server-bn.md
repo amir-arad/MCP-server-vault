@@ -4,10 +4,10 @@ repo_url: https://github.com/kydlikebtc/mcp-server-bn
 name: Binance Spot Trading MCP Server
 owner: kydlikebtc
 stars: 2
-last_updated: 2025-02-08
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [
@@ -29,19 +29,81 @@ This server provides a robust interface for Binance spot trading operations, inc
 
 ## Features
 
-- Spot trading operations
-- API credential management
-- Order execution
-- Balance monitoring
-- Order tracking
-- Account management
-- Market data access
-- Security handling
+### Spot Trading Operations
 
-## Installation
+- Execute spot trading operations (LIMIT/MARKET orders)
+- Monitor account balances
+- Track and manage open orders
+- Cancel existing orders
 
-```bash
-npm install @kydlikebtc/mcp-server-bn
+## Tools
+
+#### API Configuration
+
+##### `configure_api_keys`
+
+Securely store your Binance API credentials:
+
+```javascript
+await configureBinanceApiKeys({
+  apiKey: "your-api-key",
+  apiSecret: "your-api-secret",
+});
+```
+
+#### Spot Trading Tools
+
+##### `create_spot_order`
+
+Create LIMIT or MARKET orders:
+
+```javascript
+// LIMIT order
+await createSpotOrder({
+  symbol: "BTCUSDT",
+  side: "BUY",
+  type: "LIMIT",
+  quantity: "0.001",
+  price: "40000",
+});
+
+// MARKET order
+await createSpotOrder({
+  symbol: "BTCUSDT",
+  side: "BUY",
+  type: "MARKET",
+  quantity: "0.001",
+});
+```
+
+##### `cancel_order`
+
+Cancel an existing order:
+
+```javascript
+await cancelOrder({
+  symbol: "BTCUSDT",
+  orderId: "12345678",
+});
+```
+
+##### `get_balances`
+
+Check your account balances:
+
+```javascript
+const balances = await getBalances();
+// Returns: { BTC: '0.1', USDT: '1000', ... }
+```
+
+##### `get_open_orders`
+
+List all open orders:
+
+```javascript
+const orders = await getOpenOrders({
+  symbol: "BTCUSDT", // Optional: specify symbol
+});
 ```
 
 ## Usage

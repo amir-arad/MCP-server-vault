@@ -4,12 +4,18 @@ repo_url: https://github.com/ryanjoachim/mcp-batchit
 name: BatchIt MCP Server
 owner: ryanjoachim
 stars: 12
-last_updated: 2025-02-11
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "category/utility", "purpose/batch-processing", "purpose/optimization"]
+tags:
+  [
+    "status/active",
+    "category/utility",
+    "purpose/batch-processing",
+    "purpose/optimization",
+  ]
 ---
 
 # BatchIt MCP Server

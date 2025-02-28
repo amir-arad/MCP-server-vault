@@ -4,12 +4,18 @@ repo_url: https://github.com/reeeeemo/ancestry-mcp
 name: Ancestry MCP Server
 owner: reeeeemo
 stars: 9
-last_updated: 2025-02-17
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
-tags: ["status/active", "category/genealogy", "purpose/data-analysis", "tech/gedcom"]
+tags:
+  [
+    "status/active",
+    "category/genealogy",
+    "purpose/data-analysis",
+    "tech/gedcom",
+  ]
 ---
 
 # Ancestry MCP Server

@@ -4,12 +4,18 @@ repo_url: https://github.com/Sunwood-ai-labs/aira-mcp-server
 name: Aira MCP Server
 owner: Sunwood-ai-labs
 stars: 1
-last_updated: 2024-12-22
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/version-control", "integration/git", "purpose/commit-messages"]
+tags:
+  [
+    "status/active",
+    "category/version-control",
+    "integration/git",
+    "purpose/commit-messages",
+  ]
 ---
 
 # Aira MCP Server

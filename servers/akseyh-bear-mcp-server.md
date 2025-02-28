@@ -4,12 +4,19 @@ repo_url: https://github.com/akseyh/bear-mcp-server
 name: Bear MCP Server
 owner: akseyh
 stars: 12
-last_updated: 2025-02-17
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "category/productivity", "integration/bear", "purpose/note-management", "tech/macos"]
+tags:
+  [
+    "status/active",
+    "category/productivity",
+    "integration/bear",
+    "purpose/note-management",
+    "tech/macos",
+  ]
 ---
 
 # Bear MCP Server

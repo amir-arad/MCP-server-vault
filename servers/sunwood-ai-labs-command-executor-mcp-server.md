@@ -4,10 +4,10 @@ repo_url: https://github.com/Sunwood-ai-labs/command-executor-mcp-server
 name: Command Executor MCP Server
 owner: Sunwood-ai-labs
 stars: 13
-last_updated: 2025-02-09
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [

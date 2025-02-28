@@ -4,19 +4,20 @@ repo_url: https://github.com/sdairs/claudekeep
 name: ClaudeKeep MCP Server
 owner: sdairs
 stars: 4
-last_updated: 2025-01-14
-status: active
+last_updated: 2025-02-28
+status: deprecated
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
-    "status/active",
+    "status/deprecated",
     "category/knowledge-management",
     "purpose/note-taking",
     "purpose/organization",
     "tech/typescript",
     "category/productivity",
+    "tech/nodejs",
   ]
 ---
 

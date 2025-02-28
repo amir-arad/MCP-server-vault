@@ -4,10 +4,10 @@ repo_url: https://github.com/raw391/coin_daemon_mcp
 name: Cryptocurrency Daemon MCP Server
 owner: raw391
 stars: 0
-last_updated: 2025-02-14
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "purpose/wallet-operations",
     "tech/rpc",
     "category/blockchain",
+    "tech/typescript",
   ]
 ---
 

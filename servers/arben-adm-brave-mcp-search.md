@@ -4,10 +4,10 @@ repo_url: https://github.com/arben-adm/brave-mcp-search
 name: Brave Search MCP Server
 owner: arben-adm
 stars: 2
-last_updated: 2025-02-20
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [
@@ -64,7 +64,7 @@ npm install @arben-adm/brave-mcp-search
 
 ## Dependencies
 
-- Node.js >= 14
+- Node.js >= 16
 - Brave Search API key
 - Internet connection
 - Cache storage (optional)

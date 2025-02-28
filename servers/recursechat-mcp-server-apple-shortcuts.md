@@ -3,13 +3,21 @@ type: server
 repo_url: https://github.com/recursechat/mcp-server-apple-shortcuts
 name: Apple Shortcuts MCP Server
 owner: recursechat
-stars: 56
-last_updated: 2025-02-21
+stars: 67
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
-tags: ["status/active", "category/automation", "integration/apple", "tech/macos", "purpose/workflow-automation"]
+tags:
+  [
+    "status/active",
+    "category/automation",
+    "integration/apple",
+    "tech/macos",
+    "purpose/workflow-automation",
+    "tech/nodejs",
+  ]
 ---
 
 # Apple Shortcuts MCP Server

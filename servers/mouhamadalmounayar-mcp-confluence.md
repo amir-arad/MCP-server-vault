@@ -4,10 +4,10 @@ repo_url: https://github.com/mouhamadalmounayar/mcp-confluence
 name: Confluence Slash Commands MCP Server
 owner: mouhamadalmounayar
 stars: 9
-last_updated: 2025-02-15
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [
@@ -17,29 +17,31 @@ tags:
     "purpose/slash-commands",
     "integration/zed",
     "purpose/context",
+    "tech/typescript",
+    "tech/nodejs"
   ]
 ---
 
 # Confluence Slash Commands MCP Server
 
-#status/active #category/productivity #integration/confluence #purpose/slash-commands #integration/zed #purpose/context
+#status/active #category/productivity #integration/confluence #purpose/slash-commands #integration/zed #purpose/context #tech/typescript #tech/nodejs
 
 ## Description
 
-A model context server that provides prompts that can be used as slash commands for clients like Zed Editor, in order to add page contents as context to the AI assistant.
+A model context server that provides prompts that can be used as slash commands for clients like Zed Editor, in order to add page contents as context to the AI assistant. The server enables seamless integration between Confluence pages and AI tools through slash commands.
 
 ## Features
 
-- Slash commands
-- Context integration
-- Confluence access
-- Page content retrieval
-- Command suggestions
-- Context management
-- Editor integration
-- Content formatting
+- Slash commands for Confluence integration
+- Context integration with AI assistants
+- Confluence page and blog post access
+- Page content retrieval and formatting
+- Command suggestions and auto-completion
+- Context management and caching
+- Editor integration (Zed)
+- Content formatting and parsing
 - Search capabilities
-- Permission handling
+- Permission handling and authentication
 
 ## Installation
 
@@ -70,7 +72,7 @@ npm install @mouhamadalmounayar/mcp-confluence
 ## Dependencies
 
 - Node.js >= 16
-- Confluence API access
+- Confluence API access token
 - Command parser
 - Context manager
 - Content formatter
