@@ -91,6 +91,21 @@ The response is an array of objects with the following structure:
 }
 ```
 
+# JsonLogic Query for Unverified Servers
+
+This document demonstrates a working JsonLogic query that lists all files with `verified: false` in their frontmatter.
+
+### Unverified Servers
+
+```javascript
+
+{
+  "query": "{\"and\": [{\"===\": [{\"var\": \"frontmatter.verified\"}, false]}, {\"===\": [{\"var\": \"frontmatter.type\"}, \"server\"]}]}",
+  "queryType": "jsonlogic"
+}
+
+```
+
 ## Notes
 
 - When constructing JsonLogic queries, remember to escape quotes and properly stringify the JSON object

@@ -10,7 +10,8 @@ Validate unverified servers (`verified: false`) by checking repository informati
 
    ```javascript
    search_vault({
-     query: "{\"and\\":[{\"==\":[{\"var\\":\"type\\"},\"server\"]},{\"==\":[{\"var\":\"verified\"},false]}]}",
+     query:
+       '{"and": [{"===": [{"var": "frontmatter.verified"}, false]}, {"===": [{"var": "frontmatter.type"}, "server"]}]}',
      queryType: "jsonlogic",
    });
    ```

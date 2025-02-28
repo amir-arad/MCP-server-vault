@@ -1,60 +1,83 @@
 ---
+type: server
 repo_url: https://github.com/cloudflare/mcp-server-cloudflare
+name: Cloudflare MCP Server
 owner: cloudflare
-name: mcp-server-cloudflare
 stars: 277
 last_updated: 2025-02-21
 status: active
 official: true
-verified: true
-sources:
-  - inbox
-  - awesome-mcp-servers-wong2
-  - mcpservers-org
-  - opentools
-  - smithery-ai
+verified: false
+sources: ["inbox/batch_006.md"]
 tags:
-  - status/active
-  - status/official
-  - category/cloud
-  - integration/cloudflare
-  - tech/typescript
-  - purpose/infrastructure
+  [
+    "status/active",
+    "status/official",
+    "category/cloud",
+    "integration/cloudflare",
+    "purpose/infrastructure",
+    "category/ai",
+  ]
 ---
 
 # Cloudflare MCP Server
 
-#status/active #status/official #category/cloud #integration/cloudflare #tech/typescript #purpose/infrastructure
+#status/active #status/official #category/cloud #integration/cloudflare #purpose/infrastructure #category/ai
 
 ## Description
 
-The Cloudflare MCP server lets you use Claude Desktop, or any MCP Client, to use natural language to accomplish tasks on your Cloudflare account. Interact with Cloudflare's developer platform including Workers, KV, R2, D1, and other services.
+Lets you use Claude Desktop, or any MCP Client, to use natural language to accomplish things on your Cloudflare account. This official MCP server enables natural language control of Cloudflare services and configurations.
 
 ## Features
 
-- Deploy and configure Cloudflare resources
-- Interact with Cloudflare Workers
-- Manage KV, R2, and D1 data stores
-- Control DNS settings
-- Configure security settings
-- View analytics and logs
+- Natural language control
+- DNS management
+- SSL/TLS configuration
+- Security settings
+- Cache control
+- Worker deployment
+- Analytics access
+- Rule management
+- Domain control
+- Performance optimization
 
 ## Installation
 
 ```bash
-npm install -g @cloudflare/mcp-server
-npx @cloudflare/mcp-server
+npm install @cloudflare/mcp-server
 ```
 
-## Authentication
+## Usage
 
-The server uses Cloudflare API tokens for authentication. You'll need to create an API token with appropriate permissions in your Cloudflare dashboard.
+```javascript
+{
+  "mcpServers": {
+    "cloudflare": {
+      "command": "npx",
+      "args": ["@cloudflare/mcp-server"],
+      "env": {
+        "CF_API_TOKEN": "your-api-token",
+        "CF_ACCOUNT_ID": "your-account-id",
+        "ZONE_ID": "optional-zone-id",
+        "AI_MODEL": "gpt-4",
+        "LOG_LEVEL": "info"
+      }
+    }
+  }
+}
+```
 
 ## Dependencies
 
-- Node.js v16+
-- Cloudflare account with API access
+- Node.js >= 16
+- Cloudflare API token
+- AI model access
+- Natural language processor
+- API client
+- Command parser
 
 ## Related Servers
 
-- [Cloudflare Github Backup MCP](https://github.com/DynamicEndpoints/cloudflare-github-backup-mcp)
+- dynamicendpoints-cloudflare-github-backup-mcp
+- cloudflare-mcp-server-cloudflare
+- modelcontextprotocol-cloud-server

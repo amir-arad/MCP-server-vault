@@ -1,74 +1,83 @@
 ---
 type: server
 repo_url: https://github.com/fireproof-storage/mcp-database-server
-name: Fireproof
+name: Fireproof Database MCP Server
 owner: fireproof-storage
-stars: 0
-last_updated: 2025-02-27
+stars: 8
+last_updated: 2025-02-09
 status: active
 official: true
 verified: false
-sources: ["inbox"]
-tags: ["status/active", "status/official", "category/database"]
+sources: ["inbox/batch_008.md"]
+tags:
+  [
+    "status/active",
+    "status/official",
+    "category/database",
+    "tech/ledger",
+    "purpose/sync",
+    "purpose/storage",
+  ]
 ---
 
-#status/active #status/official #category/database
+# Fireproof Database MCP Server
 
-# Fireproof
+#status/active #status/official #category/database #tech/ledger #purpose/sync #purpose/storage
 
 ## Description
 
-Immutable ledger database with live synchronization. This MCP server provides a robust database solution with built-in immutability and real-time synchronization capabilities, powered by [Fireproof](https://fireproof.storage).
+Fireproof ledger database with multi-user sync. This server provides a secure, distributed database solution with built-in synchronization capabilities.
 
 ## Features
 
-- Immutable ledger-based storage
-- Real-time data synchronization
-- Cryptographic verification
-- Audit trail capabilities
-- Conflict-free replication
-- Offline-first architecture
-- Secure data storage
-- Multi-device synchronization
+- Ledger database
+- Multi-user sync
+- Data integrity
+- Transaction logging
+- Conflict resolution
+- Real-time updates
+- User management
+- Access control
+- Audit trail
+- Backup support
 
 ## Installation
 
 ```bash
-npm install @fireproof/mcp-server
+npm install @fireproof-storage/database-mcp
 ```
 
 ## Usage
 
 ```javascript
-import { FireproofServer } from "@fireproof/mcp-server";
-
-const server = new FireproofServer({
-  apiKey: "your-fireproof-api-key",
-  databaseName: "my-ledger-db",
-});
-
-// Create a new record
-const record = await server.create({
-  collection: "transactions",
-  data: {
-    amount: 100,
-    description: "Payment for services",
-    timestamp: new Date().toISOString(),
-  },
-});
-
-// Subscribe to changes
-server.subscribe("transactions", (changes) => {
-  console.log("New changes:", changes);
-});
+{
+  "mcpServers": {
+    "fireproof-db": {
+      "command": "npx",
+      "args": ["@fireproof-storage/database-mcp"],
+      "env": {
+        "DB_PATH": "./fireproof-data",
+        "SYNC_INTERVAL": "5000",
+        "MAX_USERS": "100",
+        "CONFLICT_STRATEGY": "last-write-wins",
+        "BACKUP_ENABLED": "true"
+      }
+    }
+  }
+}
 ```
 
 ## Dependencies
 
-- Node.js >= 14.x
-- Fireproof API key
-- Active Fireproof account
+- Node.js >= 16
+- Ledger engine
+- Sync manager
+- User authenticator
+- Conflict resolver
+- Backup system
 
 ## Related Servers
 
-- None currently listed
+- modelcontextprotocol-database-server
+- neondatabase-mcp-server-neon
+- motherduckdb-mcp-server-motherduck
