@@ -22,12 +22,10 @@
 
    - Tags: Scan the vault for existing tags using the `search_vault` tool to understand the taxonomy and tagging standards
      ```javascript
-     // Use this JsonLogic query to retrieve all tags from all files:
      {
        "query": "{\"var\": \"tags\"}",
        "queryType": "jsonlogic"
      }
-     // This will return an array of objects containing filenames and their associated tags
      ```
    - Notes example: Review 3 random existing server files to understand the format and content structure
    - Pay attention to details. for exampler, the tags appear twice in the note: once in the frontmatter and another time between the title and the description. compare the examples to the template to make sure you are familiar with any neuances.
