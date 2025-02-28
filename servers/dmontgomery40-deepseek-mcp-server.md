@@ -1,12 +1,13 @@
 ---
+type: server
 repo_url: https://github.com/DMontgomery40/deepseek-mcp-server
+name: DeepSeek MCP Server
 owner: DMontgomery40
-name: deepseek-mcp-server
-stars: 57
-last_updated: 2025-02-20
+stars: 70
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources:
   - inbox
   - awesome-mcp-servers-wong2
@@ -17,54 +18,64 @@ tags:
   - status/community
   - category/llm
   - integration/deepseek
-  - tech/typescript
+  - tech/javascript
   - purpose/reasoning
 ---
 
-#status/active #status/community #category/llm #integration/deepseek #tech/typescript #purpose/reasoning
+#status/active #status/community #category/llm #integration/deepseek #tech/javascript #purpose/reasoning
 
 # DeepSeek MCP Server
 
 ## Description
 
-The DeepSeek MCP Server is a Model Context Protocol implementation that integrates DeepSeek's advanced language models with MCP-compatible applications. It offers features like chat completion, custom model selection, and parameter control for enhancing language-based interactions.
+A Model Context Protocol (MCP) server for the DeepSeek API, allowing seamless integration of DeepSeek's powerful language models with MCP-compatible applications like Claude Desktop. The server provides access to DeepSeek's advanced models including R1 (reasoner) and V3 (chat) with customizable parameters and multi-turn conversation support.
 
 ## Features
 
-- Integration with DeepSeek's language models
-- Support for DeepSeek R1 reasoning engine
-- Chat completion API
-- Custom parameter configuration
-- Multi-model support
+- Integration with DeepSeek's language models (R1 and V3)
+- Automatic model fallback if primary model is unavailable
+- Custom model selection and configuration
+- Temperature control (0.0 - 2.0)
+- Max tokens limit adjustment
+- Top P sampling (0.0 - 1.0)
+- Presence and frequency penalty settings
+- Multi-turn conversation support with context preservation
+- Resource discovery for available models and configurations
 
 ## Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/DMontgomery40/deepseek-mcp-server.git
-cd deepseek-mcp-server
+# Install via npm
+npm install -g deepseek-mcp-server
 
-# Install dependencies
-npm install
-
-# Configure your API key
-echo "DEEPSEEK_API_KEY=your_api_key" > .env
-
-# Start the server
-npm start
+# Or install via Smithery
+npx -y @smithery/cli install @dmontgomery40/deepseek-mcp-server --client claude
 ```
 
-## Authentication
+## Usage
 
-The server requires a DeepSeek API key which should be stored in the environment variables or a .env file.
+```javascript
+{
+  "mcpServers": {
+    "deepseek": {
+      "command": "npx",
+      "args": ["-y", "deepseek-mcp-server"],
+      "env": {
+        "DEEPSEEK_API_KEY": "your-api-key"
+      }
+    }
+  }
+}
+```
 
 ## Dependencies
 
-- Node.js v16+
-- DeepSeek API access
+- Node.js
+- DeepSeek API key
+- Internet connection
 
 ## Related Servers
 
-- [Deepseek Claude MCP Server](https://github.com/HarshJ23/deepseek-claude-MCP-server)
-- [Deepseek Thinking Claude 3.5 Sonnet Cline MCP](https://github.com/newideas99/Deepseek-Thinking-Claude-3.5-Sonnet-CLINE-MCP)
-- [Deepseek R1](https://github.com/66julienmartin/MCP-server-Deepseek_R1)
+- [Deepseek Claude MCP Server](https://github.com/HarshJ23/deepseek-claude-MCP-server) - Alternative implementation
+- [Deepseek Thinking Claude 3.5 Sonnet Cline MCP](https://github.com/newideas99/Deepseek-Thinking-Claude-3.5-Sonnet-CLINE-MCP) - Enhanced version
+- [Deepseek R1](https://github.com/66julienmartin/MCP-server-Deepseek_R1) - R1 model focused implementation

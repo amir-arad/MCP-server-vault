@@ -1,41 +1,42 @@
 ---
 type: server
 repo_url: https://github.com/browserbase/mcp-server-browserbase
-name: mcp-server-browserbase
+name: Browserbase MCP Server
 owner: browserbase
-stars: 0
-last_updated: 2025-02-27
+stars: 118
+last_updated: 2025-02-21
 status: active
-official: true
+official: false
 verified: false
-sources:
-  - inbox
+sources: ["inbox/batch_004.md"]
 tags:
-  - status/active
-  - status/official
-  - category/web-scraping
-  - category/automation
-  - purpose/development
+  [
+    "status/active",
+    "category/automation",
+    "integration/puppeteer",
+    "integration/stagehand",
+    "purpose/browser-automation",
+  ]
 ---
 
 # Browserbase MCP Server
 
-#status/active #status/official #category/web-scraping #category/automation #purpose/development
+#status/active #category/automation #integration/puppeteer #integration/stagehand #purpose/browser-automation
 
 ## Description
 
-Browserbase MCP Server enables cloud-based browser automation for web navigation, data extraction, form filling, and more. It provides a reliable and scalable solution for browser-based tasks without requiring local browser instances.
+This server provides cloud browser automation capabilities using Browserbase, Puppeteer, and Stagehand. This server enables LLMs to interact with web pages, take screenshots, and execute JavaScript in a cloud browser environment.
 
 ## Features
 
-- Cloud-based browser automation
-- Web navigation and interaction
-- Data extraction capabilities
-- Form filling automation
+- Cloud browser automation
+- Puppeteer integration
+- Stagehand support
+- Web page interaction
 - Screenshot capture
-- Network request monitoring
-- Geolocation spoofing
-- Proxy support
+- JavaScript execution
+- Cloud environment
+- Browser management
 
 ## Installation
 
@@ -52,7 +53,10 @@ npm install @browserbase/mcp-server
       "command": "npx",
       "args": ["@browserbase/mcp-server"],
       "env": {
-        "BROWSERBASE_API_KEY": "your-api-key"
+        "BROWSERBASE_API_KEY": "your-api-key",
+        "CLOUD_REGION": "us-east-1",
+        "BROWSER_TYPE": "chrome",
+        "CONCURRENT_SESSIONS": "5"
       }
     }
   }
@@ -61,11 +65,13 @@ npm install @browserbase/mcp-server
 
 ## Dependencies
 
-- Node.js v16 or higher
-- Browserbase account with API key
+- Node.js >= 14
+- Browserbase account
+- API credentials
+- Cloud access
 
 ## Related Servers
 
-- [Puppeteer](https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer)
-- [Apify](https://github.com/apify/actors-mcp-server)
-- [FireCrawl](https://github.com/mendableai/firecrawl-mcp-server)
+- hrmeetsingh/mcp-browser-automation
+- Saik0s/mcp-browser-use
+- JovaniPink/mcp-browser-use

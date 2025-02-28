@@ -1,54 +1,70 @@
 ---
+type: server
 repo_url: https://github.com/modelcontextprotocol/servers/tree/main/src/aws-kb-retrieval-server
+name: AWS KB Retrieval Server
 owner: modelcontextprotocol
-name: aws-kb-retrieval-server
 stars: 9794
 last_updated: 2025-02-21
 status: active
 official: true
-verified: true
-sources:
-  - inbox
+verified: false
+sources: ["inbox/batch_003.md"]
+tags: ["status/active", "status/official", "category/knowledge-base", "integration/aws", "integration/bedrock"]
 ---
-
-#status/active #status/official #status/verified
 
 # AWS KB Retrieval Server
 
+#status/active #status/official #category/knowledge-base #integration/aws #integration/bedrock
+
 ## Description
 
-A Model Context Protocol server that enables retrieval from AWS Knowledge Base using Bedrock Agent Runtime. This server provides seamless integration with AWS's knowledge base services, allowing AI assistants to access and query AWS documentation and resources.
+Retrieval from AWS Knowledge Base using Bedrock Agent Runtime.
 
 ## Features
 
-- Integration with AWS Bedrock Agent Runtime
-- Knowledge base retrieval capabilities
-- Efficient document search and access
-- Structured response formatting
-- AWS authentication and security integration
+- Knowledge base retrieval
+- Bedrock agent integration
+- Runtime management
+- Query processing
+- Content indexing
+- Search optimization
+- Response formatting
+- Context handling
 
 ## Installation
 
 ```bash
-# Installation details would be found in the repository
+npm install @modelcontextprotocol/aws-kb-retrieval-server
 ```
 
 ## Usage
 
-The server can be used to:
-
-- Query AWS knowledge base content
-- Retrieve specific documentation sections
-- Search across AWS resources
-- Get contextual information about AWS services
+```javascript
+{
+  "mcpServers": {
+    "aws-kb": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/aws-kb-retrieval-server"],
+      "env": {
+        "AWS_ACCESS_KEY_ID": "your-access-key",
+        "AWS_SECRET_ACCESS_KEY": "your-secret-key",
+        "AWS_REGION": "us-east-1",
+        "BEDROCK_AGENT_ID": "your-agent-id"
+      }
+    }
+  }
+}
+```
 
 ## Dependencies
 
-- AWS Bedrock SDK
-- AWS Authentication credentials
-- MCP SDK
+- Node.js >= 16
+- AWS account
+- Bedrock access
+- Knowledge base setup
 
 ## Related Servers
 
-- [AWS S3](https://github.com/aws-samples/sample-mcp-server-s3) - Sample MCP server for AWS S3
-- [AWS](https://github.com/rishikavikondala/mcp-server-aws) - General AWS resource management
+- RafalWilinski/aws-mcp
+- rishikavikondala/mcp-server-aws
+- baryhuang/mcp-server-aws-resources-python
