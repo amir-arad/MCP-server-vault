@@ -4,10 +4,10 @@ repo_url: https://github.com/felores/cloudinary-mcp-server
 name: Cloudinary MCP Server
 owner: felores
 stars: 4
-last_updated: 2025-02-18
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "purpose/media-management",
     "purpose/upload",
     "tech/cloud-storage",
+    "tech/javascript",
   ]
 ---
 

@@ -3,13 +3,19 @@ type: server
 repo_url: https://github.com/cyanheads/atlas-mcp-server
 name: ATLAS MCP Server
 owner: cyanheads
-stars: 84
-last_updated: 2025-02-18
+stars: 88
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
-tags: ["status/active", "category/task-management", "category/ai", "purpose/workflow-automation"]
+tags:
+  [
+    "status/active",
+    "category/task-management",
+    "category/ai",
+    "purpose/workflow-automation",
+  ]
 ---
 
 # ATLAS MCP Server
@@ -34,7 +40,7 @@ ATLAS (Adaptive Task & Logic Automation System) is a Model Context Protocol serv
 ## Installation
 
 ```bash
-npm install @cyanheads/atlas-mcp
+npm install atlas-mcp-server
 ```
 
 ## Usage

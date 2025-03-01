@@ -1,13 +1,12 @@
----
 type: server
 repo_url: https://github.com/turlockmike/chess-mcp
 name: Chess Analysis MCP Server
 owner: turlockmike
-stars: 2
-last_updated: 2025-02-08
+stars: 3
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
 [
@@ -16,6 +15,8 @@ tags:
 "integration/stockfish",
 "purpose/analysis",
 "tech/chess",
+"tech/typescript",
+"tech/javascript",
 ]
 
 ---
@@ -40,6 +41,10 @@ Helps you analyze chess positions and get professional evaluations using Stockfi
 - PGN parsing
 - FEN support
 - Stockfish integration
+- Visual board representation
+- Masters database search
+- Win/draw statistics
+- Filter games by date range
 
 ## Installation
 
@@ -75,6 +80,7 @@ npm install @turlockmike/chess-mcp
 - PGN parser
 - Opening book database
 - Endgame tablebases (optional)
+- Cairo graphics library (for board visualization)
 
 ## Related Servers
 

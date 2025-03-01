@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/lenwood/cfbd-mcp-server
 name: College Football Data MCP Server
 owner: lenwood
-stars: 5
-last_updated: 2025-02-17
+stars: 6
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
@@ -16,6 +16,7 @@ tags:
     "integration/cfbd",
     "purpose/statistics",
     "purpose/data-analysis",
+    "tech/python",
   ]
 ---
 

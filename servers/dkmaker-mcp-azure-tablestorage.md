@@ -1,15 +1,24 @@
----
+--- 
 type: server
 repo_url: https://github.com/dkmaker/mcp-azure-tablestorage
 name: Azure Table Storage MCP Server
 owner: dkmaker
 stars: 4
-last_updated: 2025-01-13
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "category/storage", "integration/azure", "integration/table-storage", "purpose/data-management"]
+tags:
+  [
+    "status/active",
+    "category/storage",
+    "integration/azure",
+    "integration/table-storage",
+    "purpose/data-management",
+    "tech/javascript",
+    "tech/typescript",
+  ]
 ---
 
 # Azure Table Storage MCP Server
@@ -58,13 +67,7 @@ npm install @dkmaker/mcp-azure-tablestorage
 
 ## Dependencies
 
-- Node.js >= 14
+- Node.js >= 16
 - Azure subscription
 - Storage account
 - Table access rights
-
-## Related Servers
-
-- stefanskiasan/azure-devops-mcp-server
-- mashriram/azure_mcp_server
-- ZubeidHendricks/azure-onenote-mcp-server

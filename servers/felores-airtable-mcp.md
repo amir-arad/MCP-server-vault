@@ -3,13 +3,21 @@ type: server
 repo_url: https://github.com/felores/airtable-mcp
 name: Airtable MCP Server
 owner: felores
-stars: 12
-last_updated: 2025-02-18
+stars: 13
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/database", "integration/airtable", "purpose/data-management"]
+tags:
+  [
+    "status/active",
+    "category/database",
+    "integration/airtable",
+    "purpose/data-management",
+    "tech/javascript",
+    "tech/typescript",
+  ]
 ---
 
 # Airtable MCP Server

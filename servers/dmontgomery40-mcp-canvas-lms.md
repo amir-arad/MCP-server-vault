@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/DMontgomery40/mcp-canvas-lms
 name: Canvas LMS MCP Server
 owner: DMontgomery40
 stars: 0
-last_updated: 2024-12-14
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
@@ -16,6 +16,7 @@ tags:
     "integration/canvas",
     "purpose/course-management",
     "tech/typescript",
+    "tech/javascript",
   ]
 ---
 
@@ -69,7 +70,3 @@ npm install @dmontgomery40/mcp-canvas-lms
 - Canvas LMS instance
 - Canvas API token
 - TypeScript runtime
-
-## Related Servers
-
-- None currently listed

@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/databridge-org/databridge-mcp
 name: DataBridge MCP Server
 owner: databridge-org
 stars: 0
-last_updated: 2025-02-19
+last_updated: 2025-03-01
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox/batch_008.md"]
 tags:
   [
@@ -43,9 +43,7 @@ Integrates with DataBridge to enable ingestion and retrieval of contextual infor
 
 ## Installation
 
-```bash
-npm install @databridge-org/databridge-mcp
-```
+To use this server in an MCP client such as Claude Desktop:
 
 ## Usage
 

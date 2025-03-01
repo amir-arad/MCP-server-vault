@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/DMontgomery40/mcp-server-birdstats
 name: BirdStats MCP Server
 owner: DMontgomery40
 stars: 1
-last_updated: 2024-12-13
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [
@@ -16,6 +16,8 @@ tags:
     "integration/birdnet",
     "integration/ebird",
     "purpose/wildlife-monitoring",
+    "tech/javascript",
+    "tech/typescript",
   ]
 ---
 
@@ -65,11 +67,7 @@ npm install @dmontgomery40/mcp-server-birdstats
 
 ## Dependencies
 
-- Node.js >= 14
+- Node.js >= 16
 - BirdNET-Pi setup
 - eBird API access
 - Database storage
-
-## Related Servers
-
-- None currently listed

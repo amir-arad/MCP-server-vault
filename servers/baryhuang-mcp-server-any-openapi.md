@@ -1,35 +1,39 @@
----
+--- 
 type: server
 repo_url: https://github.com/baryhuang/mcp-server-any-openapi
 name: Any OpenAPI MCP Server
 owner: baryhuang
-stars: 5
-last_updated: 2025-02-13
+stars: 7
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
-tags: ["status/active", "category/api", "tech/openapi", "purpose/api-integration"]
+tags: ["status/active", "category/api", "tech/openapi", "purpose/api-integration", "tech/docker"]
 ---
 
 # Any OpenAPI MCP Server
 
-#status/active #category/api #tech/openapi #purpose/api-integration
+#status/active #category/api #tech/openapi #purpose/api-integration #tech/docker
 
 ## Description
 
-This server facilitates scalable discovery and execution of OpenAPI endpoints using semantic search and high-performance processing, overcoming limitations of large spec handling for streamlined API interactions.
+This server facilitates scalable discovery and execution of OpenAPI endpoints using semantic search and high-performance processing, overcoming limitations of large spec handling for streamlined API interactions. It uses in-memory semantic search to find relevant Api endpoints by natural language and returns the complete end-point docs in millionseconds.
 
 ## Features
 
 - OpenAPI endpoint discovery
-- Semantic search
+- Semantic search using optimized MiniLM-L3 model (43MB vs original 90MB)
 - High-performance processing
 - Large spec handling
 - API interactions
 - Endpoint execution
 - Schema validation
 - Request/response handling
+- Use remote openapi json file as source, no local file system access, no updating required for API changes
+- FastAPI-based server with async support
+- Endpoint based chunking OpenAPI specs (handles 100KB+ documents), no loss of endpoint context
+- In-memory FAISS vector search for instant endpoint discovery
 
 ## Installation
 
@@ -62,6 +66,7 @@ npm install @baryhuang/mcp-server-any-openapi
 - OpenAPI specifications
 - Semantic search engine
 - Cache storage (optional)
+- FastAPI
 
 ## Related Servers
 

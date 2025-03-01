@@ -4,12 +4,19 @@ repo_url: https://github.com/cpage-pivotal/app-advisor-mcp
 name: App Advisor MCP Server
 owner: cpage-pivotal
 stars: 2
-last_updated: 2025-02-13
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
-tags: ["status/active", "category/development", "integration/spring", "integration/cloud-foundry", "purpose/optimization"]
+tags:
+  [
+    "status/active",
+    "category/development",
+    "integration/spring",
+    "integration/cloud-foundry",
+    "purpose/optimization",
+  ]
 ---
 
 # App Advisor MCP Server

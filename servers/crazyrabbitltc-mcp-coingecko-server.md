@@ -1,13 +1,12 @@
----
 type: server
 repo_url: https://github.com/crazyrabbitLTC/mcp-coingecko-server
 name: CoinGecko Pro MCP Server
 owner: crazyrabbitLTC
 stars: 5
-last_updated: 2025-02-13
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
 [
@@ -17,6 +16,8 @@ tags:
 "purpose/market-data",
 "category/cryptocurrency",
 "tech/openai",
+"tech/typescript",
+"tech/javascript",
 ]
 
 ---
@@ -41,6 +42,10 @@ Enables interaction with the CoinGecko Pro API to access cryptocurrency data inc
 - Token information
 - Exchange data
 - Trend analysis
+- Paginated list of supported cryptocurrencies
+- Coin ID lookup by name or symbol
+- OHLC candlestick data
+- Local coin cache with refresh capability
 
 ## Installation
 

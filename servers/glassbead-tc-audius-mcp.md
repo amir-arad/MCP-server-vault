@@ -4,12 +4,19 @@ repo_url: https://github.com/glassBead-tc/audius-mcp
 name: Audius MCP Server
 owner: glassBead-tc
 stars: 0
-last_updated: 2025-02-06
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "category/music", "integration/audius", "purpose/content-management"]
+tags:
+  [
+    "status/active",
+    "category/music",
+    "integration/audius",
+    "purpose/content-management",
+    "tech/javascript",
+  ]
 ---
 
 # Audius MCP Server

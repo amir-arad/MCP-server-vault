@@ -3,13 +3,21 @@ type: server
 repo_url: https://github.com/crazyrabbitLTC/mcp-etherscan-server
 name: Etherscan MCP Server
 owner: crazyrabbitLTC
-stars: 6
-last_updated: 2025-02-03
+stars: 8
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_011.md"]
-tags: ["status/active", "category/blockchain", "integration/etherscan", "purpose/blockchain-data", "tech/ethereum", "purpose/real-time-data"]
+tags:
+  [
+    "status/active",
+    "category/blockchain",
+    "integration/etherscan",
+    "purpose/blockchain-data",
+    "tech/ethereum",
+    "purpose/real-time-data",
+  ]
 ---
 
 # Etherscan MCP Server
@@ -22,21 +30,17 @@ Facilitates interaction with Ethereum blockchain data via Etherscan's API, provi
 
 ## Features
 
-- Real-time blockchain data
-- Balance monitoring
-- Transaction tracking
-- Token transfer tracking
-- Contract ABI access
-- Gas price monitoring
-- ENS resolution
-- Event log access
-- Address analytics
-- Multi-network support
+- Balance Checking: Get ETH balance for any Ethereum address
+- Transaction History: View recent transactions with detailed information
+- Token Transfers: Track ERC20 token transfers with token details
+- Contract ABI: Fetch smart contract ABIs for development
+- Gas Prices: Monitor current gas prices (Safe Low, Standard, Fast)
+- ENS Resolution: Resolve Ethereum addresses to ENS names
 
 ## Installation
 
 ```bash
-npm install @crazyrabbitltc/mcp-etherscan-server
+npm install
 ```
 
 ## Usage
@@ -60,11 +64,8 @@ npm install @crazyrabbitltc/mcp-etherscan-server
 
 ## Dependencies
 
-- Node.js >= 14
+- Node.js >= 18
 - Etherscan API key
-- Network connectivity
-- Cache storage
-- Rate limiting system
 
 ## Related Servers
 

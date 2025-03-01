@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/cmann50/mcp-chrome-google-search
 name: Chrome Google Search MCP Server
 owner: cmann50
-stars: 5
-last_updated: 2025-02-12
+stars: 10
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
@@ -71,7 +71,7 @@ npm install @cmann50/mcp-chrome-google-search
 
 - macOS
 - Google Chrome
-- Node.js >= 16
+- Node.js >= 20
 - Chrome DevTools Protocol
 - Google account (optional)
 - Cookie manager

@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/Deep070203/docling-mcp
 name: Docling MCP Server
 owner: Deep070203
-stars: 4
-last_updated: 2025-02-19
+stars: 5
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_010.md"]
 tags: ["status/active", "category/document-processing", "integration/ibm", "purpose/document-conversion", "tech/markdown", "purpose/parsing"]
 ---
@@ -35,23 +35,16 @@ Integrates IBM's Docling software to parse and convert various document formats 
 
 ## Installation
 
-```bash
-npm install @deep070203/docling-mcp
-```
+To use the published one, add the below code to Claude config file.
 
 ## Usage
 
 ```javascript
 {
   "mcpServers": {
-    "docling": {
-      "command": "npx",
-      "args": ["@deep070203/docling-mcp"],
-      "env": {
-        "IBM_API_KEY": "your-ibm-api-key",
-        "DOCLING_WORKSPACE": "./workspace",
-        "OUTPUT_FORMAT": "markdown"
-      }
+    "docling-mcp": {
+      "command": "uvx",
+      "args": ["docling-mcp"]
     }
   }
 }

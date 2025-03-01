@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/Nayshins/mcp-server-ccxt
 name: CCXT MCP Server
 owner: Nayshins
 stars: 13
-last_updated: 2025-02-17
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
@@ -15,14 +15,14 @@ tags:
     "category/finance",
     "category/cryptocurrency",
     "purpose/market-data",
-    "tech/javascript",
+    "tech/python",
     "integration/ccxt",
   ]
 ---
 
 # CCXT MCP Server
 
-#status/active #category/finance #category/cryptocurrency #purpose/market-data #tech/javascript #integration/ccxt
+#status/active #category/finance #category/cryptocurrency #purpose/market-data #tech/python #integration/ccxt
 
 ## Description
 

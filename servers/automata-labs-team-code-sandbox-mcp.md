@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/Automata-Labs-team/code-sandbox-mcp
 name: Code Sandbox MCP Server
 owner: Automata-Labs-team
-stars: 17
-last_updated: 2025-02-20
+stars: 21
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [
@@ -26,7 +26,7 @@ tags:
 
 ## Description
 
-An MCP server to create secure code sandbox environment for executing code within Docker containers. This server provides isolated and controlled environments for safe code execution.
+An MCP server to create secure code sandbox environment for executing code within Docker containers. This MCP server provides AI applications with a safe and isolated environment for running code while maintaining security through containerization.
 
 ## Features
 

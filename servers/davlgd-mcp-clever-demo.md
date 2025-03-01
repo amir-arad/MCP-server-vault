@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/davlgd/mcp-clever-demo
 name: Clever Cloud Demo MCP Server
 owner: davlgd
 stars: 1
-last_updated: 2025-01-29
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
@@ -43,26 +43,15 @@ Integrates with Clever Cloud's tools and services to enable application deployme
 
 ## Installation
 
-```bash
-npm install @davlgd/mcp-clever-demo
-```
+To use this server in an MCP client such as Claude Desktop:
 
 ## Usage
 
 ```javascript
 {
-  "mcpServers": {
-    "clever-demo": {
-      "command": "npx",
-      "args": ["@davlgd/mcp-clever-demo"],
-      "env": {
-        "CLEVER_TOKEN": "your-token",
-        "CLEVER_SECRET": "your-secret",
-        "ORGANIZATION_ID": "your-org-id",
-        "DEFAULT_REGION": "par",
-        "LOG_LEVEL": "info"
-      }
-    }
+  "mcp-clever-demo": {
+    "command": "npx",
+    "args": [ "-y", "mcp-clever-demo" ]
   }
 }
 ```

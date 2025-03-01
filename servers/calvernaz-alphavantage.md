@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/calvernaz/alphavantage
 name: Alphavantage MCP Server
 owner: calvernaz
-stars: 10
-last_updated: 2025-02-14
+stars: 11
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
 tags: ["status/active", "category/finance", "integration/alpha-vantage", "purpose/market-data"]
 ---

@@ -4,12 +4,21 @@ repo_url: https://github.com/identimoji/mcp-server-emojikey
 name: Emojikey MCP Server
 owner: identimoji
 stars: 1
-last_updated: 2024-12-15
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_010.md"]
-tags: ["status/active", "category/personalization", "integration/supabase", "purpose/interaction-styles", "category/llm", "tech/emoji"]
+tags:
+  [
+    "status/active",
+    "category/personalization",
+    "integration/supabase",
+    "purpose/interaction-styles",
+    "category/llm",
+    "tech/emoji",
+    "tech/javascript",
+  ]
 ---
 
 # Emojikey MCP Server

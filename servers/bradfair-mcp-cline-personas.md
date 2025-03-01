@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/bradfair/mcp-cline-personas
 name: Cline Personas MCP Server
 owner: bradfair
-stars: 16
-last_updated: 2025-02-18
+stars: 17
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [

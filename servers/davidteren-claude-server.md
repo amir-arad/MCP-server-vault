@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/davidteren/claude-server
 name: Claude Context Manager MCP Server
 owner: davidteren
 stars: 0
-last_updated: 2024-12-29
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
@@ -43,9 +43,7 @@ Enhances Claude's capabilities with context management across sessions, knowledg
 
 ## Installation
 
-```bash
-npm install @davidteren/claude-server
-```
+The server is automatically configured in your Claude desktop app's MCP settings. All contexts are stored in `~/.claude/` for better organization:
 
 ## Usage
 

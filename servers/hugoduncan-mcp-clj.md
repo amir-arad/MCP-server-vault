@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/hugoduncan/mcp-clj
 name: Clojure REPL MCP Server
 owner: hugoduncan
-stars: 0
-last_updated: 2025-01-24
+stars: 2
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "purpose/repl",
     "tech/sse",
     "purpose/data-analysis",
+    "tech/javascript",
   ]
 ---
 

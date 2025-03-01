@@ -4,10 +4,10 @@ repo_url: https://github.com/chatmcp/mcp-server-collector
 name: MCP Server Collector
 owner: chatmcp
 stars: 18
-last_updated: 2025-01-31
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [

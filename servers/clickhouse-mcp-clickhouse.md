@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/ClickHouse/mcp-clickhouse
 name: ClickHouse MCP Server
 owner: ClickHouse
-stars: 36
-last_updated: 2025-02-20
+stars: 60
+last_updated: 2025-03-01
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [

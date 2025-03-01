@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/chatmcp/mcp-server-chatsum
 name: Chatsum MCP Server
 owner: chatmcp
-stars: 449
-last_updated: 2025-02-21
+stars: 462
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [

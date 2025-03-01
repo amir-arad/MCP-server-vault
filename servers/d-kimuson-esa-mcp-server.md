@@ -4,12 +4,20 @@ repo_url: https://github.com/d-kimuson/esa-mcp-server
 name: Esa MCP Server
 owner: d-kimuson
 stars: 1
-last_updated: 2025-01-25
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_011.md"]
-tags: ["status/active", "category/documentation", "integration/esa", "purpose/article-management", "purpose/search", "tech/api"]
+tags:
+  [
+    "status/active",
+    "category/documentation",
+    "integration/esa",
+    "purpose/article-management",
+    "purpose/search",
+    "tech/api",
+  ]
 ---
 
 # Esa MCP Server
@@ -22,16 +30,9 @@ Enables interaction with esa.io's API through the Model Context Protocol, suppor
 
 ## Features
 
-- Article search functionality
-- Content retrieval
-- API integration
-- MCP compliance
-- Document management
-- Search filtering
-- Content organization
-- Team collaboration
-- Version tracking
-- Access control
+- esa.io の記事検索
+- 記事の詳細取得（単一・複数）
+- MCP 準拠のインターフェース提供
 
 ## Installation
 

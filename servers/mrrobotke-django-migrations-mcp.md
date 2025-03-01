@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/mrrobotke/django-migrations-mcp
 name: Django Migrations MCP Server
 owner: mrrobotke
 stars: 0
-last_updated: 2025-02-11
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_010.md"]
 tags: ["status/active", "category/database", "tech/django", "tech/python", "purpose/database-migration", "purpose/distributed-systems"]
 ---

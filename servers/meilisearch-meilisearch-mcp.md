@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/meilisearch/meilisearch-mcp
 name: Meilisearch
 owner: meilisearch
-stars: 0
-last_updated: 2025-02-27
+stars: 27
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags: ["status/active", "status/official", "category/search"]
 ---

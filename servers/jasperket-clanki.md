@@ -4,10 +4,10 @@ repo_url: https://github.com/jasperket/clanki
 name: Clanki MCP Server
 owner: jasperket
 stars: 0
-last_updated: 2025-01-26
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "purpose/learning",
     "purpose/flashcards",
     "tech/javascript",
+    "tech/typescript",
   ]
 ---
 

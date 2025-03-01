@@ -1,10 +1,10 @@
----
+--- 
 type: server
 repo_url: https://github.com/bmorphism/babashka-mcp-server
 name: Babashka MCP Server
 owner: bmorphism
 stars: 1
-last_updated: 2025-02-28
+last_updated: 2025-03-01
 status: active
 official: false
 verified: true
@@ -26,10 +26,6 @@ A Model Context Protocol server for interacting with Babashka, a native Clojure 
 - Cache recent command results
 - Access command history through MCP resources
 - Configurable command timeouts
-- Command execution with optional timeout settings
-- Resource management for script results
-- Support for Babashka language features
-- Error handling and reporting
 
 ## Installation
 

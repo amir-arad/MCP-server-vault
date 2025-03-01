@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/ben4mn/amadeus-mcp
 name: Amadeus MCP Server
 owner: ben4mn
 stars: 1
-last_updated: 2025-02-16
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
 tags: ["status/active", "category/travel", "integration/amadeus", "purpose/flight-search"]
 ---

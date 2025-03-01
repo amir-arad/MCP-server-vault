@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/bsmi021/mcp-file-context-server
 name: File Context MCP Server
 owner: bsmi021
-stars: 1
-last_updated: 2025-01-30
+stars: 2
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_012.md"]
 tags: ["status/active", "category/development", "purpose/file-access", "purpose/code-analysis", "purpose/quality-assessment", "purpose/navigation"]
 ---

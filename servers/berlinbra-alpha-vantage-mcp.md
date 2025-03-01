@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/berlinbra/alpha-vantage-mcp
 name: Alpha Vantage MCP Server
 owner: berlinbra
-stars: 8
-last_updated: 2025-02-20
+stars: 9
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
 tags: ["status/active", "category/finance", "integration/alpha-vantage", "purpose/market-data"]
 ---
@@ -30,31 +30,6 @@ A Model Context Protocol (MCP) server that provides real-time access to financia
 - Historical data access
 - API standardization
 - Data caching
-
-## Installation
-
-```bash
-npm install @berlinbra/alpha-vantage-mcp
-```
-
-## Usage
-
-```javascript
-{
-  "mcpServers": {
-    "alpha-vantage": {
-      "command": "npx",
-      "args": ["@berlinbra/alpha-vantage-mcp"],
-      "env": {
-        "ALPHA_VANTAGE_API_KEY": "your-api-key",
-        "CACHE_DURATION": "300",
-        "MAX_REQUESTS_PER_MINUTE": "5",
-        "DEFAULT_MARKET": "US"
-      }
-    }
-  }
-}
-```
 
 ## Dependencies
 

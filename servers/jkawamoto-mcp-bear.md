@@ -4,12 +4,20 @@ repo_url: https://github.com/jkawamoto/mcp-bear
 name: Bear MCP Server
 owner: jkawamoto
 stars: 4
-last_updated: 2025-02-18
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "category/productivity", "integration/bear", "purpose/note-management", "tech/macos"]
+tags:
+  [
+    "status/active",
+    "category/productivity",
+    "integration/bear",
+    "purpose/note-management",
+    "tech/macos",
+    "tech/javascript",
+  ]
 ---
 
 # Bear MCP Server

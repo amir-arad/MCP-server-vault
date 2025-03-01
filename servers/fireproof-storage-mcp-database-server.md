@@ -4,10 +4,10 @@ repo_url: https://github.com/fireproof-storage/mcp-database-server
 name: Fireproof Database MCP Server
 owner: fireproof-storage
 stars: 8
-last_updated: 2025-02-09
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox/batch_008.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "tech/ledger",
     "purpose/sync",
     "purpose/storage",
+    "tech/javascript",
   ]
 ---
 

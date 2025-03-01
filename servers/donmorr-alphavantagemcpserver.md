@@ -1,15 +1,22 @@
----
+--- 
 type: server
 repo_url: https://github.com/DonMorr/AlphavantageMCPServer
 name: Alphavantage MCP Server
 owner: DonMorr
 stars: 0
-last_updated: 2025-01-27
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/finance", "integration/alpha-vantage", "purpose/market-data"]
+tags:
+  [
+    "status/active",
+    "category/finance",
+    "integration/alpha-vantage",
+    "purpose/market-data",
+    "tech/python",
+  ]
 ---
 
 # Alphavantage MCP Server
@@ -58,11 +65,6 @@ npm install @donmorr/alphavantage-mcp
 
 ## Dependencies
 
-- Node.js >= 14
+- Node.js >= 16
 - Alphavantage API key
 - Redis (optional, for caching)
-
-## Related Servers
-
-- berlinbra/alpha-vantage-mcp
-- calvernaz/alphavantage

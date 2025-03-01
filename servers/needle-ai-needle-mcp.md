@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/needle-ai/needle-mcp
 name: Needle
 owner: needle-ai
-stars: 0
-last_updated: 2025-02-27
+stars: 20
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags:
   ["status/active", "status/official", "category/ai", "category/knowledge-base"]

@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/IBM/wxflows/tree/main/examples/mcp/javascript
 name: IBM wxflows
 owner: IBM
-stars: 0
-last_updated: 2025-02-27
+stars: 48
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags:
   [
@@ -15,6 +15,7 @@ tags:
     "status/official",
     "category/development",
     "integration/ibm",
+    "tech/javascript",
   ]
 ---
 

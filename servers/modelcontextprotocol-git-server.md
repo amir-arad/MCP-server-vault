@@ -1,13 +1,13 @@
----
+--- 
 type: server
-repo_url: https://github.com/modelcontextprotocol/servers/src/git
+repo_url: https://github.com/modelcontextprotocol/servers
 name: Git
 owner: modelcontextprotocol
-stars: 0
-last_updated: 2025-02-27
+stars: 11500
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags:
   [
@@ -18,9 +18,9 @@ tags:
   ]
 ---
 
-# Git
-
 #category/version-control #status/official #purpose/development #tech/typescript
+
+# Git
 
 ## Description
 

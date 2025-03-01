@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/fatwang2/search1api-mcp
 name: Search1API
 owner: fatwang2
-stars: 0
-last_updated: 2025-02-27
+stars: 85
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags:
   [
@@ -15,6 +15,8 @@ tags:
     "status/official",
     "category/search",
     "category/web-scraping",
+    "tech/javascript",
+    "tech/typescript",
   ]
 ---
 

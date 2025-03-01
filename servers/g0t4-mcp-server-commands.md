@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/g0t4/mcp-server-commands
 name: Commands MCP Server
 owner: g0t4
-stars: 47
-last_updated: 2025-02-20
+stars: 52
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "purpose/automation",
     "tech/shell",
     "purpose/system-control",
+    "tech/javascript",
   ]
 ---
 

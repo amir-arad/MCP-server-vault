@@ -4,12 +4,20 @@ repo_url: https://github.com/Cleversoft-IT/drupal-modules-mcp
 name: Drupal Modules MCP Server
 owner: Cleversoft-IT
 stars: 0
-last_updated: 2025-02-15
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_010.md"]
-tags: ["status/active", "category/cms", "integration/drupal", "tech/typescript", "purpose/note-management", "purpose/module-management"]
+tags:
+  [
+    "status/active",
+    "category/cms",
+    "integration/drupal",
+    "tech/typescript",
+    "purpose/note-management",
+    "purpose/module-management",
+  ]
 ---
 
 # Drupal Modules MCP Server
@@ -18,25 +26,18 @@ tags: ["status/active", "category/cms", "integration/drupal", "tech/typescript",
 
 ## Description
 
-This TypeScript-based MCP server implements a simple notes system, allowing the creation, listing, and summarization of text notes using MCP concepts with note:// URIs and metadata.
+Model Context Protocol (MCP) servers for Drupal development. Includes tools for querying Drupal.org module and interacting with Drush commands. Seamlessly integrates with Cline and other MCP-compatible clients to enhance Drupal development workflows.
 
 ## Features
 
-- Note creation and management
-- Note listing and organization
-- Text summarization
-- Metadata handling
-- URI-based note access
-- Note search capabilities
-- Note categorization
-- Content formatting
-- Note export options
-- Version tracking
+- Drupal module information
+- Querying Drupal.org module
+- Interacting with Drush commands
 
 ## Installation
 
 ```bash
-npm install @cleversoft-it/drupal-modules-mcp
+npm install
 ```
 
 ## Usage
@@ -59,13 +60,8 @@ npm install @cleversoft-it/drupal-modules-mcp
 
 ## Dependencies
 
-- Node.js >= 16
-- TypeScript
-- Drupal >= 9.0
-- File system access
-- JSON processing libraries
-- Text processing tools
+- Node.js 16 or higher
 
 ## Related Servers
 
-- [Drupal MCP Server](https://github.com/Omedia/mcp-server-drupal) - Main Drupal integration
+- Drupal MCP Server - Main Drupal integration

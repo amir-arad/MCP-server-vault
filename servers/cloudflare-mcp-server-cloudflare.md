@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/cloudflare/mcp-server-cloudflare
 name: Cloudflare MCP Server
 owner: cloudflare
-stars: 277
-last_updated: 2025-02-21
+stars: 309
+last_updated: 2025-03-01
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [

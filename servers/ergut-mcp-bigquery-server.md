@@ -4,12 +4,20 @@ repo_url: https://github.com/ergut/mcp-bigquery-server
 name: BigQuery MCP Server
 owner: ergut
 stars: 9
-last_updated: 2025-02-04
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "category/database", "integration/bigquery", "purpose/data-analysis", "integration/google"]
+tags:
+  [
+    "status/active",
+    "category/database",
+    "integration/bigquery",
+    "purpose/data-analysis",
+    "integration/google",
+    "tech/javascript",
+  ]
 ---
 
 # BigQuery MCP Server

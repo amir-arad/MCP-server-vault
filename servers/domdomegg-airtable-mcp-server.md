@@ -1,15 +1,23 @@
----
+--- 
 type: server
 repo_url: https://github.com/domdomegg/airtable-mcp-server
 name: Airtable Server
 owner: domdomegg
-stars: 35
-last_updated: 2025-02-19
+stars: 39
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_001.md"]
-tags: ["status/active", "category/database", "integration/airtable", "purpose/data-management"]
+tags:
+  [
+    "status/active",
+    "category/database",
+    "integration/airtable",
+    "purpose/data-management",
+    "tech/javascript",
+    "tech/typescript",
+  ]
 ---
 
 # Airtable Server
@@ -62,7 +70,3 @@ npm install @domdomegg/airtable-mcp-server
 - Airtable account
 - API access token
 - Base permissions
-
-## Related Servers
-
-- felores/airtable-mcp

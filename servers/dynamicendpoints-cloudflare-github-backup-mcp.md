@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/DynamicEndpoints/cloudflare-github-backup-mcp
 name: Cloudflare GitHub Backup MCP Server
 owner: DynamicEndpoints
 stars: 0
-last_updated: 2024-12-24
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "integration/github",
     "purpose/backup",
     "purpose/disaster-recovery",
+    "tech/javascript",
   ]
 ---
 
@@ -75,9 +76,3 @@ npm install @dynamicendpoints/cloudflare-github-backup-mcp
 - Version control system
 - Backup manager
 - Diff generator
-
-## Related Servers
-
-- cloudflare/mcp-server-cloudflare
-- modelcontextprotocol-github-server
-- modelcontextprotocol-backup-server

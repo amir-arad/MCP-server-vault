@@ -4,10 +4,10 @@ repo_url: https://github.com/garc33/bitbucket-server-mcp-server
 name: Bitbucket Server MCP Server
 owner: garc33
 stars: 0
-last_updated: 2025-01-28
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [
@@ -15,6 +15,7 @@ tags:
     "category/version-control",
     "integration/bitbucket",
     "purpose/code-review",
+    "tech/javascript",
   ]
 ---
 

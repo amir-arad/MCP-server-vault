@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/bmorphism/anti-bullshit-mcp-server
 name: Anti Bullshit MCP Server
 owner: bmorphism
-stars: 11
-last_updated: 2025-02-05
+stars: 12
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
 tags: ["status/active", "category/verification", "purpose/fact-checking", "category/ai"]
 ---

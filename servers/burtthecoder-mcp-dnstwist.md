@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/BurtTheCoder/mcp-dnstwist
 name: DNSTwist MCP Server
 owner: BurtTheCoder
 stars: 3
-last_updated: 2025-02-16
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_010.md"]
 tags: ["status/active", "category/security", "purpose/dns-analysis", "purpose/phishing-detection", "purpose/security-monitoring", "tech/python"]
 ---

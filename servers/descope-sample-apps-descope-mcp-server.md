@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/descope-sample-apps/descope-mcp-server
 name: Descope Management MCP Server
 owner: descope-sample-apps
 stars: 2
-last_updated: 2025-02-01
+last_updated: 2025-03-01
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox/batch_009.md"]
 tags:
   [

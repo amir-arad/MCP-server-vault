@@ -4,10 +4,10 @@ repo_url: https://github.com/hmk/box-mcp-server
 name: Box MCP Server
 owner: hmk
 stars: 2
-last_updated: 2025-02-11
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [
@@ -15,6 +15,7 @@ tags:
     "category/storage",
     "integration/box",
     "purpose/document-management",
+    "tech/javascript",
   ]
 ---
 

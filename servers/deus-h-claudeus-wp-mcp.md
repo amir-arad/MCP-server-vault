@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/deus-h/claudeus-wp-mcp
 name: Claudeus WordPress MCP Server
 owner: deus-h
 stars: 3
-last_updated: 2025-02-15
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
@@ -58,7 +58,7 @@ npm install @deus-h/claudeus-wp-mcp
       "env": {
         "WP_URL": "https://your-wordpress-site.com",
         "WP_USERNAME": "your-username",
-        "WP_APP_PASSWORD": "your-app-password",
+        "WP_APP_PASSWORD": "your-app-specific-password",
         "API_VERSION": "v2",
         "VERIFY_SSL": "true"
       }

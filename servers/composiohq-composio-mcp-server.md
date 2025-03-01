@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/ComposioHQ/composio-mcp-server
 name: Composio MCP Server
 owner: ComposioHQ
-stars: 6
-last_updated: 2025-02-21
+stars: 8
+last_updated: 2025-03-01
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [

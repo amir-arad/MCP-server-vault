@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/cablate/mcp-doc-forge
 name: Doc Forge MCP Server
 owner: cablate
-stars: 0
-last_updated: 2025-02-14
+stars: 1
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_010.md"]
 tags: ["status/active", "category/document-processing", "purpose/file-conversion", "purpose/text-processing", "tech/html", "purpose/document-manipulation"]
 ---

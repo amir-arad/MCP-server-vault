@@ -4,12 +4,21 @@ repo_url: https://github.com/esignaturescom/mcp-server-esignatures
 name: eSignatures MCP Server
 owner: esignaturescom
 stars: 2
-last_updated: 2025-02-12
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox/batch_011.md"]
-tags: ["status/active", "status/official", "category/document-management", "purpose/esignature", "purpose/contract-management", "purpose/template-management"]
+tags:
+  [
+    "status/active",
+    "status/official",
+    "category/document-management",
+    "purpose/esignature",
+    "purpose/contract-management",
+    "purpose/template-management",
+    "tech/python",
+  ]
 ---
 
 # eSignatures MCP Server

@@ -4,10 +4,10 @@ repo_url: https://github.com/cf-toolsuite/cf-kaizen/tree/HEAD/butler
 name: Butler MCP Server
 owner: cf-toolsuite
 stars: 1
-last_updated: 2025-02-20
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [

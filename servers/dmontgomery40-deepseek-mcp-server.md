@@ -1,10 +1,10 @@
----
+--- 
 type: server
 repo_url: https://github.com/DMontgomery40/deepseek-mcp-server
 name: DeepSeek MCP Server
 owner: DMontgomery40
-stars: 70
-last_updated: 2025-02-28
+stars: 72
+last_updated: 2025-03-01
 status: active
 official: false
 verified: true
@@ -22,9 +22,9 @@ tags:
   - purpose/reasoning
 ---
 
-#status/active #status/community #category/llm #integration/deepseek #tech/javascript #purpose/reasoning
-
 # DeepSeek MCP Server
+
+#status/active #status/official #category/llm #integration/deepseek #tech/javascript #purpose/reasoning
 
 ## Description
 
@@ -45,7 +45,6 @@ A Model Context Protocol (MCP) server for the DeepSeek API, allowing seamless in
 ## Installation
 
 ```bash
-# Install via npm
 npm install -g deepseek-mcp-server
 
 # Or install via Smithery

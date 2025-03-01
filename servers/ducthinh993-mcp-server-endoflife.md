@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/ducthinh993/mcp-server-endoflife
 name: End of Life MCP Server
 owner: ducthinh993
 stars: 1
-last_updated: 2025-01-29
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_010.md"]
 tags: ["status/active", "category/software-lifecycle", "integration/endoflife-date", "purpose/version-tracking", "purpose/security-status", "category/ai"]
 ---

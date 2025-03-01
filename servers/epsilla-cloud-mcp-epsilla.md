@@ -4,12 +4,20 @@ repo_url: https://github.com/epsilla-cloud/mcp-epsilla
 name: Epsilla MCP Server
 owner: epsilla-cloud
 stars: 0
-last_updated: 2024-12-25
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_010.md"]
-tags: ["status/active", "category/database", "integration/epsilla", "purpose/vector-data", "tech/python", "purpose/data-manipulation"]
+tags:
+  [
+    "status/active",
+    "category/database",
+    "integration/epsilla",
+    "purpose/vector-data",
+    "tech/python",
+    "purpose/data-manipulation",
+  ]
 ---
 
 # Epsilla MCP Server

@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/grafana/mcp-grafana
 name: Grafana
 owner: grafana
-stars: 0
-last_updated: 2025-02-27
+stars: 50
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags:
   [
@@ -15,6 +15,7 @@ tags:
     "status/official",
     "category/monitoring",
     "category/analytics",
+    "tech/python",
   ]
 ---
 

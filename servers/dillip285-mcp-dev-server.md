@@ -4,10 +4,10 @@ repo_url: https://github.com/dillip285/mcp-dev-server
 name: Development Tools MCP Server
 owner: dillip285
 stars: 0
-last_updated: 2024-12-15
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_009.md"]
 tags:
   [
@@ -17,6 +17,8 @@ tags:
     "integration/git",
     "purpose/project-management",
     "purpose/automation",
+    "tech/javascript",
+    "tech/python",
   ]
 ---
 

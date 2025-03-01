@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/da1y/mcp-server-elasticsearch
 name: Elasticsearch MCP Server
 owner: da1y
 stars: 1
-last_updated: 2024-12-06
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_010.md"]
 tags: ["status/active", "category/search", "integration/elasticsearch", "purpose/indexing", "purpose/search", "tech/full-text-search"]
 ---
@@ -60,12 +60,8 @@ npm install @da1y/mcp-server-elasticsearch
 
 ## Dependencies
 
-- Node.js >= 14
+- Node.js >= 16
 - Elasticsearch >= 7.x
 - Elasticsearch client
 - Memory for indexing
 - Storage space
-
-## Related Servers
-
-- None currently listed

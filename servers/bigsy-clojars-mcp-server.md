@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/Bigsy/Clojars-MCP-Server
 name: Clojars MCP Server
 owner: Bigsy
 stars: 2
-last_updated: 2025-02-18
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [

@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/browserbase/mcp-server-browserbase
 name: Browserbase MCP Server
 owner: browserbase
-stars: 118
-last_updated: 2025-02-21
+stars: 156
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [

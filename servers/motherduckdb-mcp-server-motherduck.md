@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/motherduckdb/mcp-server-motherduck
 name: MotherDuck
 owner: motherduckdb
-stars: 0
-last_updated: 2025-02-27
+stars: 22
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags: ["status/active", "status/official", "category/database"]
 ---

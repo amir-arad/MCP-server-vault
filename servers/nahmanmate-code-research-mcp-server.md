@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/nahmanmate/code-research-mcp-server
 name: Code Research MCP Server
 owner: nahmanmate
-stars: 13
-last_updated: 2025-02-18
+stars: 14
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [

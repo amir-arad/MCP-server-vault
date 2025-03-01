@@ -3,18 +3,25 @@ type: server
 repo_url: https://github.com/e2b-dev/mcp-server
 name: E2B
 owner: e2b-dev
-stars: 0
-last_updated: 2025-02-27
+stars: 96
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
-tags: ["status/active", "status/official", "category/development"]
+tags:
+  [
+    "status/active",
+    "status/official",
+    "category/development",
+    "tech/javascript",
+    "tech/python",
+  ]
 ---
 
-#status/active #status/official #category/development
-
 # E2B
+
+#status/active #status/official #category/development
 
 ## Description
 

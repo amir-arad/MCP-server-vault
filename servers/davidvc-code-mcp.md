@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/davidvc/code-mcp
 name: Code Graph Analysis MCP Server
 owner: davidvc
-stars: 3
-last_updated: 2025-02-07
+stars: 4
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [

@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/didlawowo/mcp-collection
 name: Datadog Log Collection MCP Server
 owner: didlawowo
-stars: 1
-last_updated: 2025-02-17
+stars: 2
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_007.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "purpose/logging",
     "purpose/clustering",
     "tech/log-analysis",
+    "tech/python",
   ]
 ---
 
@@ -75,9 +76,3 @@ npm install @didlawowo/mcp-collection
 - Log processor
 - Clustering engine
 - Pattern analyzer
-
-## Related Servers
-
-- modelcontextprotocol-monitoring-server
-- macrat-mcp-ayd-server
-- metoro-io-metoro-mcp-server

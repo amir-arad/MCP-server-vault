@@ -4,12 +4,20 @@ repo_url: https://github.com/compiledwithproblems/file-context-mcp
 name: File Context MCP Server
 owner: compiledwithproblems
 stars: 1
-last_updated: 2025-02-07
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_012.md"]
-tags: ["status/active", "category/llm", "purpose/context-management", "purpose/file-querying", "tech/multi-model", "purpose/file-analysis"]
+tags:
+  [
+    "status/active",
+    "category/llm",
+    "purpose/context-management",
+    "purpose/file-querying",
+    "tech/multi-model",
+    "purpose/file-analysis",
+  ]
 ---
 
 # File Context MCP Server

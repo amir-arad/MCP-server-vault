@@ -4,19 +4,19 @@ repo_url: https://github.com/iskakaushik/mcp-clickhouse
 name: ClickHouse Community MCP Server
 owner: iskakaushik
 stars: 3
-last_updated: 2025-01-06
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
     "status/active",
-    "status/community",
     "category/database",
     "integration/clickhouse",
     "purpose/analytics",
     "tech/sql",
+    "tech/python",
   ]
 ---
 

@@ -3,16 +3,22 @@ type: server
 repo_url: https://github.com/integration-app/mcp-server
 name: Integration App
 owner: integration-app
-stars: 0
-last_updated: 2025-02-27
+stars: 3
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
-tags: ["status/active", "status/official", "category/integration"]
+tags:
+  [
+    "status/active",
+    "status/official",
+    "category/integration",
+    "tech/javascript",
+  ]
 ---
 
-#status/active #status/official #category/integration
+#status/active #status/official #category/integration #tech/javascript
 
 # Integration App
 

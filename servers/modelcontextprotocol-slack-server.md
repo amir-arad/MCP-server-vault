@@ -1,13 +1,13 @@
----
+--- 
 type: server
-repo_url: https://github.com/modelcontextprotocol/servers/src/slack
+repo_url: https://github.com/modelcontextprotocol/servers
 name: Slack
 owner: modelcontextprotocol
-stars: 0
-last_updated: 2025-02-27
+stars: 11500
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags:
   [

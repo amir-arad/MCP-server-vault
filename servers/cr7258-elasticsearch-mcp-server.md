@@ -3,13 +3,21 @@ type: server
 repo_url: https://github.com/cr7258/elasticsearch-mcp-server
 name: Elasticsearch MCP Server
 owner: cr7258
-stars: 9
-last_updated: 2025-02-19
+stars: 10
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_010.md"]
-tags: ["status/active", "category/search", "integration/elasticsearch", "purpose/cluster-management", "purpose/search", "purpose/indexing"]
+tags:
+  [
+    "status/active",
+    "category/search",
+    "integration/elasticsearch",
+    "purpose/cluster-management",
+    "purpose/search",
+    "purpose/indexing",
+  ]
 ---
 
 # Elasticsearch MCP Server

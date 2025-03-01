@@ -4,12 +4,21 @@ repo_url: https://github.com/grapheneaffiliate/dRiNk-ThE-kOoLaId
 name: Drink The Koolaid MCP Server
 owner: grapheneaffiliate
 stars: 1
-last_updated: 2025-02-08
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_010.md"]
-tags: ["status/active", "category/automation", "category/computer-vision", "category/ai", "purpose/browser-automation", "tech/vision"]
+tags:
+  [
+    "status/active",
+    "category/automation",
+    "category/computer-vision",
+    "category/ai",
+    "purpose/browser-automation",
+    "tech/vision",
+    "tech/javascript",
+  ]
 ---
 
 # Drink The Koolaid MCP Server

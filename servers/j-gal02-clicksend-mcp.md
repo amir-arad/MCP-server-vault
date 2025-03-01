@@ -4,10 +4,10 @@ repo_url: https://github.com/J-Gal02/clicksend-mcp
 name: ClickSend MCP Server
 owner: J-Gal02
 stars: 1
-last_updated: 2025-01-30
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "purpose/sms",
     "purpose/text-to-speech",
     "tech/api",
+    "tech/javascript",
   ]
 ---
 

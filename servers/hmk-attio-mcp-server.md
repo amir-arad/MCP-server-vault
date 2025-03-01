@@ -4,12 +4,18 @@ repo_url: https://github.com/hmk/attio-mcp-server
 name: Attio MCP Server
 owner: hmk
 stars: 2
-last_updated: 2025-02-20
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "category/crm", "integration/attio", "purpose/data-management"]
+tags:
+  [
+    "status/active",
+    "category/crm",
+    "integration/attio",
+    "purpose/data-management",
+  ]
 ---
 
 # Attio MCP Server

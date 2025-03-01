@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/baba786/angleone-mcp-server
 name: AngleOne MCP Server
 owner: baba786
 stars: 0
-last_updated: 2024-12-04
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
 tags: ["status/active", "category/finance", "integration/angleone", "purpose/trading"]
 ---

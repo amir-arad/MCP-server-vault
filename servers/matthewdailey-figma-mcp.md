@@ -3,13 +3,21 @@ type: server
 repo_url: https://github.com/MatthewDailey/figma-mcp
 name: Figma MCP Server
 owner: MatthewDailey
-stars: 9
-last_updated: 2025-02-19
+stars: 15
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_012.md"]
-tags: ["status/active", "category/design", "integration/figma", "tech/rest-api", "purpose/design-analysis", "purpose/collaboration"]
+tags:
+  [
+    "status/active",
+    "category/design",
+    "integration/figma",
+    "tech/rest-api",
+    "purpose/design-analysis",
+    "purpose/collaboration",
+  ]
 ---
 
 # Figma MCP Server

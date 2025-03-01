@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/berlinbra/binary-reader-mcp
 name: Binary Reader MCP Server
 owner: berlinbra
 stars: 0
-last_updated: 2025-01-31
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
 tags: ["status/active", "category/development", "purpose/file-analysis", "tech/unreal-engine", "purpose/forensics"]
 ---

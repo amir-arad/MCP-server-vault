@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/bossjones/datetime-mcp-server
-name: DateTime Notes MCP Server
+name: datetime-mcp-server
 owner: bossjones
 stars: 0
-last_updated: 2025-02-07
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_008.md"]
 tags:
   [

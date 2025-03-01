@@ -3,13 +3,22 @@ type: server
 repo_url: https://github.com/flexpa/mcp-fhir
 name: FHIR MCP Server
 owner: flexpa
-stars: 16
-last_updated: 2025-02-19
+stars: 17
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_012.md"]
-tags: ["status/active", "category/healthcare", "integration/fhir", "purpose/data-access", "purpose/search", "purpose/analysis"]
+tags:
+  [
+    "status/active",
+    "category/healthcare",
+    "integration/fhir",
+    "purpose/data-access",
+    "purpose/search",
+    "purpose/analysis",
+    "tech/typescript",
+  ]
 ---
 
 # FHIR MCP Server

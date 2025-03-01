@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/MindscapeHQ/mcp-server-raygun
 name: Raygun
 owner: MindscapeHQ
-stars: 0
-last_updated: 2025-02-27
+stars: 3
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox"]
 tags: ["status/active", "status/official", "category/monitoring"]
 ---
@@ -18,7 +18,7 @@ tags: ["status/active", "status/official", "category/monitoring"]
 
 ## Description
 
-Interact with your crash reporting and real using monitoring data on your Raygun account. This MCP server provides comprehensive access to Raygun's error tracking and application performance monitoring capabilities.
+Interact with your crash reporting and real using monitoring data on your Raygun account. This MCP server provides comprehensive access to Raygun's API features through the Model Context Protocol.
 
 ## Features
 

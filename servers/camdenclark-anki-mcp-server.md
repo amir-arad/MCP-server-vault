@@ -4,12 +4,18 @@ repo_url: https://github.com/CamdenClark/anki-mcp-server
 name: Anki MCP Server
 owner: CamdenClark
 stars: 7
-last_updated: 2025-02-08
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
-tags: ["status/active", "category/education", "integration/anki", "purpose/learning"]
+tags:
+  [
+    "status/active",
+    "category/education",
+    "integration/anki",
+    "purpose/learning",
+  ]
 ---
 
 # Anki MCP Server

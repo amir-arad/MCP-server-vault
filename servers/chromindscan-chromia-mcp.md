@@ -1,13 +1,13 @@
 ---
 type: server
 repo_url: https://github.com/chromindscan/chromia-mcp
-name: Chromia Wallet MCP Server
+name: Chromia MCP Server
 owner: chromindscan
 stars: 1
-last_updated: 2024-12-23
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_005.md"]
 tags:
   [
@@ -26,7 +26,7 @@ tags:
 
 ## Description
 
-Enables AI to interact with Chromia Wallet for sending $CHR transactions. This MCP server provides a secure interface for automated cryptocurrency transactions on the Chromia blockchain.
+This tool that enables Claude AI to interact with Chromia Wallet for sending $CHR transactions.
 
 ## Features
 
@@ -44,7 +44,7 @@ Enables AI to interact with Chromia Wallet for sending $CHR transactions. This M
 ## Installation
 
 ```bash
-npm install @chromindscan/chromia-mcp
+npm install
 ```
 
 ## Usage
@@ -69,7 +69,7 @@ npm install @chromindscan/chromia-mcp
 
 ## Dependencies
 
-- Node.js >= 14
+- Node.js >= 16
 - Chromia Wallet
 - Chromia SDK
 - Crypto libraries

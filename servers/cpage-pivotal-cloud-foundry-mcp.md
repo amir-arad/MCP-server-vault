@@ -4,10 +4,10 @@ repo_url: https://github.com/cpage-pivotal/cloud-foundry-mcp
 name: Cloud Foundry MCP Server
 owner: cpage-pivotal
 stars: 2
-last_updated: 2025-02-19
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [
@@ -56,7 +56,7 @@ npm install @cpage-pivotal/cloud-foundry-mcp
       "command": "npx",
       "args": ["@cpage-pivotal/cloud-foundry-mcp"],
       "env": {
-        "CF_API": "https://api.your-cf.com",
+        "CF_API_URL": "https://api.your-cf.com",
         "CF_USERNAME": "your-username",
         "CF_PASSWORD": "your-password",
         "ORG_NAME": "your-org",

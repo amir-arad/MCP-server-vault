@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/axiomhq/mcp-server-axiom
 name: Axiom MCP Server
 owner: axiomhq
-stars: 10
-last_updated: 2025-02-20
+stars: 14
+last_updated: 2025-03-01
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
 tags: ["status/active", "status/official", "category/analytics", "integration/axiom", "purpose/data-analysis"]
 ---

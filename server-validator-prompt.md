@@ -20,7 +20,7 @@ Validate unverified servers (`verified: false`) by checking repository informati
 
    - Get server file content: `get_vault_file({filename: "servers/owner-repo.md"})`
    - Visit repository URL: `fetch_markdown({"url":"https://github.com/servers/owner-repo"})`
-     - Use markdown (or text) to read pages, because raw HTML wastes too many tokens.
+     - Use markdown (or text) to read pages, because raw HTML can cause severe errors. never use fetch_html.
      - If fetch fails, move to next server and make no changes
    - check:
      - Does repository exist?

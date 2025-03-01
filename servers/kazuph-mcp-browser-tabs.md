@@ -4,16 +4,17 @@ repo_url: https://github.com/kazuph/mcp-browser-tabs
 name: Browser Tabs MCP Server
 owner: kazuph
 stars: 1
-last_updated: 2025-02-13
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [
     "status/active",
     "category/browser",
     "tech/applescript",
+    "tech/javascript",
     "purpose/tab-management",
     "tech/macos",
   ]

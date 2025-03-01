@@ -3,13 +3,23 @@ type: server
 repo_url: https://github.com/exa-labs/exa-mcp-server
 name: Exa MCP Server
 owner: exa-labs
-stars: 231
-last_updated: 2025-02-21
+stars: 243
+last_updated: 2025-02-28
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox/batch_011.md"]
-tags: ["status/active", "status/official", "category/search", "category/ai", "integration/exa", "purpose/web-search"]
+tags:
+  [
+    "status/active",
+    "status/official",
+    "category/search",
+    "category/ai",
+    "integration/exa",
+    "purpose/web-search",
+    "tech/javascript",
+    "tech/typescript",
+  ]
 ---
 
 # Exa MCP Server

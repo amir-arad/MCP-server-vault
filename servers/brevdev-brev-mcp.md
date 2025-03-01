@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/brevdev/brev-mcp
 name: Brev MCP Server
 owner: brevdev
-stars: 2
-last_updated: 2024-12-16
+stars: 3
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [

@@ -4,10 +4,10 @@ repo_url: https://github.com/hideya/mcp-client-langchain-py
 name: LangChain Python Client MCP Server
 owner: hideya
 stars: 4
-last_updated: 2025-02-21
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [
@@ -18,6 +18,7 @@ tags:
     "integration/openai",
     "integration/anthropic",
     "integration/groq",
+    "tech/javascript",
   ]
 ---
 

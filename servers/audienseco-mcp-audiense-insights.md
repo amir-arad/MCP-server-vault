@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/AudienseCo/mcp-audiense-insights
 name: Audiense Insights MCP Server
 owner: AudienseCo
-stars: 1
-last_updated: 2025-02-17
+stars: 21
+last_updated: 2025-03-01
 status: active
-official: false
-verified: false
+official: true
+verified: true
 sources: ["inbox/batch_003.md"]
 tags: ["status/active", "category/marketing", "integration/audiense", "purpose/analytics"]
 ---

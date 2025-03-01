@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/berlinbra/BlueSky-MCP
 name: BlueSky MCP Server
 owner: berlinbra
 stars: 1
-last_updated: 2025-01-31
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [

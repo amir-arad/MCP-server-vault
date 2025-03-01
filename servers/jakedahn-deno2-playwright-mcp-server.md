@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/jakedahn/deno2-playwright-mcp-server
 name: Deno Playwright MCP Server
 owner: jakedahn
-stars: 7
-last_updated: 2025-02-05
+stars: 8
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_009.md"]
 tags:
   [
@@ -17,6 +17,7 @@ tags:
     "tech/playwright",
     "purpose/web-automation",
     "purpose/data-extraction",
+    "tech/typescript",
   ]
 ---
 

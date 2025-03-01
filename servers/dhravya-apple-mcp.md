@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/Dhravya/apple-mcp
 name: Apple MCP Server
 owner: Dhravya
-stars: 227
-last_updated: 2025-02-21
+stars: 433
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_002.md"]
 tags: ["status/active", "category/integration", "integration/apple", "purpose/app-control", "tech/macos"]
 ---

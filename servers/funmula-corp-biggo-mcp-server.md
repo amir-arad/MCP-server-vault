@@ -3,13 +3,19 @@ type: server
 repo_url: https://github.com/Funmula-Corp/BigGo-MCP-Server
 name: BigGo MCP Server
 owner: Funmula-Corp
-stars: 2
-last_updated: 2025-02-21
+stars: 3
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
-tags: ["status/active", "category/e-commerce", "purpose/product-search", "purpose/price-tracking"]
+tags:
+  [
+    "status/active",
+    "category/e-commerce",
+    "purpose/product-search",
+    "purpose/price-tracking",
+  ]
 ---
 
 # BigGo MCP Server

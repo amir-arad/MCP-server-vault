@@ -4,12 +4,20 @@ repo_url: https://github.com/crazyrabbitLTC/mcp-ethers-server
 name: Ethers MCP Server
 owner: crazyrabbitLTC
 stars: 1
-last_updated: 2025-01-31
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_011.md"]
-tags: ["status/active", "category/blockchain", "integration/ethereum", "tech/ethers-js", "purpose/wallet-operations", "purpose/smart-contracts"]
+tags:
+  [
+    "status/active",
+    "category/blockchain",
+    "integration/ethereum",
+    "tech/ethers-js",
+    "purpose/wallet-operations",
+    "purpose/smart-contracts",
+  ]
 ---
 
 # Ethers MCP Server

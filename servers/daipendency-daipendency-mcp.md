@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/daipendency/daipendency-mcp
 name: Daipendency Documentation MCP Server
 owner: daipendency
-stars: 15
-last_updated: 2025-02-18
+stars: 35
+last_updated: 2025-03-01
 status: active
 official: true
-verified: false
+verified: true
 sources: ["inbox/batch_008.md"]
 tags:
   [
@@ -75,9 +75,3 @@ npm install @daipendency/daipendency-mcp
 - Documentation parser
 - Cache system
 - Search indexer
-
-## Related Servers
-
-- modelcontextprotocol-docs-server
-- nahmanmate/code-research-mcp-server
-- daipendency/rust-docs-mcp

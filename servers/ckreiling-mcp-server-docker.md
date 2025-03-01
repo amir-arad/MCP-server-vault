@@ -3,13 +3,21 @@ type: server
 repo_url: https://github.com/ckreiling/mcp-server-docker
 name: Docker MCP Server
 owner: ckreiling
-stars: 50
-last_updated: 2025-02-19
+stars: 62
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_010.md"]
-tags: ["status/active", "category/containerization", "integration/docker", "tech/python", "purpose/container-management", "tech/sdk"]
+tags:
+  [
+    "status/active",
+    "category/containerization",
+    "integration/docker",
+    "tech/python",
+    "purpose/container-management",
+    "tech/sdk",
+  ]
 ---
 
 # Docker MCP Server

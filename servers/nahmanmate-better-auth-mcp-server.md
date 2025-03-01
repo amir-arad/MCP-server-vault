@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/nahmanmate/better-auth-mcp-server
 name: Better Auth MCP Server
 owner: nahmanmate
 stars: 2
-last_updated: 2025-02-14
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_003.md"]
 tags: ["status/active", "category/security", "purpose/authentication", "purpose/security-testing"]
 ---

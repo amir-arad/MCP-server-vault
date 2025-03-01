@@ -3,11 +3,11 @@ type: server
 repo_url: https://github.com/GongRzhe/Calendar-Autoauth-MCP-Server
 name: Calendar Autoauth MCP Server
 owner: GongRzhe
-stars: 2
-last_updated: 2025-02-14
+stars: 3
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_004.md"]
 tags:
   [
@@ -16,6 +16,7 @@ tags:
     "integration/google",
     "purpose/calendar-management",
     "integration/claude",
+    "tech/javascript",
   ]
 ---
 

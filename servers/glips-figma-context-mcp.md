@@ -3,13 +3,22 @@ type: server
 repo_url: https://github.com/GLips/Figma-Context-MCP
 name: Figma Context MCP Server
 owner: GLips
-stars: 112
-last_updated: 2025-02-21
+stars: 392
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_012.md"]
-tags: ["status/active", "category/design", "integration/figma", "integration/cursor", "purpose/design-data", "purpose/code-generation"]
+tags:
+  [
+    "status/active",
+    "category/design",
+    "integration/figma",
+    "integration/cursor",
+    "purpose/design-data",
+    "purpose/code-generation",
+    "tech/javascript",
+  ]
 ---
 
 # Figma Context MCP Server

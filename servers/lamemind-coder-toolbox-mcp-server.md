@@ -4,16 +4,17 @@ repo_url: https://github.com/lamemind/coder-toolbox-mcp-server
 name: Coder Toolbox MCP Server
 owner: lamemind
 stars: 2
-last_updated: 2025-01-20
+last_updated: 2025-02-28
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [
     "status/active",
     "category/development",
     "tech/java",
+    "tech/javascript",
     "purpose/code-analysis",
     "purpose/testing",
     "purpose/automation",

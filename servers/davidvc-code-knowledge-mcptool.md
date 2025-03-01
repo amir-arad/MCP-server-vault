@@ -1,13 +1,13 @@
----
+--- 
 type: server
 repo_url: https://github.com/davidvc/code-knowledge-mcptool
 name: Code Knowledge MCP Server
 owner: davidvc
-stars: 6
-last_updated: 2025-02-20
+stars: 8
+last_updated: 2025-03-01
 status: active
 official: false
-verified: false
+verified: true
 sources: ["inbox/batch_006.md"]
 tags:
   [
